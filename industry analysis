@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industry Analysis | The Holistic Student</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">★</span>
+      <span class="logo-text">The Holistic Student</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"        class="nav-link">Home</a></li>
+      <li><a href="introduction.html" class="nav-link">Introduction</a></li>
+      <li><a href="industry.html"     class="nav-link active">Industry Analysis</a></li>
+      <li><a href="business.html"     class="nav-link">Business Profile</a></li>
+      <li><a href="conclusion.html"   class="nav-link">Conclusion</a></li>
+      <li><a href="references.html"   class="nav-link">References</a></li>
+      <li><a href="references.html"   class="nav-link">References</a></li>
+    </ul>
+  </nav>
+ 
+  <div class="page-wrapper">
+ 
+    <header class="page-hero">
+      <div class="hero-inner">
+        <span class="hero-tag">02 / Industry Analysis</span>
+        <h1>From Classroom Concept<br /><em>to Global Market</em></h1>
+        <p>
+          A journey from Ancient Greece to a $21 billion industry — and the three
+          technological forces reshaping Social-Emotional Learning for the next decade.
+        </p>
+      </div>
+    </header>
+ 
+    <main class="container">
+ 
+      <!-- HISTORY -->
+      <div class="section-header fade-in">
+        <span class="section-tag">Part One</span>
+        <h2 class="section-title">A History of SEL</h2>
+      </div>
+ 
+      <div class="timeline">
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Ancient Origins</span>
+            <h4>Plato's Holistic Curriculum</h4>
+            <p>The roots of Social and Emotional Learning are sewn deep into Ancient Greece. In <em>The Republic</em>, Plato proposed a holistic curriculum requiring balance of training in physical movement, arts, math, science, character, and moral judgment. He was convinced a thorough and balanced education was how a society would produce "citizens of good character."</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">1920s–1930s</span>
+            <h4>Vygotsky's Foundational Frameworks</h4>
+            <p>Influenced by Plato, Lev Vygotsky emphasized the key role that social interaction plays in the development of cognition. His sociocultural theory suggested that the ways people interact with others and the culture they live in shapes their mental abilities. His Zone of Proximal Development argued that learning should relate to both a child's developmental level and their potential learning ability — encompassing emotional and social abilities, not just academic ones.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">1968</span>
+            <h4>Dr. Comer's Proof of Concept</h4>
+            <p>Dr. James Comer of Yale University's Child Study Center began piloting what would become the Comer School Development Program in two of New Haven's most underperforming schools — both serving predominantly Black student populations with the lowest academic achievement and worst attendance in the city. Collaborative management teams of teachers, parents, principals, and mental health workers made decisions together. By the early 1980s, both schools exceeded national academic averages with significant declines in truancy and behavior problems.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">1980s</span>
+            <h4>A Push for More</h4>
+            <p>After the profound results of Dr. Comer's program, the district superintendent called for a broader focus on social development. This birthed the New Haven Social Development Program. Around the same time, Dr. Weissberg and Dr. Elias chaired the Grant Consortium on the School-Based Promotion of Social Competence, bringing leaders together to build a framework. In 1989, the term "emotional intelligence" was coined by psychologists Peter Salovey and John D. Mayer.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot tl-dot--gold"></div>
+          <div class="tl-content tl-content--featured">
+            <span class="tl-date">1994</span>
+            <h4>The Birth of Social-Emotional Learning as a Field</h4>
+            <p>A group of researchers, educators, child advocates, and practitioners with expertise across emotional intelligence, child development, public health, and prevention science came together to address the "missing piece" in education. From a small conference in Kalamazoo, Michigan, the <strong>Collaborative for Academic, Social, and Emotional Learning (CASEL)</strong> was born — along with the term "social and emotional learning."</p>
+            <p>The first foundational contribution of CASEL was the <strong>CASEL 5</strong> — five broad, interrelated areas that would define the industry for decades: self-awareness, self-management, social awareness, relationship skills, and responsible decision-making.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">1995</span>
+            <h4>SEL Goes Mainstream</h4>
+            <p>American psychologist Daniel Goleman released <em>Emotional Intelligence: Why It Matters More Than IQ</em> — the first time emotional intelligence was popularized in the public sphere. The book became a bestseller, making the case to parents, policymakers, and educators that emotional intelligence needed to be seen as more than a soft skill. It created a public appetite to drive investment and policy action in social-emotional learning for decades to come.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2009 / 2011</span>
+            <h4>Policy and Evidence</h4>
+            <p>In 2009, the first federal act on Academic, Social, and Emotional Learning was released. In 2011, a landmark meta-analysis linked SEL to an <strong>11-point gain in academic achievement</strong> — providing the hard evidence the field needed to argue for mainstream adoption.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2015</span>
+            <h4>Federal Legitimization (ESSA)</h4>
+            <p>The Every Student Succeeds Act created multiple funding pathways for SEL programming in schools. School leaders could now use funding for nonacademic indicators of success, supporting student mental and behavioral health, as well as hiring support personnel to develop school climate and safety. This was the first time government money institutionalized SEL as a school priority.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2020</span>
+            <h4>COVID and Cultural Urgency</h4>
+            <p>The global pandemic brought elevated attention to social-emotional learning as an industry. With students at home, the nation saw elevated levels of youth mental health struggles and educators worked to combat this trend.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot tl-dot--gold"></div>
+          <div class="tl-content tl-content--featured">
+            <span class="tl-date">2021–Present</span>
+            <h4>A Multi-Billion Dollar Industry is Born</h4>
+            <p>The American Rescue Plan Act injected <strong>$123 billion</strong> into K-12 education — an unprecedented opportunity to invest in SEL. The global market reached <strong>$4.0 billion in 2024</strong> and is projected to grow to <strong>$21.1 billion by 2033</strong>. Driven by AI and digital platforms, the EdTech market for social-emotional learning continues to rise.</p>
+          </div>
+        </div>
+ 
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2026</span>
+            <h4>Educators Demand Action — With Complications</h4>
+            <p>Research now shows more than 3 out of 3 educators believe students should be taught self-management, cooperation, problem-solving, and effective communication — all core features of the SEL framework. However, in some states, SEL has become the focus of political attacks from conservatives who see it as an effort to introduce discussions of race and gender issues in the classroom. Meanwhile, educators report they are not being adequately trained or equipped to teach SEL.</p>
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <!-- FUTURE PROJECTIONS -->
+      <div class="section-header fade-in" style="margin-top: 80px;">
+        <span class="section-tag">Part Two</span>
+        <h2 class="section-title">Future Projections</h2>
+      </div>
+ 
+      <div class="trends-grid stagger-parent">
+ 
+        <div class="trend-card">
+          <div class="trend-badge">Trend 01</div>
+          <h3>AI-Powered Personalized SEL</h3>
+          <p>
+            As artificial intelligence grows across the globe, it is becoming a disruptive
+            force in social-emotional learning. AI-driven emotional learning systems are
+            being increasingly integrated within SEL frameworks — offering interactive
+            simulations, role-playing environments, and real-time feedback.
+          </p>
+          <p>
+            A 2024 systematic review published in the <em>Journal of Research in Innovative
+            Teaching and Learning</em> found that AI technologies — including virtual reality,
+            chatbots, gamification, and wearable devices — present significant opportunities
+            in the SEL space (Sethi &amp; Jain, 2024).
+          </p>
+          <p>
+            What makes AI particularly powerful is its capacity for real-time personalization:
+            tracking emotional patterns over time, flagging concerns to educators, and adapting
+            support based on individual student needs.
+          </p>
+          <div class="trend-callout trend-callout--warning">
+            <strong>⚠️ Ethical Concern:</strong> Without intentional design, researchers warn AI may cause
+            <em>"social deskilling"</em> — the erosion of students' capacity for empathy, negotiation,
+            and non-verbal attunement. AI must amplify human connection, not substitute it.
+          </div>
+        </div>
+ 
+        <div class="trend-card">
+          <div class="trend-badge">Trend 02</div>
+          <h3>Rise of Data-Driven Wellbeing-as-a-Service</h3>
+          <p>
+            The SEL industry is undergoing a fundamental shift in how student emotional health
+            is managed and measured. What was once a largely unquantifiable classroom practice
+            is increasingly being treated as a data-driven outcome — tracked, reported, and
+            tied directly to school accountability metrics.
+          </p>
+          <p>
+            This model, commonly referred to as <strong>Wellbeing-as-a-Service</strong>, treats
+            emotional health the same way as other student measurable outcomes — with dashboards,
+            benchmarks, and longitudinal tracking.
+          </p>
+          <p>
+            In 2024, analytics and assessment platforms accounted for <strong>73% of total SEL
+            platform revenue</strong>. Companies like Panorama Education enhanced their analytics
+            engine with updated behavior-tracking that improved accuracy by 42% and increased
+            teacher engagement with dashboards by more than 55%.
+          </p>
+          <div class="trend-callout trend-callout--info">
+            <strong>📊 Federal Signal:</strong> $87 million in federal grants in 2024 focused on
+            evidence-based, data-supported SEL strategies. The House of Representatives approved
+            $260 million for measurable holistic child development outcomes.
+          </div>
+        </div>
+ 
+        <div class="trend-card">
+          <div class="trend-badge">Trend 03</div>
+          <h3>Physical Activity as a Core SEL Strategy</h3>
+          <p>
+            Among the most significant scientific advancements in SEL is the evidence that
+            physical movement is not just compatible with social-emotional learning — it is a
+            <em>driver</em> of it.
+          </p>
+          <p>
+            A 2024 landmark review and meta-analysis published in the <em>Review of Education</em>
+            by Wiley examined 32 separate intervention studies and found a consistent positive
+            effect of physical activity interventions on elementary school children's SEL outcomes
+            (Moon et al., 2024). This was the first meta-analysis of its kind — moving physical
+            activity from a wellness strategy to a data-driven SEL tool.
+          </p>
+          <div class="trend-callout trend-callout--positive">
+            <strong>🏃 Key Implication:</strong> This finding is the scientific foundation of
+            GoNoodle's entire business model — and the reason its approach is uniquely validated
+            by research. See the Business Profile for full analysis.
+          </div>
+          <a href="business.html" class="trend-link">Read the GoNoodle Profile →</a>
+        </div>
+ 
+      </div>
+ 
+      <!-- PAGE NAV -->
+      <nav class="page-nav">
+        <a href="introduction.html" class="page-nav-btn prev">
+          <span class="page-nav-label">← Previous</span>
+          <span class="page-nav-title">Introduction</span>
+        </a>
+        <a href="business.html" class="page-nav-btn next">
+          <span class="page-nav-label">Next →</span>
+          <span class="page-nav-title">Business Profile</span>
+        </a>
+      </nav>
+ 
+    </main>
+  </div>
+ 
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;">
+        <span class="logo-icon">★</span>
+        <span class="logo-text">The Holistic Student</span>
+      </a>
+      <p class="footer-caption">MEITE Final Project · Kiannah Pierce · University of North Carolina · 2026</p>
+      <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+  <style>
+    /* Timeline */
+    .timeline { position:relative; padding-left:44px; margin-bottom:40px; }
+    .timeline::before {
+      content:''; position:absolute; left:14px; top:8px; bottom:8px;
+      width:2px; background:linear-gradient(to bottom,var(--teal),var(--gold)); border-radius:2px;
+    }
+    .timeline-item { position:relative; margin-bottom:36px; }
+    .tl-dot {
+      position:absolute; left:-36px; top:8px;
+      width:14px; height:14px; border-radius:50%;
+      background:var(--teal); border:3px solid var(--offwhite);
+      box-shadow:0 0 0 2px var(--teal);
+    }
+    .tl-dot--gold { background:var(--gold); box-shadow:0 0 0 2px var(--gold); }
+    .tl-content {
+      background:var(--white); border-radius:var(--radius);
+      padding:24px 28px; box-shadow:var(--shadow);
+      border-top:3px solid var(--teal); transition:all 0.3s;
+    }
+    .tl-content:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg); border-top-color:var(--gold); }
+    .tl-content--featured { border-top:3px solid var(--gold); background:linear-gradient(135deg,#fffbea,var(--white)); }
+    .tl-date {
+      display:inline-block; font-size:0.72rem; font-weight:700;
+      letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;
+    }
+    .tl-content h4 { font-family:var(--font-display); font-size:1.1rem; color:var(--navy); margin-bottom:10px; }
+    .tl-content p { font-size:0.9rem; color:var(--mid-text); line-height:1.75; margin-bottom:10px; }
+    .tl-content p:last-child { margin-bottom:0; }
+ 
+    /* Trends */
+    .trends-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .trend-card {
+      background:var(--white); border-radius:var(--radius);
+      padding:32px 28px; box-shadow:var(--shadow);
+      display:flex; flex-direction:column; gap:14px; transition:all 0.3s;
+    }
+    .trend-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); }
+    .trend-badge {
+      display:inline-block; background:var(--navy); color:var(--gold);
+      font-size:0.7rem; font-weight:700; letter-spacing:0.1em;
+      text-transform:uppercase; padding:6px 12px; border-radius:20px;
+    }
+    .trend-card h3 { font-family:var(--font-display); font-size:1.1rem; color:var(--navy); }
+    .trend-card p { font-size:0.88rem; color:var(--mid-text); line-height:1.75; margin:0; }
+    .trend-callout {
+      border-radius:var(--radius-sm); padding:14px 16px;
+      font-size:0.82rem; line-height:1.6; color:var(--dark-text);
+    }
+    .trend-callout--warning { background:#fff8e1; border-left:3px solid #f9a825; }
+    .trend-callout--info    { background:#e3f2fd; border-left:3px solid #1976d2; }
+    .trend-callout--positive{ background:#e8f5e9; border-left:3px solid #2e7d32; }
+    .trend-link {
+      display:inline-block; font-size:0.85rem; font-weight:700;
+      color:var(--gold); text-decoration:none; margin-top:4px;
+    }
+    .trend-link:hover { text-decoration:underline; }
+ 
+    @media (max-width:900px) { .trends-grid { grid-template-columns:1fr; } }
+  </style>
+</body>
+</html>

@@ -24,8 +24,8 @@ body{font-family:var(--font-body);color:var(--dark-text);background:var(--offwhi
 /* NAVBAR */
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:rgba(25,63,86,.97);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.15);transition:box-shadow .3s}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--white);flex-shrink:0}
-.logo-icon{font-size:1.4rem;color:var(--gold)}
-.logo-text{font-family:var(--font-display);font-size:1.05rem;font-weight:700}
+.logo-icon { display: none; }
+.logo-text  { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; }
 .nav-links{list-style:none;display:flex;align-items:center;gap:4px}
 .nav-link{display:block;padding:8px 14px;border-radius:50px;color:rgba(255,255,255,.72);text-decoration:none;font-size:.85rem;font-weight:500;letter-spacing:.02em;transition:all .22s;white-space:nowrap}
 .nav-link:hover,.nav-link.active{color:var(--gold);background:rgba(255,161,20,.18)}
@@ -187,7 +187,10 @@ p strong{color:var(--navy)}
 </head>
 <body>
   <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo"><span class="logo-icon">★</span><span class="logo-text">The Holistic Student</span></a>
+  <a href="index.html" class="nav-logo">
+  <img src="social emotional learning.jpg" alt="The Holistic Student" class="nav-logo-img" />
+  <span class="logo-text">The Holistic Student</span>
+</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html" class="nav-link active">Home</a></li>

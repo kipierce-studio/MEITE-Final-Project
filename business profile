@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Profile | The Holistic Student</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">★</span>
+      <span class="logo-text">The Holistic Student</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"        class="nav-link">Home</a></li>
+      <li><a href="introduction.html" class="nav-link">Introduction</a></li>
+      <li><a href="industry.html"     class="nav-link">Industry Analysis</a></li>
+      <li><a href="business.html"     class="nav-link active">Business Profile</a></li>
+      <li><a href="conclusion.html"   class="nav-link">Conclusion</a></li>
+      <li><a href="references.html"   class="nav-link">References</a></li>
+      <li><a href="references.html"   class="nav-link">References</a></li>
+    </ul>
+  </nav>
+ 
+  <div class="page-wrapper">
+ 
+    <header class="page-hero">
+      <div class="hero-inner">
+        <span class="hero-tag">03 / Business Profile</span>
+        <h1>GoNoodle:<br /><em>Where Movement Meets Wellbeing</em></h1>
+        <p>
+          A high-performing industry leader that has bridged the gap between physical activity
+          and mental regulation for over 40 million children — and what it means for the
+          future of SEL.
+        </p>
+      </div>
+    </header>
+ 
+    <main class="container">
+ 
+      <!-- OVERVIEW -->
+      <div class="profile-banner fade-in">
+        <div class="profile-left">
+          <div class="gonoodle-logo">
+            <div class="gn-circle">G</div>
+            <span>oNoodle</span>
+          </div>
+          <p class="profile-tagline">
+            Bridging the gap between physical activity and mental regulation
+            for over 40 million children in K–5 classrooms across the country.
+          </p>
+        </div>
+        <div class="profile-metrics stagger-parent">
+          <div class="pm-item">
+            <span class="pm-val">40M+</span>
+            <span class="pm-lbl">Children Reached</span>
+          </div>
+          <div class="pm-item">
+            <span class="pm-val">K–5</span>
+            <span class="pm-lbl">Target Grade Range</span>
+          </div>
+          <div class="pm-item">
+            <span class="pm-val">Free</span>
+            <span class="pm-lbl">Core Platform Access</span>
+          </div>
+          <div class="pm-item">
+            <span class="pm-val">3–5</span>
+            <span class="pm-lbl">Min. Activity Breaks</span>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- BUSINESS MODEL -->
+      <div class="subsection-title fade-in"><h3>Business Model &amp; Key Features</h3></div>
+ 
+      <div class="features-grid stagger-parent fade-in">
+        <div class="feature-card">
+          <div class="fc-icon">🏫</div>
+          <h4>Classroom-First Design</h4>
+          <p>GoNoodle is built for instant classroom deployment — 3–5 minute movement breaks that teachers can play immediately with zero prep. Designed to fit within the natural rhythm of a school day.</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon">🏠</div>
+          <h4>Classroom-to-Home Connectivity</h4>
+          <p>A distinctive innovation: GoNoodle extends into the home, enabling parents to engage with the same content their children use in school. This continuity amplifies SEL impact beyond the classroom walls.</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon">🎮</div>
+          <h4>Gamified Engagement</h4>
+          <p>Classes earn points, level up their characters, and unlock new content — creating intrinsic motivation for movement and emotional regulation activities rather than treating them as obligations.</p>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon">🌍</div>
+          <h4>Democratized Access</h4>
+          <p>The free core platform ensures that access to mental health support tools is not gated by district budget. This equity-first approach aligns with GoNoodle's mission to reach all children regardless of background.</p>
+        </div>
+      </div>
+ 
+      <!-- SWOT -->
+      <div class="subsection-title fade-in"><h3>SWOT Analysis</h3></div>
+ 
+      <div class="swot-grid stagger-parent">
+        <div class="swot-card swot-s">
+          <div class="swot-badge">Strengths</div>
+          <ul class="swot-list">
+            <li>Unique intersection of movement + SEL, scientifically validated by 2024 meta-analysis</li>
+            <li>Classroom-to-home connectivity bridges school and family engagement</li>
+            <li>Free access democratizes mental health support across income levels</li>
+            <li>Gamified, age-appropriate content drives high engagement among K–5</li>
+            <li>Established trust and recognition with 40M+ users</li>
+          </ul>
+        </div>
+        <div class="swot-card swot-w">
+          <div class="swot-badge">Weaknesses</div>
+          <ul class="swot-list">
+            <li>Limited data analytics capabilities compared to competitors like Panorama</li>
+            <li>Primarily K–5 focus limits market reach and long-term user retention</li>
+            <li>Revenue model partially reliant on advertising in free tier</li>
+            <li>Lower brand awareness among parents relative to teachers</li>
+          </ul>
+        </div>
+        <div class="swot-card swot-o">
+          <div class="swot-badge">Opportunities</div>
+          <ul class="swot-list">
+            <li>Growing Wellbeing-as-a-Service market — $21B projected by 2033</li>
+            <li>AI integration for personalized movement and SEL programming</li>
+            <li>Expansion into middle school (grades 6–8) content library</li>
+            <li>Federal funding streams via ESSA and American Rescue Plan Act</li>
+            <li>International market expansion beyond US classrooms</li>
+          </ul>
+        </div>
+        <div class="swot-card swot-t">
+          <div class="swot-badge">Threats</div>
+          <ul class="swot-list">
+            <li>Political attacks on SEL in some states limiting school adoption</li>
+            <li>Well-funded competitors (Panorama Education, ClassDojo, Second Step)</li>
+            <li>Teacher burnout limiting consistent SEL implementation</li>
+            <li>Data privacy regulations in K-12 creating compliance burden</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- COMPETITORS -->
+      <div class="subsection-title fade-in"><h3>Competitive Landscape</h3></div>
+ 
+      <div class="competitor-wrap fade-in">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Primary Focus</th>
+              <th>Key Differentiator</th>
+              <th>Grade Range</th>
+              <th>Price Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-hl">
+              <td><strong>GoNoodle ★</strong></td>
+              <td>Movement + Mental Regulation</td>
+              <td>Physical activity as SEL driver</td>
+              <td>K–5</td>
+              <td>Freemium</td>
+            </tr>
+            <tr>
+              <td>Panorama Education</td>
+              <td>SEL Analytics &amp; Assessment</td>
+              <td>Data dashboards, 42% accuracy improvement</td>
+              <td>K–12</td>
+              <td>Paid (district)</td>
+            </tr>
+            <tr>
+              <td>ClassDojo</td>
+              <td>Classroom Culture &amp; Communication</td>
+              <td>Parent-teacher-student connection</td>
+              <td>K–8</td>
+              <td>Free + Premium</td>
+            </tr>
+            <tr>
+              <td>Nearpod SEL</td>
+              <td>Interactive SEL Lessons</td>
+              <td>Embedded in curriculum delivery</td>
+              <td>K–12</td>
+              <td>Freemium</td>
+            </tr>
+            <tr>
+              <td>Second Step</td>
+              <td>Evidence-Based SEL Curriculum</td>
+              <td>Long-form, research-backed lessons</td>
+              <td>PreK–8</td>
+              <td>Paid (school)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+ 
+      <!-- ACTIVITY + SEL -->
+      <div class="subsection-title fade-in"><h3>The Science: Activity &amp; SEL</h3></div>
+ 
+      <div class="science-section fade-in">
+        <p class="lead-text">
+          GoNoodle's most powerful differentiator is the scientific validation of its core
+          model. The 2024 meta-analysis of 32 studies confirmed that physical activity
+          interventions consistently improve SEL outcomes in elementary school children.
+        </p>
+        <p>
+          Movement activates the body's stress-response systems, improves self-regulation,
+          and creates positive social experiences through cooperative activity. GoNoodle
+          translates this research into classroom-ready, 3–5 minute breaks that teachers
+          can deploy instantly — no training, no setup, no cost.
+        </p>
+ 
+        <div class="science-diagram stagger-parent">
+          <div class="sd-node sd-center">
+            <span>Physical<br />Movement</span>
+          </div>
+          <div class="sd-arrow">→</div>
+          <div class="sd-outcomes">
+            <div class="sd-outcome">Self-Regulation</div>
+            <div class="sd-outcome">Social Awareness</div>
+            <div class="sd-outcome">Emotional Health</div>
+            <div class="sd-outcome">Academic Readiness</div>
+          </div>
+        </div>
+ 
+        <div class="research-cite">
+          <strong>Source:</strong> Moon et al. (2024). <em>Review of Education</em>, Wiley — Meta-analysis of 32 physical activity intervention studies in elementary school children. First meta-analysis of its kind to examine physical activity's effect specifically on SEL outcomes.
+        </div>
+      </div>
+ 
+      <!-- PAGE NAV -->
+      <nav class="page-nav">
+        <a href="industry.html" class="page-nav-btn prev">
+          <span class="page-nav-label">← Previous</span>
+          <span class="page-nav-title">Industry Analysis</span>
+        </a>
+        <a href="conclusion.html" class="page-nav-btn next">
+          <span class="page-nav-label">Next →</span>
+          <span class="page-nav-title">Conclusion</span>
+        </a>
+      </nav>
+ 
+    </main>
+  </div>
+ 
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;">
+        <span class="logo-icon">★</span>
+        <span class="logo-text">The Holistic Student</span>
+      </a>
+      <p class="footer-caption">MEITE Final Project · Kiannah Pierce · University of North Carolina · 2026</p>
+      <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+  <style>
+    /* Profile banner */
+    .profile-banner {
+      background: linear-gradient(135deg, var(--navy), #1a5072);
+      border-radius: var(--radius); padding: 48px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+      align-items: center; color: var(--white); margin-bottom: 16px;
+    }
+    .gonoodle-logo {
+      display: flex; align-items: center;
+      font-family: var(--font-display); font-size: 2.4rem; font-weight: 900;
+      margin-bottom: 16px;
+    }
+    .gn-circle {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--gold); color: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; margin-right: 12px;
+    }
+    .profile-tagline { font-size: 0.95rem; color: rgba(255,255,255,0.72); line-height: 1.7; max-width: 340px; }
+    .profile-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .pm-item {
+      background: rgba(255,255,255,0.1); border-radius: var(--radius-sm);
+      padding: 16px 20px; text-align: center;
+    }
+    .pm-val { display:block; font-family:var(--font-display); font-size:1.9rem; font-weight:900; color:var(--gold); }
+    .pm-lbl { font-size:0.78rem; color:rgba(255,255,255,0.65); }
+ 
+    /* Features */
+    .features-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+    .feature-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 28px; box-shadow: var(--shadow); border-left: 4px solid var(--teal);
+      transition: all 0.3s;
+    }
+    .feature-card:hover { border-left-color: var(--gold); transform: translateX(4px); box-shadow: var(--shadow-lg); }
+    .fc-icon { font-size: 1.8rem; margin-bottom: 12px; }
+    .feature-card h4 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .feature-card p { font-size: 0.88rem; color: var(--mid-text); line-height: 1.75; margin: 0; }
+ 
+    /* SWOT */
+    .swot-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+    .swot-card { border-radius: var(--radius); padding: 28px 30px; transition: all 0.3s; }
+    .swot-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .swot-badge {
+      display: inline-block; font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 5px 12px; border-radius: 20px; margin-bottom: 16px;
+    }
+    .swot-s { background: #e8f5e9; } .swot-s .swot-badge { background: #388e3c; color: #fff; }
+    .swot-w { background: #fff3e0; } .swot-w .swot-badge { background: #e65100; color: #fff; }
+    .swot-o { background: #e3f2fd; } .swot-o .swot-badge { background: #1565c0; color: #fff; }
+    .swot-t { background: #fce4ec; } .swot-t .swot-badge { background: #c62828; color: #fff; }
+    .swot-list { list-style: none; }
+    .swot-list li {
+      font-size: 0.87rem; color: var(--dark-text); padding: 7px 0 7px 18px;
+      position: relative; border-bottom: 1px solid rgba(0,0,0,0.06); line-height: 1.6;
+    }
+    .swot-list li::before { content:'→'; position:absolute; left:0; color:var(--gold); font-size:0.8rem; }
+    .swot-list li:last-child { border-bottom: none; }
+ 
+    /* Competitors */
+    .competitor-wrap { overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow); }
+    .comp-table { width: 100%; border-collapse: collapse; background: var(--white); }
+    .comp-table thead { background: var(--navy); color: var(--white); }
+    .comp-table th { padding: 15px 18px; text-align: left; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+    .comp-table td { padding: 13px 18px; font-size: 0.87rem; color: var(--dark-text); border-bottom: 1px solid #eee; }
+    .comp-table tbody tr:hover { background: var(--offwhite); }
+    .row-hl { background: #fffbea !important; border-left: 4px solid var(--gold); }
+    .row-hl td { font-weight: 500; }
+ 
+    /* Science */
+    .science-diagram {
+      display: flex; align-items: center; gap: 24px;
+      background: var(--white); border-radius: var(--radius);
+      padding: 32px; box-shadow: var(--shadow); margin: 24px 0;
+      flex-wrap: wrap;
+    }
+    .sd-center {
+      background: var(--navy); color: var(--gold);
+      font-family: var(--font-display); font-weight: 900; font-size: 1rem;
+      text-align: center; line-height: 1.3;
+      width: 110px; height: 110px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; box-shadow: 0 0 0 8px rgba(25,63,86,0.1);
+    }
+    .sd-arrow { font-size: 1.8rem; color: var(--gold); font-weight: 700; }
+    .sd-outcomes { display: flex; flex-wrap: wrap; gap: 10px; }
+    .sd-outcome {
+      background: var(--offwhite); border: 2px solid var(--teal);
+      border-radius: 50px; padding: 8px 16px;
+      font-size: 0.85rem; font-weight: 600; color: var(--navy);
+    }
+    .research-cite {
+      background: var(--offwhite); border-radius: var(--radius-sm);
+      padding: 16px 20px; font-size: 0.84rem; color: var(--mid-text);
+      line-height: 1.65; border-left: 3px solid var(--teal);
+    }
+ 
+    @media (max-width: 900px) {
+      .profile-banner { grid-template-columns: 1fr; }
+      .features-grid { grid-template-columns: 1fr; }
+      .swot-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</body>
+</html>

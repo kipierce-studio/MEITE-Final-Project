@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction | The Holistic Student</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">★</span>
+      <span class="logo-text">The Holistic Student</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"        class="nav-link">Home</a></li>
+      <li><a href="introduction.html" class="nav-link active">Introduction</a></li>
+      <li><a href="industry.html"     class="nav-link">Industry Analysis</a></li>
+      <li><a href="business.html"     class="nav-link">Business Profile</a></li>
+      <li><a href="conclusion.html"   class="nav-link">Conclusion</a></li>
+      <li><a href="references.html"   class="nav-link">References</a></li>
+      <li><a href="references.html"   class="nav-link">References</a></li>
+    </ul>
+  </nav>
+ 
+  <div class="page-wrapper">
+ 
+    <!-- HERO -->
+    <header class="page-hero">
+      <div class="hero-inner">
+        <span class="hero-tag">01 / Introduction</span>
+        <h1>A Crisis That Demanded<br /><em>an Industry</em></h1>
+        <p>
+          Two decades of rising youth mental health struggles, a smartphone revolution,
+          and the educators who refused to look away — this is how Social-Emotional
+          Learning became a global imperative.
+        </p>
+      </div>
+    </header>
+ 
+    <main class="container">
+ 
+      <!-- ABSTRACT -->
+      <section class="fade-in">
+        <p class="lead-text">
+          As the global education sector grapples with the rising mental health crisis
+          in young students, Social-Emotional Learning has evolved from supplemental
+          education into a multi-billion dollar technology-driven industry.
+        </p>
+        <p>
+          This ePublication provides an in-depth analysis of the Social-Emotional Learning
+          industry, exploring the transition from traditional classroom instruction to a
+          dynamic ecosystem where mental health, physical movement, and data analysis
+          intersect. From the foundational Collaborative for Academic, Social, and Emotional
+          Learning (CASEL) frameworks to the rise of Wellbeing-as-a-Service, this ePublication
+          examines emerging trends for the future of Social-Emotional Learning.
+        </p>
+      </section>
+ 
+      <!-- CRISIS SECTION -->
+      <div class="subsection-title fade-in">
+        <h3>Youth Mental Health: A Nation Reckoning with Its Children</h3>
+      </div>
+ 
+      <div class="crisis-layout fade-in">
+        <div class="crisis-text">
+          <p>
+            For more than two decades, a growing number of US youth have been presenting to
+            emergency rooms for mental health issues. The numbers tell a stark story — but
+            behind every statistic is a student, a classroom, and a community struggling
+            to respond.
+          </p>
+          <p>
+            Suicide rates among young people increased <strong>85.3% between 2007 and 2017</strong>.
+            More than 1 in 5 high school students reported seriously considering suicide in
+            the previous year. 9.5% attempted suicide, and 2.3% made attempts requiring
+            medical care.
+          </p>
+          <p>
+            These were not isolated incidents — they were the symptom of a systemic failure
+            to address the social and emotional needs of young people alongside their
+            academic development.
+          </p>
+        </div>
+        <div class="crisis-stats stagger-parent">
+          <div class="crisis-stat-card">
+            <div class="cs-value">85.3%</div>
+            <div class="cs-desc">Rise in youth suicide rates between 2007–2017</div>
+          </div>
+          <div class="crisis-stat-card">
+            <div class="cs-value">1 in 5</div>
+            <div class="cs-desc">High school students seriously considered suicide in the past year</div>
+          </div>
+          <div class="crisis-stat-card">
+            <div class="cs-value">9.5%</div>
+            <div class="cs-desc">Of high school students attempted suicide</div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- SMARTPHONE SECTION -->
+      <div class="subsection-title fade-in">
+        <h3>The Smartphone Generation</h3>
+      </div>
+ 
+      <div class="smartphone-section fade-in">
+        <p>
+          With smartphones landing in the hands of younger generations, educators saw
+          dramatic changes in how students communicate, treat others, how isolated they
+          feel, and how they perceive themselves.
+        </p>
+        <p>
+          According to a national survey carried out by EdWeek Research Center, 595 teachers,
+          school leaders, and district leaders felt concerned about K-12 students being
+          constantly online. Social media introduced new vectors for social comparison,
+          cyberbullying, and a distorted sense of self-worth that traditional SEL
+          frameworks were not designed to address.
+        </p>
+ 
+        <div class="impact-grid stagger-parent">
+          <div class="impact-card">
+            <div class="impact-icon">📱</div>
+            <h4>Always Connected</h4>
+            <p>Constant connectivity blurred the line between school and social life, making emotional regulation harder for developing brains.</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon">🔇</div>
+            <h4>Rising Isolation</h4>
+            <p>Despite being more "connected" than any generation before, rates of loneliness and social disconnection climbed steadily.</p>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon">🔄</div>
+            <h4>The SEL Response</h4>
+            <p>Rather than removing technology, educators worked toward helping students use social media in ways that support mental health and wellbeing.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- ABOUT / AUTHOR -->
+      <div class="subsection-title fade-in">
+        <h3>About This ePublication</h3>
+      </div>
+ 
+      <div class="author-section fade-in">
+        <div class="author-card">
+          <div class="author-avatar">KP</div>
+          <div class="author-info">
+            <p class="author-name">Kiannah Pierce</p>
+            <p class="author-role">Innovative Specialist · MEITE Program · University of North Carolina · 2026</p>
+          </div>
+        </div>
+        <p>
+          This ePublication centers on a business profile of GoNoodle, a high-performing
+          industry leader that has bridged the gap between physical activity and mental
+          regulation for over 40 million children. The analysis examines GoNoodle's
+          business model, innovative features such as its classroom-to-home connectivity,
+          as well as key weaknesses and critical areas for growth.
+        </p>
+        <p>
+          It also examines key competitors and industry players for student
+          social-emotional wellbeing, and explores the unique connection between
+          activity and Social-Emotional Learning. This ePublication concludes with a
+          roadmap for stakeholders to implement evidence-based tools that democratize
+          mental health support and help drive long-term student success across
+          diverse backgrounds — key focuses of GoNoodle's mission.
+        </p>
+ 
+        <div class="scope-cards stagger-parent">
+          <div class="scope-card">
+            <span class="scope-icon">📖</span>
+            <span>SEL Industry History &amp; Analysis</span>
+          </div>
+          <div class="scope-card">
+            <span class="scope-icon">📊</span>
+            <span>Future Trends &amp; Projections</span>
+          </div>
+          <div class="scope-card">
+            <span class="scope-icon">🏢</span>
+            <span>GoNoodle Business Profile</span>
+          </div>
+          <div class="scope-card">
+            <span class="scope-icon">🗺️</span>
+            <span>Stakeholder Roadmap</span>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- PAGE NAV -->
+      <nav class="page-nav">
+        <a href="index.html" class="page-nav-btn prev">
+          <span class="page-nav-label">← Previous</span>
+          <span class="page-nav-title">Home</span>
+        </a>
+        <a href="industry.html" class="page-nav-btn next">
+          <span class="page-nav-label">Next →</span>
+          <span class="page-nav-title">Industry Analysis</span>
+        </a>
+      </nav>
+ 
+    </main>
+  </div>
+ 
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;">
+        <span class="logo-icon">★</span>
+        <span class="logo-text">The Holistic Student</span>
+      </a>
+      <p class="footer-caption">MEITE Final Project · Kiannah Pierce · University of North Carolina · 2026</p>
+      <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+  <style>
+    .crisis-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+    .crisis-stats { display: flex; flex-direction: column; gap: 16px; }
+    .crisis-stat-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      border-left: 5px solid var(--gold);
+      box-shadow: var(--shadow);
+    }
+    .cs-value {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .cs-desc { font-size: 0.85rem; color: var(--mid-text); line-height: 1.6; margin: 0; }
+ 
+    .impact-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 24px; }
+    .impact-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border-top: 3px solid var(--teal);
+      transition: all 0.3s;
+    }
+    .impact-card:hover { transform: translateY(-4px); border-top-color: var(--gold); box-shadow: var(--shadow-lg); }
+    .impact-icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .impact-card h4 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .impact-card p { font-size: 0.86rem; color: var(--mid-text); line-height: 1.7; margin: 0; }
+ 
+    .author-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: linear-gradient(135deg, var(--navy), #1a4a66);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 24px;
+    }
+    .author-avatar {
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.3rem;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .author-name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .author-role { font-size: 0.8rem; color: var(--teal); margin: 0; }
+ 
+    .scope-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .scope-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      background: var(--offwhite);
+      border-radius: var(--radius-sm);
+      padding: 16px 12px;
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--navy);
+      border: 1px solid rgba(25,63,86,0.1);
+    }
+    .scope-icon { font-size: 1.4rem; }
+ 
+    @media (max-width: 900px) {
+      .crisis-layout { grid-template-columns: 1fr; }
+      .impact-grid { grid-template-columns: 1fr; }
+      .scope-cards { grid-template-columns: repeat(2,1fr); }
+    }
+  </style>
+</body>
+</html>

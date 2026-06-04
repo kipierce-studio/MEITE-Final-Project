@@ -1,4 +1,4 @@
-[README (1).md](https://github.com/user-attachments/files/28617204/README.1.md)
+
 # The Holistic Student: Social-Emotional Learning in K-12 Education
 
 > **MEITE Final Project · Kiannah Pierce · University of North Carolina · 2026**

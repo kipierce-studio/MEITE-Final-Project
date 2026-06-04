@@ -1,529 +1,173 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Holistic Student | SEL in K-12 Education</title>
+  <title>The Holistic Student | Home</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="home.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-<!-- NAV -->
-<nav class="navbar" id="navbar">
-  <div class="nav-logo">
-    <span class="logo-icon">
-      <img src="social emotional learning.jpg" alt="project logo" style="height: 1.5em; width: auto; vertical-align: middle; margin-right: 8px;"> 
-    </span>
-    <span class="logo-text">The Holistic Student</span>
-  </div>
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-    <span></span><span></span><span></span>
-  </button>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
-    <li><a href="#introduction" class="nav-link" data-section="introduction">Introduction</a></li>
-    <li><a href="#industry" class="nav-link" data-section="industry">Industry Analysis</a></li>
-    <li><a href="#business" class="nav-link" data-section="business">Business Profile</a></li>
-    <li><a href="#conclusion" class="nav-link" data-section="conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-
-  <!-- ═══════════════════════════════════════════
-       HOME
-  ═══════════════════════════════════════════ -->
-  <section id="home" class="section section--home">
-    <div class="home-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
+ 
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">★</span>
+      <span class="logo-text">The Holistic Student</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"          class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="introduction.html"   class="nav-link" data-page="introduction.html">Introduction</a></li>
+      <li><a href="industry.html"       class="nav-link" data-page="industry.html">Industry Analysis</a></li>
+      <li><a href="business.html"       class="nav-link" data-page="business.html">Business Profile</a></li>
+      <li><a href="conclusion.html"     class="nav-link" data-page="conclusion.html">Conclusion</a></li>
+      <li><a href="references.html"   class="nav-link" data-page="references.html">References</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
     </div>
-    <div class="home-content">
-      <p class="home-eyebrow">MEITE Final Project · Kiannah Pierce</p>
-      <h1 class="home-title">The Holistic<br /><em>Student</em></h1>
-      <p class="home-subtitle">Social-Emotional Learning in K-12 Education</p>
-      <p class="home-desc">
+    <div class="hero-content">
+      <p class="eyebrow">MEITE Final Project &nbsp;·&nbsp; Kiannah Pierce &nbsp;·&nbsp; UNC 2026</p>
+      <h1>The Holistic<br /><em>Student</em></h1>
+      <p class="hero-sub">Social-Emotional Learning in K-12 Education</p>
+      <p class="hero-desc">
         Exploring the intersection of mental health, physical movement, and
         data-driven innovation in today's fastest-growing EdTech sector.
       </p>
-      <a href="#introduction" class="btn btn-primary">Explore the Research</a>
+      <div class="hero-btns">
+        <a href="introduction.html" class="btn btn-primary">Start Reading</a>
+        <a href="industry.html"     class="btn btn-outline">Industry Analysis</a>
+      </div>
     </div>
-    <div class="home-stats">
-      <div class="stat-card">
-        <span class="stat-num">$4B</span>
+  </section>
+ 
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="stats-inner stagger-parent">
+      <div class="stat-item">
+        <span class="stat-num" data-target="4" data-suffix="B" data-prefix="$">$0B</span>
         <span class="stat-label">Global SEL Market (2024)</span>
       </div>
-      <div class="stat-card">
-        <span class="stat-num">$21B</span>
-        <span class="stat-label">Projected by 2033</span>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="21" data-suffix="B" data-prefix="$">$0B</span>
+        <span class="stat-label">Projected Market by 2033</span>
       </div>
-      <div class="stat-card">
-        <span class="stat-num">40M+</span>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="40" data-suffix="M+" data-prefix="">0M+</span>
         <span class="stat-label">Children Reached by GoNoodle</span>
       </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="85" data-suffix="%" data-prefix="">0%</span>
+        <span class="stat-label">Rise in Youth Suicide Rates (2007–2017)</span>
+      </div>
     </div>
   </section>
-
-  <!-- ═══════════════════════════════════════════
-       INTRODUCTION
-  ═══════════════════════════════════════════ -->
-  <section id="introduction" class="section section--intro">
+ 
+  <!-- OVERVIEW CARDS -->
+  <section class="overview">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">01 / Introduction</span>
-        <h2 class="section-title">A Crisis That Demanded<br />an Industry</h2>
+      <div class="overview-header fade-in">
+        <span class="section-tag">What's Inside</span>
+        <h2 class="section-title">Four Chapters.<br />One Story.</h2>
       </div>
-
-      <div class="intro-grid">
-        <div class="intro-text">
-          <p class="lead-text">
-            As the global education sector grapples with the rising mental health
-            crisis in young students, Social-Emotional Learning has evolved from
-            supplemental education into a multi-billion dollar technology-driven industry.
-          </p>
-          <p>
-           This ePublication first provides an in-depth analysis of the Social-Emotional Learning industry, exploring the transition from traditional classroom instruction to a dynamic ecosystem where mental health, 
-            physical movement, and data analysis intersect. From the foundational Collaborative for Academic, Social, and Emotional Learning frameworks to the rise of Wellbeing-as-a-Service, 
-            this ePublication examines emerging trends for the future of Social-Emotional Learning, such as AI-driven analysis and the integration of physical activity with emotional health. 
-
-          </p>
-          <p>
-           This ePublication next centers on a business profile of GoNoodle, a high-performing industry leader that has bridged the gap between physical activity and mental regulation for over 40 million children. 
-            The analysis will examine GoNoodle’s business model, innovative features such as its classroom-to-home connectivity, as well as identify weaknesses and critical areas for growth. It will also examine
-            key competitors and industry players for student social-emotional wellbeing. After, it will explore the unique connection between activity and Social-Emotional Learning. This ePublication will 
-            conclude with a roadmap for stakeholders to implement evidence-based tools that democratize mental health support and help drive long-term student success across diverse backgrounds, key focuses of 
-            GoNoodle’s mission.
-          </p>
-        </div>
-        <div class="intro-visual">
-          <div class="crisis-cards">
-            <div class="crisis-card">
-              <div class="crisis-icon">📱</div>
-              <h4>Smartphone Generation</h4>
-              <p>Rising isolation, anxiety, and social comparison among youth raised on social media</p>
-            </div>
-            <div class="crisis-card">
-              <div class="crisis-icon">🧠</div>
-              <h4>Mental Health Crisis</h4>
-              <p>For more than two decades, growing numbers of US youth presented to ERs for mental health</p>
-            </div>
-            <div class="crisis-card">
-              <div class="crisis-icon">📚</div>
-              <h4>Education Gap</h4>
-              <p>Academic achievement cannot be separated from emotional and social development</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- About the Author -->
-      <div class="author-block">
-        <div class="author-avatar">KP</div>
-        <div class="author-info">
-          <p class="author-name">Kiannah Pierce</p>
-          <p class="author-role">Innovative Specialist · MEITE Program · University of North Carolina</p>
-          <p class="author-desc">
-            This ePublication examines the Scial-Emotional Learning industry through the lens of its history,
-            emerging trends, and the business of student wellbeing — with a focus on
-            GoNoodle as a leading Social-Emotional Learning venture.
-          </p>
-        </div>
+      <div class="overview-grid stagger-parent">
+ 
+        <a href="introduction.html" class="ov-card">
+          <div class="ov-num">01</div>
+          <h3>Introduction</h3>
+          <p>The youth mental health crisis that sparked a movement — and the smartphone generation that made it urgent.</p>
+          <span class="ov-cta">Read →</span>
+        </a>
+ 
+        <a href="industry.html" class="ov-card">
+          <div class="ov-num">02</div>
+          <h3>Industry Analysis</h3>
+          <p>From Plato's Republic to a $21B market — the complete history of SEL and three forces shaping its future.</p>
+          <span class="ov-cta">Read →</span>
+        </a>
+ 
+        <a href="business.html" class="ov-card">
+          <div class="ov-num">03</div>
+          <h3>Business Profile</h3>
+          <p>GoNoodle: how one platform bridged physical movement and emotional regulation for 40 million children.</p>
+          <span class="ov-cta">Read →</span>
+        </a>
+ 
+        <a href="conclusion.html" class="ov-card">
+          <div class="ov-num">04</div>
+          <h3>Conclusion</h3>
+          <p>A five-step roadmap for educators, administrators, and policymakers ready to act on the evidence.</p>
+          <span class="ov-cta">Read →</span>
+        </a>
+ 
       </div>
     </div>
   </section>
-
-  <!-- ═══════════════════════════════════════════
-       INDUSTRY ANALYSIS
-  ═══════════════════════════════════════════ -->
-  <section id="industry" class="section section--industry">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">02 / Industry Analysis</span>
-        <h2 class="section-title">From Classroom Concept<br />to Global Market</h2>
-      </div>
-
-      <!-- HISTORY TIMELINE -->
-      <div class="subsection-title">
-        <h3>A History of SEL</h3>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Ancient Origins</span>
-            <h4>A Rich Beginning</h4>
-            <p>The roots of Social and Emotional Learning (SEL) are sewn deep into Ancient Greece, written in Plato’s ideas about education in The Republic (Edutopia). 
-              In his work, Plato touches on a “holistic curriculum that requires balance of training” in all areas, such as physical movement, arts, math, science, character, and moral judgment (Edutopia). 
-              Plato was convinced that a thorough and balanced education was how a society would produce “citizens of good character” (Edutopia). </p>
-          </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">1920s–1930s</span>
-            <h4>Foundational Framworks</h4>
-            <p>Influenced by Plato’s The Republic, Lev Vygotsky emphasized the key role that social interaction plays in the development of cognition. Vygotsky’s work in sociocultural theory suggested that the ways in which people interact with others and the culture they live in shapes their mental abilities (Fresno State University). His work on Zone of Proximal Development was critical in developing the frameworks for social-emotional learning. In this theory, Vygotsky argues that learning should be related to the child’s developmental level and their potential learning ability; this approach relates to more than just academic abilities, but a student’s mental and emotional abilities as well (Positive Action). These foundational thinkers established an approach that would become the core of social-emotional learning guidelines decades later, establishing something essential: academic achievement cannot be separated from emotional and social development.</p>
-          </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">1960s</span>
-            <h4>Proof of Concept</h4>
-            <p>Before social-emotional learning was named a discipline, it was used as a proven intervention. In 1968, Dr. James Comer of Yale University’s Child Study Center began piloting what would become the Comer School Development Program in two of New Haven’s most underperforming schools serving predominantly Black student populations (Edutopia). His theory was to support the whole child in order to improve the educational experience of poor ethnic youth. Comer’s program focused on two poor, low-achieving elementary schools in New Haven, Connecticut; both schools had the lowest academic achievement and worst attendance in the city. In the program, the schools established a collaborative-management team consisting of teachers, parents, the principal, and a mental health worker to make decisions together on the schools’ academic and social programs. Their goal was to work together and adjust the ways in which schools were engaging with behavioral problems by better supporting the whole student (CASEL). The results were striking; by the early 1980s both schools had shown significant academic growth, exceeding the national averages. In addition, both schools saw a decline in truancy and behavior problems (CASEL). This change sparked a momentum to the social-emotional learning movement across the nation. </p>
-          </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">1980s</span>
-            <h4>A Push For More</h4>
-            <p>After seeing profound results from Dr. Comer’s program, the superintendent of the district in which the pilot schools resided called for a focus on social development of students. This birthed the New Haven Social Development Program that pioneered social-emotional learning strategies in K-12 classrooms. Around the same time, educator and researcher Dr. Weissberg and Dr. Elias chaired the Grant Consortium on the School-Based Promotion of Social Competence, bringing leaders together to build a framework for social-emotional learning in schools (CASEL). Finally, in 1989 the term “emotional intelligence” was coined by psychologists Peter Salovey and John D. Mayer, using it to describe the ability to monitor the needs of oneself and others, and use them to guide behaviors (CASEL). </p>
-          </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">1994</span>
-            <h4>The Birth of Social-Emotional Learning as a Field</h4>
-            <p>In 1994, a group of researchers, educators, child advocates, and practitioners with expertise across fields in emotional intelligence, child development, public health, prevention science, and more, came together to address the “missing piece” in education. (CASEL). They shared common ground that schools must attend to all needs of a child, including social and emotional needs. From this meeting, the Collaborative for Academic, Social, and Emotional Learning (CASEL) began from this small conference in Kalamazoo, Michigan. This meeting also gave rise to the term “social and emotional learning” (CASEL). 
-The first foundational contribution of CASEL was the CASEL 5, a framework of five broad, interrelated areas that would define the industry for decades to come. The CASEL 5, defined as self-awareness, self-management, social awareness, relationship skills, and responsible decision-making, established a universal language for SEL and remains the framework used today (CASEL). 
-</p>
-          </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Late 1990s</span>
-            <h4>Social-Emotional Learning Goes Mainstream</h4>
-            <p>In 1995, American psychologist, Daniel Goleman released the book, Emotional Intelligence: Why it Matters More Than IQ in which he detailed the concept of emotional intelligence. This was a cultural catalyst, as it was the first time that the concept of social-emotional learning was popularized in the public sphere (Positive Action). In his book, Goleman emphasized the importance of social skills and personal character, as well as the fact that these attributes can be taught (Positive Action). The book became a bestseller and made the case to parents, policymakers, and educators that emotional intelligence needed to be seen as more than a soft skill. With this book, Goleman created a public appetite to drive investment and policy action in social-emotional learning for decades to come (Positive Action).</p>
-          </div>
-        </div>
-           <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2015</span>
-            <h4>First Legitimization by Federal Policy</h4>
-            <p>While widely supported across the globe, social-emotional learning did not see true federal action and support until the passing of the Every Student Succeeds Act, a reform of No Child Left Behind (Positive Action). In the Every Student Succeeds Act, the federal government authorized K-12 policy in support of higher quality K-12 education. Although the phrase “social and emotional learning” did not explicitly appear in  the legislation, ESSA created multiple funding pathways for social-emotional learning programming in schools (RAND). School leaders were now able to use funding for nonacademic indicators of success, supporting student mental and behavioral health, as well as hiring support personnel to develop school climate and safety (Positive Action). This was the first time government money institutionalized social-emotional learning as a school priority.</p>
-          </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2010-2020s</span>
-            <h4>Smartphones and Technological Rise</h4>
-            <p>Social media, the rise of AI,  and advancements in digital technology dramatically changed education through the 2000s, and Social-Emotional Learning was not immune to this change. With smartphones landing in the hands of younger generations, educators saw dramatic changes in how students communicate, treat others, how isolated they feel, and how they perceive themselves (GovTech). According to a national survey carried out by EdWeek Research Center, 595 teachers, school leaders, and district leaders felt concerned about K-12 students being constantly online (GovTech). 
-As technology continues to rise, schools have been searching for ways to engage students in Social-Emotional Learning through technology. Instead of trying to simply remove technology from students, educators worked toward “helping students learn to use social media in ways that support their mental health and well-being” (GovTech).</p>
-          </div>
-        </div>
-      </div>
- <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2020s-Present</span>
-            <h4>2020-Present: A Multi-Billion Dollar Industry is Born</h4>
-            <p>The global pandemic of 2020 brought elevated attention to social-emotional learning as an industry. With students at home, the nation saw elevated levels of youth mental health struggles and educators worked to combat this trend (Positive Action). A cumulative effect of decades of research, advocacy, policy, and now cultural urgency, social-emotional learning has produced one of the fastest growing sectors of EdTech (IMARC Group). In 2021, Weissberg launched a Scholars Program to inspire the next generation of social-emotional learning scholars (Positive Action). This program was infused with money from a $123 billion investment to social-emotional learning which was presented in the American Rescue Plan Act (Positive Action). With this unprecedented investment, social-emotional learning as an industry skyrocketed. Today, research shows that educators are pushing for schools to deliver an array of social-emotional learning tools. The global market reached $4.0 billion in 2024 and is projected to grow to $21.1 billion by 2033 (IMARC Group). Driven by AI and digital platforms, the EdTech market for social-emotional learning is on the rise (IMARC Group). </p>
-          </div>
-        </div>
-      </div>
-      <!-- FUTURE PROJECTIONS -->
-      <div class="subsection-title">
-        <h3>Future Projections</h3>
-      </div>
-      <div class="trends-grid">
-        <div class="trend-card">
-          <div class="trend-number">01</div>
-          <h4>AI-Powered Personalized SEL</h4>
-          <p>
-            AI tools enable real-time personalization — tracking emotional patterns over time, flagging concerns to educators, and adapting support based on individual student needs. A 2024 systematic review found AI technologies including virtual reality, chatbots, gamification, and wearables present significant opportunities in the SEL space.
-          </p>
-          <div class="trend-warning">
-            <strong>⚠️ Watch:</strong> Without intentional design, researchers warn AI may cause "social deskilling" — the erosion of empathy, negotiation, and non-verbal attunement.
-          </div>
-        </div>
-        <div class="trend-card">
-          <div class="trend-number">02</div>
-          <h4>Wellbeing-as-a-Service</h4>
-          <p>
-            Emotional health is increasingly treated as a data-driven outcome — with dashboards, benchmarks, and longitudinal tracking. In 2024, analytics and assessment platforms accounted for <strong>73% of total SEL platform revenue</strong>. Companies like Panorama Education enhanced their analytics engine, improving accuracy by 42%.
-          </p>
-          <div class="trend-warning">
-            <strong>📊 Signal:</strong> $87M in federal grants in 2024 + $260M approved by the House — all tied to measurable wellbeing outcomes.
-          </div>
-        </div>
-        <div class="trend-card">
-          <div class="trend-number">03</div>
-          <h4>Physical Activity as a Core SEL Strategy</h4>
-          <p>
-            A 2024 landmark meta-analysis in <em>Review of Education</em> (Wiley) examined 32 intervention studies and found consistent positive effects of physical activity on children's SEL outcomes. This moved physical activity from a wellness strategy to a data-driven SEL tool.
-          </p>
-          <div class="trend-warning">
-            <strong>🏃 Insight:</strong> Movement isn't just compatible with SEL — it is a driver of it. This is the exact intersection GoNoodle occupies.
-          </div>
-        </div>
-      </div>
+ 
+  <!-- PULL QUOTE -->
+  <section class="pull-quote fade-in">
+    <div class="pq-inner">
+      <blockquote>
+        "What if education fully supported the social, emotional, and academic development of all children?"
+      </blockquote>
+      <cite>— The founding question of CASEL, Kalamazoo, Michigan, 1994</cite>
     </div>
   </section>
-
-  <!-- ═══════════════════════════════════════════
-       BUSINESS PROFILE
-  ═══════════════════════════════════════════ -->
-  <section id="business" class="section section--business">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">03 / Business Profile</span>
-        <h2 class="section-title">GoNoodle:<br />Where Movement Meets Wellbeing</h2>
-      </div>
-
-      <!-- Profile overview -->
-      <div class="profile-overview">
-        <div class="profile-logo-block">
-          <div class="gonoodle-logo">
-            <span class="gonoodle-g">G</span>
-            <span>oNoodle</span>
-          </div>
-          <p class="profile-tagline">Bridging the gap between physical activity and mental regulation for over 40 million children</p>
-        </div>
-        <div class="profile-metrics">
-          <div class="metric">
-            <span class="metric-value">40M+</span>
-            <span class="metric-label">Children Reached</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">K–5</span>
-            <span class="metric-label">Target Age Range</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">Free</span>
-            <span class="metric-label">Core Platform Access</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- SWOT -->
-      <div class="subsection-title">
-        <h3>Strategic Analysis</h3>
-      </div>
-      <div class="swot-grid">
-        <div class="swot-card swot-s">
-          <div class="swot-label">Strengths</div>
-          <ul>
-            <li>Unique intersection of movement + SEL — scientifically validated</li>
-            <li>Classroom-to-home connectivity bridges school and family</li>
-            <li>Free access democratizes mental health support</li>
-            <li>High engagement: gamified, age-appropriate content</li>
-            <li>Established trust with 40M+ users</li>
-          </ul>
-        </div>
-        <div class="swot-card swot-w">
-          <div class="swot-label">Weaknesses</div>
-          <ul>
-            <li>Limited data analytics compared to competitors</li>
-            <li>Primarily K–5 focus limits market reach</li>
-            <li>Revenue model reliant on ads in free tier</li>
-            <li>Lower brand awareness among parents vs. teachers</li>
-          </ul>
-        </div>
-        <div class="swot-card swot-o">
-          <div class="swot-label">Opportunities</div>
-          <ul>
-            <li>Growing Wellbeing-as-a-Service market</li>
-            <li>AI integration for personalized movement programming</li>
-            <li>Expansion into middle school content</li>
-            <li>Federal funding streams via ESSA and ARP Act</li>
-            <li>International market expansion</li>
-          </ul>
-        </div>
-        <div class="swot-card swot-t">
-          <div class="swot-label">Threats</div>
-          <ul>
-            <li>Political attacks on SEL in some states</li>
-            <li>Well-funded competitors (Panorama, ClassDojo)</li>
-            <li>Teacher burnout limiting SEL implementation</li>
-            <li>Data privacy concerns in K-12 market</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Competitors -->
-      <div class="subsection-title">
-        <h3>Competitive Landscape</h3>
-      </div>
-      <div class="competitor-table-wrap">
-        <table class="competitor-table">
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Primary Focus</th>
-              <th>Key Differentiator</th>
-              <th>Target</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="row-highlight">
-              <td><strong>GoNoodle ★</strong></td>
-              <td>Movement + Mental Regulation</td>
-              <td>Physical activity as SEL driver</td>
-              <td>K–5</td>
-            </tr>
-            <tr>
-              <td>Panorama Education</td>
-              <td>SEL Analytics & Assessment</td>
-              <td>Data dashboards + 42% accuracy improvement</td>
-              <td>K–12</td>
-            </tr>
-            <tr>
-              <td>ClassDojo</td>
-              <td>Classroom Culture & Communication</td>
-              <td>Parent-teacher-student connection</td>
-              <td>K–8</td>
-            </tr>
-            <tr>
-              <td>Nearpod SEL</td>
-              <td>Interactive SEL Lessons</td>
-              <td>Embedded in curriculum delivery</td>
-              <td>K–12</td>
-            </tr>
-            <tr>
-              <td>Second Step</td>
-              <td>Evidence-Based SEL Curriculum</td>
-              <td>Long-form, research-backed lessons</td>
-              <td>PreK–8</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Activity + SEL Connection -->
-      <div class="connection-block">
-        <div class="connection-text">
-          <h3>The Unique Connection:<br />Activity & SEL</h3>
-          <p>
-            GoNoodle's most powerful differentiator is not just its reach — it is
-            the scientific validation of its core model. The 2024 meta-analysis of
-            32 studies confirmed that physical activity interventions consistently
-            improve SEL outcomes in elementary school children.
-          </p>
-          <p>
-            Movement activates the body's stress-response systems, improves
-            self-regulation, and creates positive social experiences through
-            cooperative activity. GoNoodle translates this research into
-            classroom-ready, 3–5 minute breaks that teachers can deploy instantly.
-          </p>
-        </div>
-        <div class="connection-visual">
-          <div class="connection-circle">
-            <div class="circle-center">SEL<br />Outcomes</div>
-            <div class="circle-node node-1">Self-Regulation</div>
-            <div class="circle-node node-2">Social Awareness</div>
-            <div class="circle-node node-3">Emotional Health</div>
-            <div class="circle-node node-4">Physical Movement</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       CONCLUSION
-  ═══════════════════════════════════════════ -->
-  <section id="conclusion" class="section section--conclusion">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">04 / Conclusion</span>
-        <h2 class="section-title">A Roadmap for<br />Stakeholders</h2>
-      </div>
-
-      <p class="conclusion-lead">
-        The convergence of mental health urgency, federal investment, and technological
-        innovation has created an unprecedented moment for SEL. Here is a roadmap
-        for stakeholders seeking to implement evidence-based tools that democratize
-        mental health support.
-      </p>
-
-      <div class="roadmap">
-        <div class="roadmap-step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <h4>Invest in Evidence-Based Tools</h4>
-            <p>Prioritize platforms with peer-reviewed research backing. The 2024 meta-analysis confirms physical activity + SEL as a validated approach. GoNoodle and similar tools should be considered core, not supplemental.</p>
-          </div>
-        </div>
-        <div class="roadmap-step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <h4>Leverage Federal Funding Streams</h4>
-            <p>ESSA and ARP Act funding create pathways for SEL investment. Districts should proactively identify and apply for the $87M+ in annual federal grants targeting measurable wellbeing outcomes.</p>
-          </div>
-        </div>
-        <div class="roadmap-step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <h4>Embrace Data, Ethically</h4>
-            <p>The Wellbeing-as-a-Service model offers powerful accountability tools. Implement dashboards and longitudinal tracking with strong privacy protections and transparent data practices.</p>
-          </div>
-        </div>
-        <div class="roadmap-step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            <h4>Train and Equip Teachers</h4>
-            <p>Research shows educators want to deliver SEL skills but are not being adequately trained. Professional development investment is critical to the success of any SEL implementation.</p>
-          </div>
-        </div>
-        <div class="roadmap-step">
-          <div class="step-num">5</div>
-          <div class="step-content">
-            <h4>Bridge Classroom and Home</h4>
-            <p>GoNoodle's classroom-to-home connectivity model demonstrates that SEL works best when families are engaged. Stakeholders should choose and build tools that extend the SEL ecosystem beyond school walls.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Final quote -->
-      <div class="final-quote">
-        <blockquote>
-          "What if education fully supported the social, emotional, and academic
-          development of all children?"
-        </blockquote>
-        <cite>— The founding question of CASEL, 1994</cite>
-        <p class="final-reflection">
-          Thirty years later, that question is no longer philosophical — it is a
-          multi-billion dollar imperative. The technology exists. The research confirms it.
-          The funding is available. The only remaining question is whether we will act.
-        </p>
-      </div>
-
-      <!-- References teaser -->
-      <div class="references-block">
-        <h4>Key Sources</h4>
-        <ul class="references-list">
-          <li>CASEL (casel.org) — SEL History and Framework</li>
-          <li>IMARC Group — Social Emotional Learning Market Trends 2034</li>
-          <li>Moon et al. (2024) — <em>Review of Education</em>, Physical Activity Meta-Analysis</li>
-          <li>Sethi & Jain (2024) — <em>Journal of Research in Innovative Teaching & Learning</em></li>
-          <li>Grand View Research — SEL Market Projections 2033</li>
-          <li>EdWeek Research Center — Educator Survey on SEL Skills (2026)</li>
-          <li>RAND Corporation — ESSA and Social-Emotional Learning</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+ 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-logo">
+      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;">
         <span class="logo-icon">★</span>
         <span class="logo-text">The Holistic Student</span>
-      </div>
-      <p class="footer-caption">
-        MEITE Final Project · Kiannah Pierce · University of North Carolina · 2026
-      </p>
+      </a>
+      <p class="footer-caption">MEITE Final Project · Kiannah Pierce · University of North Carolina · 2026</p>
       <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
     </div>
   </footer>
-
+ 
   <script src="script.js"></script>
+  <script>
+    // Counter animation
+    function animateCounter(el) {
+      const target = +el.dataset.target;
+      const suffix = el.dataset.suffix;
+      const prefix = el.dataset.prefix;
+      let start = null;
+      const duration = 1400;
+      const step = ts => {
+        if (!start) start = ts;
+        const p = Math.min((ts - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = prefix + Math.round(eased * target) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+    const statNums = document.querySelectorAll('.stat-num');
+    const counterObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); counterObs.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    statNums.forEach(n => counterObs.observe(n));
+ 
+    // Hero shape parallax
+    const shapes = document.querySelectorAll('.hero .shape');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      shapes.forEach((s, i) => { s.style.transform = `translateY(${y * (i + 1) * 0.12}px)`; });
+    }, { passive: true });
+  </script>
 </body>
 </html>

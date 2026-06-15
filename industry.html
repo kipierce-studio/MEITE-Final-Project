@@ -126,7 +126,182 @@ p strong{color:var(--navy)}
 .mkt-lbl{font-size:.76rem;color:rgba(255,255,255,.65);line-height:1.4}
 @media(max-width:900px){.ind-overview-grid,.mkt-strip{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.ind-overview-grid,.mkt-strip{grid-template-columns:1fr}}
-</style>
+/* CASEL 5 CARDS */
+.casel-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin: 24px 0 48px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.casel-card {
+  position: relative;
+  min-height: 280px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.casel-card:nth-child(1) { background: var(--navy); }
+.casel-card:nth-child(2) { background: #1a5072; }
+.casel-card:nth-child(3) { background: #1e6080; }
+.casel-card:nth-child(4) { background: #15768a; }
+.casel-card:nth-child(5) { background: #0e8a8a; }
+
+/* FRONT FACE */
+.casel-front {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 16px;
+  text-align: center;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 2;
+}
+.casel-icon { font-size: 2.2rem; }
+.casel-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.3;
+}
+.casel-hint {
+  font-size: .68rem;
+  color: rgba(255,255,255,.4);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* BACK FACE */
+.casel-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px 20px;
+  text-align: center;
+  background: var(--gold);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 1;
+}
+.casel-icon-sm { font-size: 1.4rem; }
+.casel-back h4 {
+  font-family: var(--font-display);
+  font-size: .9rem;
+  font-weight: 900;
+  color: var(--navy);
+  margin: 0;
+}
+.casel-back p {
+  font-size: .78rem;
+  color: var(--navy);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* HOVER STATE */
+.casel-card:hover .casel-front {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+.casel-card:hover .casel-back {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MODAL */
+.casel-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 30, 45, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+.casel-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+.casel-modal-box {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 24px 80px rgba(0,0,0,.3);
+  transform: scale(0.92);
+  transition: transform 0.3s ease;
+  border-top: 6px solid var(--gold);
+}
+.casel-modal.open .casel-modal-box {
+  transform: scale(1);
+}
+.casel-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--offwhite);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: .85rem;
+  color: var(--mid-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.casel-modal-close:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+.casel-modal-icon { font-size: 2.8rem; display: block; margin-bottom: 16px; }
+.casel-modal-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+.casel-modal-body {
+  font-size: .95rem;
+  color: var(--mid-text);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .casel-cards { grid-template-columns: repeat(3, 1fr); border-radius: var(--radius); }
+  .casel-card { min-height: 200px; }
+  .casel-card:nth-child(4), .casel-card:nth-child(5) { grid-column: span 1; }
+}
+@media (max-width: 600px) {
+  .casel-cards { grid-template-columns: 1fr 1fr; }
+  .casel-card:nth-child(5) { grid-column: span 2; }
+  .casel-card { min-height: 160px; }}
+  </style>
 </head>
 <body>
   <nav class="navbar" id="navbar">
@@ -159,28 +334,89 @@ p strong{color:var(--navy)}
       </div>
     </header>
     <main class="container">
-      <div class="section-header fade-in"><span class="section-tag">Industry Overview</span><h2 class="section-title">Explore the Full Analysis</h2></div>
-      <div class="ind-overview-grid stagger-parent">
-        <a href="industry-timeline.html" class="ind-ov-card"><div class="ind-ov-icon">📅</div><h3>SEL Timeline</h3><p>From Plato's Republic to a $4B market — the complete history of social-emotional learning across two millennia.</p><span class="ind-ov-cta">View Timeline →</span></a>
-        <a href="industry-trends.html" class="ind-ov-card"><div class="ind-ov-icon">📈</div><h3>Current Trends</h3><p>Wellbeing-as-a-Service, physical activity science, and the political forces shaping SEL adoption today.</p><span class="ind-ov-cta">View Trends →</span></a>
-        <a href="industry-future.html" class="ind-ov-card"><div class="ind-ov-icon">🔭</div><h3>Future Predictions</h3><p>Three evidence-backed predictions for where Social-Emotional Learning is heading through 2033 and beyond.</p><span class="ind-ov-cta">View Predictions →</span></a>
-      </div>
-      <div class="mkt-strip stagger-parent">
-        <div class="mkt-card"><span class="mkt-val">$4.0B</span><span class="mkt-lbl">Global SEL market 2024</span></div>
-        <div class="mkt-card"><span class="mkt-val">$21.1B</span><span class="mkt-lbl">Projected by 2033</span></div>
-        <div class="mkt-card"><span class="mkt-val">73%</span><span class="mkt-lbl">Revenue from analytics platforms</span></div>
-        <div class="mkt-card"><span class="mkt-val">$123B</span><span class="mkt-lbl">ARP Act investment in K-12</span></div>
-      </div>
-      <div class="subsection-title fade-in"><h3>The CASEL 5 Framework</h3></div>
+  <div class="subsection-title fade-in"><h3>The CASEL 5 Framework</h3></div>
       <div class="fade-in">
         <p>The foundational contribution of CASEL — established at their 1994 founding conference in Kalamazoo, Michigan — was the <strong>CASEL 5</strong>: five broad, interrelated areas that have defined the SEL industry for over three decades.</p>
       </div>
-      <div class="ind-overview-grid stagger-parent" style="margin-top:24px">
-        <div class="ind-ov-card" style="border-top-color:var(--gold)"><div class="ind-ov-icon">🪞</div><h3>Self-Awareness</h3><p>The ability to understand one's own emotions, thoughts, and values and how they influence behavior.</p></div>
-        <div class="ind-ov-card" style="border-top-color:var(--gold)"><div class="ind-ov-icon">🎛️</div><h3>Self-Management</h3><p>The ability to regulate one's emotions, thoughts, and behaviors effectively across different situations.</p></div>
-        <div class="ind-ov-card" style="border-top-color:var(--gold)"><div class="ind-ov-icon">🤝</div><h3>Social Awareness</h3><p>The ability to take the perspective of others and understand social and ethical norms for behavior.</p></div>
-        <div class="ind-ov-card" style="border-top-color:var(--teal)"><div class="ind-ov-icon">💬</div><h3>Relationship Skills</h3><p>The ability to establish and maintain healthy and supportive relationships and navigate interpersonal situations.</p></div>
-        <div class="ind-ov-card" style="border-top-color:var(--teal)"><div class="ind-ov-icon">⚖️</div><h3>Responsible Decision-Making</h3><p>The ability to make caring and constructive choices about personal behavior and social interactions.</p></div>
+
+      <!-- CASEL 5 HOVER CARDS -->
+      <div class="casel-cards fade-in">
+
+        <div class="casel-card" data-title="Self-Awareness" data-def="The ability to understand one's own emotions, thoughts, and values and how they influence behavior across contexts. This includes identifying one's emotions, recognizing strengths and limitations, and having a well-grounded sense of confidence and purpose.">
+          <div class="casel-front">
+            <span class="casel-icon">🪞</span>
+            <span class="casel-name">Self-Awareness</span>
+            <span class="casel-hint">hover or click</span>
+          </div>
+          <div class="casel-back">
+            <span class="casel-icon-sm">🪞</span>
+            <h4>Self-Awareness</h4>
+            <p>The ability to understand one's own emotions, thoughts, and values and how they influence behavior across contexts. This includes identifying one's emotions, recognizing strengths and limitations, and having a well-grounded sense of confidence and purpose.</p>
+          </div>
+        </div>
+
+        <div class="casel-card" data-title="Self-Management" data-def="The ability to regulate one's emotions, thoughts, and behaviors effectively in different situations. This includes managing stress, controlling impulses, motivating oneself, and setting and working toward personal and academic goals.">
+          <div class="casel-front">
+            <span class="casel-icon">🎛️</span>
+            <span class="casel-name">Self-Management</span>
+            <span class="casel-hint">hover or click</span>
+          </div>
+          <div class="casel-back">
+            <span class="casel-icon-sm">🎛️</span>
+            <h4>Self-Management</h4>
+            <p>The ability to regulate one's emotions, thoughts, and behaviors effectively in different situations. This includes managing stress, controlling impulses, motivating oneself, and setting and working toward personal and academic goals.</p>
+          </div>
+        </div>
+
+        <div class="casel-card" data-title="Social Awareness" data-def="The ability to take the perspective of and empathize with others from diverse backgrounds and cultures. This includes understanding social and ethical norms for behavior and recognizing family, school, and community resources and supports.">
+          <div class="casel-front">
+            <span class="casel-icon">🤝</span>
+            <span class="casel-name">Social Awareness</span>
+            <span class="casel-hint">hover or click</span>
+          </div>
+          <div class="casel-back">
+            <span class="casel-icon-sm">🤝</span>
+            <h4>Social Awareness</h4>
+            <p>The ability to take the perspective of and empathize with others from diverse backgrounds and cultures. This includes understanding social and ethical norms for behavior and recognizing family, school, and community resources and supports.</p>
+          </div>
+        </div>
+
+        <div class="casel-card" data-title="Relationship Skills" data-def="The ability to establish and maintain healthy and supportive relationships and to effectively navigate settings with diverse individuals and groups. Skills include communicating clearly, listening actively, cooperating, resisting inappropriate social pressure, and resolving conflicts constructively.">
+          <div class="casel-front">
+            <span class="casel-icon">💬</span>
+            <span class="casel-name">Relationship Skills</span>
+            <span class="casel-hint">hover or click</span>
+          </div>
+          <div class="casel-back">
+            <span class="casel-icon-sm">💬</span>
+            <h4>Relationship Skills</h4>
+            <p>The ability to establish and maintain healthy and supportive relationships and to effectively navigate settings with diverse individuals and groups. Skills include communicating clearly, listening actively, cooperating, resisting inappropriate social pressure, and resolving conflicts constructively.</p>
+          </div>
+        </div>
+
+        <div class="casel-card" data-title="Responsible Decision-Making" data-def="The ability to make caring and constructive choices about personal behavior and social interactions across diverse situations. This includes evaluating the consequences of various actions, considering the wellbeing of oneself and others, and reflecting on how decisions contribute to the common good.">
+          <div class="casel-front">
+            <span class="casel-icon">⚖️</span>
+            <span class="casel-name">Responsible Decision-Making</span>
+            <span class="casel-hint">hover or click</span>
+          </div>
+          <div class="casel-back">
+            <span class="casel-icon-sm">⚖️</span>
+            <h4>Responsible Decision-Making</h4>
+            <p>The ability to make caring and constructive choices about personal behavior and social interactions across diverse situations. This includes evaluating the consequences of various actions, considering the wellbeing of oneself and others, and reflecting on how decisions contribute to the common good.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MODAL OVERLAY (click to lock open) -->
+      <div class="casel-modal" id="caselModal">
+        <div class="casel-modal-box">
+          <button class="casel-modal-close" id="caselModalClose" aria-label="Close">&#10005;</button>
+          <span class="casel-modal-icon" id="caselModalIcon"></span>
+          <h3 class="casel-modal-title" id="caselModalTitle"></h3>
+          <p class="casel-modal-body" id="caselModalBody"></p>
+        </div>
       </div>
             <nav class="page-nav">
         <a href="introduction.html" class="page-nav-btn prev"><span class="page-nav-label">← Previous</span><span class="page-nav-title">Introduction</span></a>
@@ -245,6 +481,42 @@ p strong{color:var(--navy)}
     menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
   }
 })();
+// CASEL modal
+  const modal = document.getElementById('caselModal');
+  const modalTitle = document.getElementById('caselModalTitle');
+  const modalBody = document.getElementById('caselModalBody');
+  const modalIcon = document.getElementById('caselModalIcon');
+  const modalClose = document.getElementById('caselModalClose');
+  const icons = ['🪞','🎛️','🤝','💬','⚖️'];
+
+  document.querySelectorAll('.casel-card').forEach((card, i) => {
+    card.addEventListener('click', () => {
+      modalIcon.textContent = icons[i];
+      modalTitle.textContent = card.dataset.title;
+      modalBody.textContent = card.dataset.def;
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
 </script>
 </body>
 </html>

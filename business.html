@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Business Profile | The Holistic Student</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>/* ═══════════════════════════════════════
-   ROOT & RESET
-═══════════════════════════════════════ */
+  <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
@@ -95,8 +93,7 @@ p strong{color:var(--navy)}
 /* ANIMATIONS */
 .fade-in{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
 .fade-in.visible{opacity:1;transform:translateY(0)}
-/* RESPONSIVE */
-@media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
+/* RESPONSIVE NAV */
 @media(max-width:680px){
   .navbar{padding:0 20px}
   .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
@@ -113,6 +110,7 @@ p strong{color:var(--navy)}
   .industry-tabs{padding:0 20px}
 }
 
+/* BUSINESS PROFILE STYLES */
 .profile-banner{background:linear-gradient(135deg,var(--navy),#1a5072);border-radius:var(--radius);padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:16px;color:var(--white)}
 .gn-logo{display:flex;align-items:center;font-family:var(--font-display);font-size:2.4rem;font-weight:900;margin-bottom:16px}
 .gn-c{width:56px;height:56px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin-right:12px}
@@ -137,7 +135,7 @@ p strong{color:var(--navy)}
 .sw-t{background:#fce4ec}.sw-t .swot-badge{background:#c62828;color:#fff}
 .swot-list{list-style:none}
 .swot-list li{font-size:.87rem;color:var(--dark-text);padding:7px 0 7px 18px;position:relative;border-bottom:1px solid rgba(0,0,0,.06);line-height:1.6}
-.swot-list li::before{content:'&rarr;';position:absolute;left:0;color:var(--gold);font-size:.8rem}
+.swot-list li::before{content:'\2192';position:absolute;left:0;color:var(--gold);font-size:.8rem}
 .swot-list li:last-child{border-bottom:none}
 .comp-wrap{overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow)}
 .comp-table{width:100%;border-collapse:collapse;background:var(--white)}
@@ -153,12 +151,39 @@ p strong{color:var(--navy)}
 .sd-outcomes{display:flex;flex-wrap:wrap;gap:10px}
 .sd-outcome{background:var(--offwhite);border:2px solid var(--teal);border-radius:50px;padding:8px 16px;font-size:.85rem;font-weight:600;color:var(--navy)}
 .research-cite{background:var(--offwhite);border-radius:var(--radius-sm);padding:16px 20px;font-size:.84rem;color:var(--mid-text);line-height:1.65;border-left:3px solid var(--teal)}
-@media(max-width:900px){.profile-banner,.feat-grid,.swot-grid{grid-template-columns:1fr}.pm-grid{grid-template-columns:repeat(2,1fr)}}
-</style>
+
+/* BUSINESS MODEL CANVAS */
+.bmc-grid{display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(3,auto);gap:10px;margin:24px 0 20px}
+.bmc-cell{background:var(--white);border:1.5px solid rgba(25,63,86,.12);border-radius:var(--radius-sm);padding:16px 12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;min-height:120px;transition:all .2s}
+.bmc-cell:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:var(--shadow)}
+.bmc-cell.bmc-active{border:2px solid var(--gold);background:var(--cream)}
+.bmc-icon{font-size:1.7rem}
+.bmc-title{font-family:var(--font-display);font-size:.88rem;font-weight:700;color:var(--navy);line-height:1.3}
+.bmc-hint{font-size:.68rem;color:var(--light-text);text-transform:uppercase;letter-spacing:.04em}
+.bmc-wide{flex-direction:row;gap:14px;min-height:70px}
+.bmc-detail-box{display:none;margin:8px 0 8px;padding:28px 32px;background:var(--offwhite);border-radius:var(--radius);border-left:4px solid var(--gold)}
+.bmc-detail-box.bmc-open{display:block}
+.bmc-detail-hdr{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.bmc-detail-icon{font-size:1.5rem}
+.bmc-detail-title{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--navy)}
+.bmc-detail-list{margin:0;padding-left:1.2rem;font-size:.9rem;line-height:1.8;color:var(--mid-text)}
+.bmc-detail-list li{margin-bottom:6px}
+
+@media(max-width:900px){
+  .profile-banner,.feat-grid,.swot-grid{grid-template-columns:1fr}
+  .pm-grid{grid-template-columns:repeat(2,1fr)}
+  .bmc-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}
+  .bmc-cell,.bmc-cell[style]{grid-row:auto!important;grid-column:auto!important}
+  .bmc-wide{grid-column:span 2!important;flex-direction:column}
+}
+@media(max-width:680px){
+  .bmc-detail-box{padding:20px 22px}
+}
+  </style>
 </head>
 <body>
   <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo"><span class="logo-icon">★</span><span class="logo-text">The Holistic Student</span></a>
+    <a href="index.html" class="nav-logo"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html" class="nav-link ">Home</a></li>
@@ -166,11 +191,11 @@ p strong{color:var(--navy)}
       <li class="nav-item-dropdown" id="industryDropdown">
         <button class="nav-link-dropdown " aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
         <ul class="dropdown-menu" role="menu">
-          <li class="dropdown-overview"><li><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128203;</span><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li></li>
+          <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128203;</span><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
           <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128197;</span><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
           <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128200;</span><span class="dd-label">Trends<span class="dd-desc">Current market forces</span></span></a></li>
           <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128301;</span><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
-      <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127942;</span><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
+          <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127942;</span><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
         </ul>
       </li>
       <li><a href="business.html" class="nav-link active">Business Profile</a></li>
@@ -180,62 +205,197 @@ p strong{color:var(--navy)}
   </nav>
 
   <div class="page-wrapper">
-        <header class="page-hero">
+    <header class="page-hero">
       <div class="hero-inner">
         <span class="hero-tag">03 / Business Profile</span>
         <h1>GoNoodle:<br /><em>Where Movement Meets Wellbeing</em></h1>
-        <p>EXPLAIN GONOODLE HERE IN 1-2 SENTENCES</p>
+        <p>GoNoodle is a free, web-based platform that delivers short, classroom-ready movement and mindfulness videos to elementary schools, translating the science of physical activity into an accessible tool for social-emotional regulation.</p>
       </div>
     </header>
+
     <main class="container">
+
       <div class="profile-banner fade-in">
-        <div><div class="gn-logo"><div class="gn-c">G</div>oNoodle</div><p class="profile-tag">Bridging the gap between physical activity and mental regulation for over 40 million children in K&ndash;5 classrooms.</p></div>
+        <div>
+          <div class="gn-logo"><div class="gn-c">G</div>oNoodle</div>
+          <p class="profile-tag">Bridging the gap between physical activity and mental regulation for over 40 million children in K&ndash;5 classrooms.</p>
+        </div>
         <div class="pm-grid stagger-parent">
-          <div class="pm-item"><span class="pm-val">40M+</span><span class="pm-lbl">QUICK FACT</span></div>
-          <div class="pm-item"><span class="pm-val">K&ndash;5</span><span class="pm-lbl">QUICK FACT</span></div>
-          <div class="pm-item"><span class="pm-val">Free</span><span class="pm-lbl">QUICK FACY</span></div>
-          <div class="pm-item"><span class="pm-val">3&ndash;5</span><span class="pm-lbl">QUICK FACT</span></div>
+          <div class="pm-item"><span class="pm-val">40M+</span><span class="pm-lbl">Children Reached</span></div>
+          <div class="pm-item"><span class="pm-val">K&ndash;5</span><span class="pm-lbl">Core Grade Range</span></div>
+          <div class="pm-item"><span class="pm-val">Free</span><span class="pm-lbl">Core Platform Access</span></div>
+          <div class="pm-item"><span class="pm-val">3&ndash;5</span><span class="pm-lbl">Minute Activity Breaks</span></div>
         </div>
       </div>
+
+      <!-- BUSINESS MODEL CANVAS -->
+      <div class="subsection-title fade-in"><h3>Business Model Canvas</h3></div>
+      <p class="fade-in">Click any block below to explore that part of GoNoodle's business model in detail.</p>
+
+      <div class="bmc-grid fade-in">
+        <div class="bmc-cell" data-key="partners" style="grid-row: 1 / 3; grid-column: 1;">
+          <div class="bmc-icon">&#129309;</div>
+          <div class="bmc-title">Key Partners</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+        <div class="bmc-cell" data-key="activities" style="grid-row: 1; grid-column: 2;">
+          <div class="bmc-icon">&#9889;</div>
+          <div class="bmc-title">Key Activities</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+        <div class="bmc-cell" data-key="value" style="grid-row: 1 / 3; grid-column: 3;">
+          <div class="bmc-icon">&#128161;</div>
+          <div class="bmc-title">Value Proposition</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+        <div class="bmc-cell" data-key="relationships" style="grid-row: 1; grid-column: 4;">
+          <div class="bmc-icon">&#10084;&#65039;</div>
+          <div class="bmc-title">Customer Relationships</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+        <div class="bmc-cell" data-key="segments" style="grid-row: 1 / 3; grid-column: 5;">
+          <div class="bmc-icon">&#127919;</div>
+          <div class="bmc-title">Customer Segments</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+        <div class="bmc-cell" data-key="resources" style="grid-row: 2; grid-column: 2;">
+          <div class="bmc-icon">&#128218;</div>
+          <div class="bmc-title">Key Resources</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+        <div class="bmc-cell" data-key="channels" style="grid-row: 2; grid-column: 4;">
+          <div class="bmc-icon">&#128737;&#65039;</div>
+          <div class="bmc-title">Channels</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+        <div class="bmc-cell bmc-wide" data-key="costs" style="grid-row: 3; grid-column: 1 / 3;">
+          <div class="bmc-icon">&#128179;</div>
+          <div class="bmc-title">Cost Structure</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+        <div class="bmc-cell bmc-wide" data-key="revenue" style="grid-row: 3; grid-column: 3 / 6;">
+          <div class="bmc-icon">&#128176;</div>
+          <div class="bmc-title">Revenue Streams</div>
+          <div class="bmc-hint">Click to view</div>
+        </div>
+      </div>
+
+      <div id="bmc-detail" class="bmc-detail-box">
+        <div class="bmc-detail-hdr">
+          <span id="bmc-detail-icon" class="bmc-detail-icon"></span>
+          <span id="bmc-detail-title" class="bmc-detail-title"></span>
+        </div>
+        <ul id="bmc-detail-list" class="bmc-detail-list"></ul>
+      </div>
+
+      <!-- KEY FEATURES -->
       <div class="subsection-title fade-in"><h3>Business Model &amp; Key Features</h3></div>
       <div class="feat-grid stagger-parent fade-in">
-        <div class="feat-card"><div class="fc-icon">&#127979;</div><h4>FEATURE ONE</h4><p>EXPLAIN</p></div>
-        <div class="feat-card"><div class="fc-icon">&#127968;</div><h4>FEATURE TWO </h4><p>EXPLAIN</p></div>
-        <div class="feat-card"><div class="fc-icon">&#127918;</div><h4>FEATURE THREE</h4><p>EXPLAIN</p></div>
-        <div class="feat-card"><div class="fc-icon">&#127760;</div><h4></h4>FEATURE FOUR</h4><p>EXPLAIN</p></div>
+        <div class="feat-card">
+          <div class="fc-icon">&#127979;</div>
+          <h4>Classroom-First Design</h4>
+          <p>GoNoodle is built for instant classroom deployment &mdash; 3&ndash;5 minute movement breaks that teachers can play immediately with zero prep, fitting naturally within the rhythm of a school day.</p>
+        </div>
+        <div class="feat-card">
+          <div class="fc-icon">&#127968;</div>
+          <h4>Classroom-to-Home Connectivity</h4>
+          <p>A distinctive innovation: GoNoodle extends into the home, enabling parents to engage with the same content their children use at school, amplifying SEL impact beyond classroom walls.</p>
+        </div>
+        <div class="feat-card">
+          <div class="fc-icon">&#127918;</div>
+          <h4>Gamified Engagement</h4>
+          <p>Classes earn points, level up characters, and unlock new content &mdash; creating intrinsic motivation for movement and emotional regulation rather than treating them as obligations.</p>
+        </div>
+        <div class="feat-card">
+          <div class="fc-icon">&#127760;</div>
+          <h4>Democratized Access</h4>
+          <p>The free core platform ensures mental health support tools are not gated by district budget, aligning with GoNoodle's mission to reach all children regardless of background.</p>
+        </div>
       </div>
+
+      <!-- SWOT -->
       <div class="subsection-title fade-in"><h3>SWOT Analysis</h3></div>
       <div class="swot-grid stagger-parent">
-        <div class="swot-card sw-s"><div class="swot-badge">Strengths</div><ul class="swot-list"><li>INSERT STRENGTHS</li></ul></div>
-        <div class="swot-card sw-w"><div class="swot-badge">Weaknesses</div><ul class="swot-list"><li>INSERT WEAKENSSES</li></ul></div>
-        <div class="swot-card sw-o"><div class="swot-badge">Opportunities</div><ul class="swot-list"><li>INSERT OPPORTUNITIES</li></ul></div>
-        <div class="swot-card sw-t"><div class="swot-badge">Threats</div><ul class="swot-list"><li>INSERT THREATS</li></ul></div>
+        <div class="swot-card sw-s">
+          <div class="swot-badge">Strengths</div>
+          <ul class="swot-list">
+            <li>Unique intersection of movement + SEL, validated by 2024 meta-analysis</li>
+            <li>Classroom-to-home connectivity bridges school and family engagement</li>
+            <li>Free access democratizes mental health support across income levels</li>
+            <li>Gamified, age-appropriate content drives high K&ndash;5 engagement</li>
+            <li>Established trust with 40M+ users</li>
+          </ul>
+        </div>
+        <div class="swot-card sw-w">
+          <div class="swot-badge">Weaknesses</div>
+          <ul class="swot-list">
+            <li>Limited data analytics compared to competitors focused on assessment</li>
+            <li>Primarily K&ndash;5 focus limits market reach and long-term retention</li>
+            <li>Revenue model partially reliant on advertising in the free tier</li>
+            <li>Lower brand awareness among parents relative to teachers</li>
+          </ul>
+        </div>
+        <div class="swot-card sw-o">
+          <div class="swot-badge">Opportunities</div>
+          <ul class="swot-list">
+            <li>Growing Wellbeing-as-a-Service market &mdash; $21B projected by 2033</li>
+            <li>AI integration for personalized movement and SEL programming</li>
+            <li>Expansion into middle school (grades 6&ndash;8) content library</li>
+            <li>Federal funding streams via ESSA and American Rescue Plan Act</li>
+            <li>International market expansion</li>
+          </ul>
+        </div>
+        <div class="swot-card sw-t">
+          <div class="swot-badge">Threats</div>
+          <ul class="swot-list">
+            <li>Political attacks on SEL in some states limiting school adoption</li>
+            <li>Well-funded competitors with stronger analytics or curriculum credentials</li>
+            <li>Teacher burnout limiting consistent SEL implementation</li>
+            <li>Data privacy regulations creating compliance burden</li>
+          </ul>
+        </div>
       </div>
+
+      <!-- COMPETITIVE LANDSCAPE -->
       <div class="subsection-title fade-in"><h3>Competitive Landscape</h3></div>
       <div class="comp-wrap fade-in">
         <table class="comp-table">
           <thead><tr><th>Company</th><th>Primary Focus</th><th>Key Differentiator</th><th>Grade Range</th><th>Price Model</th></tr></thead>
           <tbody>
             <tr class="row-hl"><td><strong>GoNoodle &#9733;</strong></td><td>Movement + Mental Regulation</td><td>Physical activity as SEL driver</td><td>K&ndash;5</td><td>Freemium</td></tr>
-            <tr><td>COMPETITOR 1</td><td>SEL Analytics &amp; Assessment</td><td>Data dashboards, 42% accuracy improvement</td><td>K&ndash;12</td><td>Paid (district)</td></tr>
-            <tr><td>COMPETITOR 2 </td><td>Classroom Culture &amp; Communication</td><td>Parent-teacher-student connection</td><td>K&ndash;8</td><td>Free + Premium</td></tr>
-            <tr><td>COMPETITOR 3</td><td>Interactive SEL Lessons</td><td>Embedded in curriculum delivery</td><td>K&ndash;12</td><td>Freemium</td></tr>
-            <tr><td>COMPETITOR 4</td><td>Evidence-Based SEL Curriculum</td><td>Long-form, research-backed lessons</td><td>PreK&ndash;8</td><td>Paid (school)</td></tr>
+            <tr><td>Panorama Education</td><td>SEL Analytics &amp; Assessment</td><td>Data dashboards, 42% accuracy improvement</td><td>K&ndash;12</td><td>Paid (district)</td></tr>
+            <tr><td>ClassDojo</td><td>Classroom Culture &amp; Communication</td><td>Parent-teacher-student connection</td><td>K&ndash;8</td><td>Free + Premium</td></tr>
+            <tr><td>Nearpod SEL</td><td>Interactive SEL Lessons</td><td>Embedded in curriculum delivery</td><td>K&ndash;12</td><td>Freemium</td></tr>
+            <tr><td>Second Step</td><td>Evidence-Based SEL Curriculum</td><td>Long-form, research-backed lessons</td><td>PreK&ndash;8</td><td>Paid (school)</td></tr>
           </tbody>
         </table>
       </div>
+
+      <!-- SCIENCE -->
       <div class="subsection-title fade-in"><h3>The Science: Activity &amp; SEL</h3></div>
       <div class="fade-in">
-        <p class="lead-text">EXPLAIN WHY THEIR APPROACH WORKS</p>
-        <div class="sci-diag stagger-parent"><div class="sd-center">Physical<br/>Movement</div><div class="sd-arrow">&rarr;</div><div class="sd-outcomes"><div class="sd-outcome">Self-Regulation</div><div class="sd-outcome">Social Awareness</div><div class="sd-outcome">Emotional Health</div><div class="sd-outcome">Academic Readiness</div></div></div>
-        <div class="research-cite"><strong>Source:</strong>INSERT CITATION</div>
+        <p class="lead-text">GoNoodle's most powerful differentiator is the scientific validation of its core model: a landmark meta-analysis confirmed that physical activity directly improves children's social-emotional learning outcomes.</p>
+        <div class="sci-diag stagger-parent">
+          <div class="sd-center">Physical<br/>Movement</div>
+          <div class="sd-arrow">&rarr;</div>
+          <div class="sd-outcomes">
+            <div class="sd-outcome">Self-Regulation</div>
+            <div class="sd-outcome">Social Awareness</div>
+            <div class="sd-outcome">Emotional Health</div>
+            <div class="sd-outcome">Academic Readiness</div>
+          </div>
+        </div>
+        <div class="research-cite"><strong>Source:</strong> Moon et al. (2024). <em>Review of Education</em>, Wiley &mdash; Meta-analysis of 32 physical activity intervention studies in elementary school children, the first of its kind to link physical activity directly to SEL outcomes.</div>
       </div>
-            <nav class="page-nav">
+
+      <nav class="page-nav">
         <a href="industry.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Industry Analysis</span></a>
         <a href="conclusion.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Conclusion</span></a>
       </nav>
+
     </main>
   </div>
+
   <footer class="footer">
     <div class="footer-inner">
       <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
@@ -243,6 +403,7 @@ p strong{color:var(--navy)}
       <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
     </div>
   </footer>
+
 <script>(function(){
   // Active nav link
   const path=window.location.pathname.split('/').pop()||'index.html';
@@ -259,7 +420,7 @@ p strong{color:var(--navy)}
   // Fade-in observer
   const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
   document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
-  // Timeline
+  // Timeline (unused here but kept for consistency)
   document.querySelectorAll('.timeline-item').forEach((item,i)=>{
     item.style.cssText='opacity:0;transform:translateX(-20px);transition:opacity .5s ease,transform .5s ease';
     const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){setTimeout(()=>{item.style.opacity='1';item.style.transform='translateX(0)';},(i%5)*80);o.unobserve(item);}},{threshold:.15});
@@ -291,6 +452,83 @@ p strong{color:var(--navy)}
     });
     menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
   }
+  // Business Model Canvas
+  const bmcData = {
+    partners: { icon: '&#129309;', title: 'Key Partners', items: [
+      'School districts and individual classroom teachers who adopt the platform at no direct cost',
+      'CASEL and SEL researchers, whose framework GoNoodle content aligns to',
+      'Education nonprofits and physical-activity advocacy groups supporting movement-based learning',
+      'Streaming and ed-tech distribution partners (smart boards, classroom apps) that host GoNoodle content'
+    ]},
+    activities: { icon: '&#9889;', title: 'Key Activities', items: [
+      'Producing short, classroom-ready movement and mindfulness videos',
+      'Aligning new content to CASEL 5 competencies and SEL research',
+      'Maintaining the free platform and classroom-to-home connectivity features',
+      'Partnering with researchers to validate movement-based SEL outcomes'
+    ]},
+    value: { icon: '&#128161;', title: 'Value Proposition', items: [
+      'Free, research-backed movement breaks that improve self-regulation and SEL outcomes',
+      'Zero-prep, 3-5 minute activities teachers can deploy instantly',
+      'A scientifically validated bridge between physical activity and emotional regulation',
+      'Classroom-to-home connectivity that extends SEL practice beyond the school day'
+    ]},
+    relationships: { icon: '&#10084;&#65039;', title: 'Customer Relationships', items: [
+      'Self-service: teachers sign up and use the platform with no sales contact',
+      'Community-driven engagement through gamified class rewards and characters',
+      'Email and social content keeping teachers engaged with new releases',
+      'Light-touch support model relying on simplicity over high-touch service'
+    ]},
+    segments: { icon: '&#127919;', title: 'Customer Segments', items: [
+      'K-5 classroom teachers seeking quick SEL and movement breaks',
+      'Elementary school administrators implementing schoolwide SEL initiatives',
+      'Parents extending classroom SEL practices into the home',
+      'School districts evaluating low-cost, evidence-based SEL tools'
+    ]},
+    resources: { icon: '&#128218;', title: 'Key Resources', items: [
+      'Library of original movement and mindfulness video content',
+      'Brand recognition and trust built with 40 million+ children',
+      'Platform and app infrastructure supporting classroom and home use',
+      'Relationships with SEL researchers lending scientific credibility'
+    ]},
+    channels: { icon: '&#128737;&#65039;', title: 'Channels', items: [
+      'Direct web and app access for teachers and families',
+      'Word-of-mouth and teacher community recommendations',
+      'District-level partnerships and education conference presence',
+      'Classroom-to-home handoff extending reach into family channels'
+    ]},
+    costs: { icon: '&#128179;', title: 'Cost Structure', items: [
+      'Content production: video creation, music licensing, talent',
+      'Platform engineering and hosting infrastructure',
+      'Research partnerships validating SEL and movement outcomes',
+      'Marketing and teacher community management'
+    ]},
+    revenue: { icon: '&#128176;', title: 'Revenue Streams', items: [
+      'Advertising revenue from the free, ad-supported core tier',
+      'Premium subscription tier (GoNoodle Plus) for expanded content',
+      'Licensing partnerships with ed-tech platforms and smart-board makers',
+      'Potential grant and foundation funding tied to SEL research validation'
+    ]}
+  };
+  const bmcCells = document.querySelectorAll('.bmc-cell');
+  const bmcDetail = document.getElementById('bmc-detail');
+  const bmcIcon = document.getElementById('bmc-detail-icon');
+  const bmcTitle = document.getElementById('bmc-detail-title');
+  const bmcList = document.getElementById('bmc-detail-list');
+  bmcCells.forEach(cell => {
+    cell.addEventListener('click', () => {
+      const key = cell.dataset.key;
+      const entry = bmcData[key];
+      const wasActive = cell.classList.contains('bmc-active');
+      bmcCells.forEach(c => c.classList.remove('bmc-active'));
+      if (wasActive) { bmcDetail.classList.remove('bmc-open'); return; }
+      cell.classList.add('bmc-active');
+      bmcIcon.innerHTML = entry.icon;
+      bmcTitle.textContent = entry.title;
+      bmcList.innerHTML = entry.items.map(i => '<li>' + i + '</li>').join('');
+      bmcDetail.classList.add('bmc-open');
+      bmcDetail.scrollIntoView({behavior:'smooth', block:'nearest'});
+    });
+  });
 })();
 </script>
 </body>

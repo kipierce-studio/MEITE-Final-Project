@@ -176,6 +176,15 @@ p strong{color:var(--navy)}
 @media(max-width:680px){
   .bmc-detail-box{padding:20px 22px}
 }
+   /* RECOMMENDATIONS */
+.rec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.rec-card{background:var(--white);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border-top:4px solid var(--gold);transition:all .3s}
+.rec-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.rec-num{font-family:var(--font-display);font-size:1.8rem;font-weight:900;color:var(--cream);line-height:1;margin-bottom:10px}
+.rec-card h4{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+.rec-card p{font-size:.88rem;color:var(--mid-text);line-height:1.75;margin:0}
+
+@media(max-width:900px){.rec-grid{grid-template-columns:1fr}} 
   </style>
 </head>
 <body>
@@ -333,19 +342,31 @@ Another strength of GoNoodle is their top-notch track record with other brands. 
         </div>
       </div>
 
-      <!-- COMPETITIVE LANDSCAPE -->
-      <div class="subsection-title fade-in"><h3>Competitive Landscape</h3></div>
-      <div class="comp-wrap fade-in">
-        <table class="comp-table">
-          <thead><tr><th>Company</th><th>Primary Focus</th><th>Key Differentiator</th><th>Grade Range</th><th>Price Model</th></tr></thead>
-          <tbody>
-            <tr class="row-hl"><td><strong>GoNoodle &#9733;</strong></td><td>Movement + Mental Regulation</td><td>Physical activity as SEL driver</td><td>K&ndash;5</td><td>Freemium</td></tr>
-            <tr><td>Panorama Education</td><td>SEL Analytics &amp; Assessment</td><td>Data dashboards, 42% accuracy improvement</td><td>K&ndash;12</td><td>Paid (district)</td></tr>
-            <tr><td>ClassDojo</td><td>Classroom Culture &amp; Communication</td><td>Parent-teacher-student connection</td><td>K&ndash;8</td><td>Free + Premium</td></tr>
-            <tr><td>Nearpod SEL</td><td>Interactive SEL Lessons</td><td>Embedded in curriculum delivery</td><td>K&ndash;12</td><td>Freemium</td></tr>
-            <tr><td>Second Step</td><td>Evidence-Based SEL Curriculum</td><td>Long-form, research-backed lessons</td><td>PreK&ndash;8</td><td>Paid (school)</td></tr>
-          </tbody>
-        </table>
+     <!-- RECOMMENDATIONS -->
+      <div class="subsection-title fade-in"><h3>Recommendations</h3></div>
+      <p class="fade-in">Based on the SWOT analysis above, the following recommendations identify how GoNoodle can build on its strengths, address its weaknesses, and position itself for long-term growth.</p>
+
+      <div class="rec-grid stagger-parent fade-in">
+        <div class="rec-card">
+          <div class="rec-num">1</div>
+          <h4>Diversify Revenue Beyond Brand Partnerships</h4>
+          <p>Given GoNoodle's heavy reliance on brand and media partnerships for revenue, the company should prioritize expanding its B2B relationships with school districts. Bundling SuperNoodle with district-wide SEL initiatives would create a more predictable, recurring revenue stream less vulnerable to partnership churn.</p>
+        </div>
+        <div class="rec-card">
+          <div class="rec-num">2</div>
+          <h4>Protect the Free Tier, Monetize Strategically</h4>
+          <p>Because GoNoodle's brand trust is built on broad free access, any new monetization should be concentrated on district and school B2B offerings rather than family-facing content. Introducing fees on previously free, beloved content risks damaging the trust that has driven adoption in 600,000+ classrooms.</p>
+        </div>
+        <div class="rec-card">
+          <div class="rec-num">3</div>
+          <h4>Pursue Academic Validation for SuperNoodle</h4>
+          <p>To strengthen SuperNoodle's credibility as a true SEL tool rather than just a movement platform, GoNoodle should pursue a partnership with a university research center or advisory board. This mirrors the legitimacy RULER has built through its Yale affiliation and would help GoNoodle compete on research credentials, not just reach.</p>
+        </div>
+        <div class="rec-card">
+          <div class="rec-num">4</div>
+          <h4>Expand Into the At-Home and Out-of-School Market</h4>
+          <p>The at-home SEL market remains underdeveloped. GoNoodle should pilot a paid offering built for families and after-school care providers using its existing content library, creating a new, stable revenue stream that doesn't disrupt its core free, school-facing product.</p>
+        </div>
       </div>
 
       <!-- SCIENCE -->

@@ -185,6 +185,36 @@ p strong{color:var(--navy)}
 .rec-card p{font-size:.88rem;color:var(--mid-text);line-height:1.75;margin:0}
 
 @media(max-width:900px){.rec-grid{grid-template-columns:1fr}} 
+/* PAGE HERO IMAGE */
+.page-hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  flex-wrap:wrap;
+}
+.page-hero .hero-inner{flex:1;min-width:280px}
+.hero-image{
+  flex-shrink:0;
+  width:320px;
+  position:relative;
+  z-index:1;
+}
+.hero-image img{
+  width:100%;
+  height:auto;
+  border-radius:var(--radius);
+  box-shadow:0 20px 60px rgba(0,0,0,.4);
+  display:block;
+}
+
+@media(max-width:900px){
+  .page-hero{flex-direction:column;text-align:center}
+  .hero-image{width:260px}
+}
+@media(max-width:680px){
+  .hero-image{width:200px}
+}
   </style>
 </head>
 <body>
@@ -210,12 +240,14 @@ p strong{color:var(--navy)}
     </ul>
   </nav>
 
-  <div class="page-wrapper">
-    <header class="page-hero">
+ <header class="page-hero">
       <div class="hero-inner">
         <span class="hero-tag">03 / Business Profile</span>
         <h1>GoNoodle:<br /><em>Where Movement Meets Wellbeing</em></h1>
         <p>GoNoodle is a free, web-based platform that delivers short, classroom-ready movement and mindfulness videos to elementary schools, translating the science of physical activity into an accessible tool for social-emotional regulation.</p>
+      </div>
+      <div class="hero-image">
+        <img src="gonoodle-screenshot.jpg" alt="GoNoodle platform screenshot" />
       </div>
     </header>
 

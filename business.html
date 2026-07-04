@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Business Profile | The Holistic Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Business Profile | The Holistic Student</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+ <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
-  --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
-  --mid-text:#3d5a6e;--light-text:#6b8fa0;
-  --font-display:'Playfair Display',Georgia,serif;
-  --font-body:'DM Sans',system-ui,sans-serif;
-  --radius:16px;--radius-sm:8px;--nav-h:72px;
-  --shadow:0 4px 24px rgba(25,63,86,.10);
-  --shadow-lg:0 12px 48px rgba(25,63,86,.18);
+ --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
+ --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
+ --mid-text:#3d5a6e;--light-text:#6b8fa0;
+ --font-display:'Playfair Display',Georgia,serif;
+ --font-body:'DM Sans',system-ui,sans-serif;
+ --radius:16px;--radius-sm:8px;--nav-h:72px;
+ --shadow:0 4px 24px rgba(25,63,86,.10);
+ --shadow-lg:0 12px 48px rgba(25,63,86,.18);
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--font-body);color:var(--dark-text);background:var(--offwhite);overflow-x:hidden}
@@ -95,19 +95,19 @@ p strong{color:var(--navy)}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 /* RESPONSIVE NAV */
 @media(max-width:680px){
-  .navbar{padding:0 20px}
-  .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
-  .nav-links.open{display:flex}
-  .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
-  .hamburger{display:flex}
-  .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
-  .dropdown-menu::before{display:none}
-  .nav-item-dropdown.open .dropdown-menu{display:block}
-  .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
-  .page-hero{padding:48px 24px}
-  .container{padding:40px 20px}
-  .industry-breadcrumb{padding:10px 20px}
-  .industry-tabs{padding:0 20px}
+ .navbar{padding:0 20px}
+ .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+ .nav-links.open{display:flex}
+ .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
+ .hamburger{display:flex}
+ .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
+ .dropdown-menu::before{display:none}
+ .nav-item-dropdown.open .dropdown-menu{display:block}
+ .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
+ .page-hero{padding:48px 24px}
+ .container{padding:40px 20px}
+ .industry-breadcrumb{padding:10px 20px}
+ .industry-tabs{padding:0 20px}
 }
 
 /* BUSINESS PROFILE STYLES */
@@ -167,16 +167,16 @@ p strong{color:var(--navy)}
 .bmc-detail-list li{margin-bottom:6px}
 
 @media(max-width:900px){
-  .profile-banner,.feat-grid,.swot-grid{grid-template-columns:1fr}
-  .pm-grid{grid-template-columns:repeat(2,1fr)}
-  .bmc-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}
-  .bmc-cell,.bmc-cell[style]{grid-row:auto!important;grid-column:auto!important}
-  .bmc-wide{grid-column:span 2!important;flex-direction:column}
+ .profile-banner,.feat-grid,.swot-grid{grid-template-columns:1fr}
+ .pm-grid{grid-template-columns:repeat(2,1fr)}
+ .bmc-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}
+ .bmc-cell,.bmc-cell[style]{grid-row:auto!important;grid-column:auto!important}
+ .bmc-wide{grid-column:span 2!important;flex-direction:column}
 }
 @media(max-width:680px){
-  .bmc-detail-box{padding:20px 22px}
+ .bmc-detail-box{padding:20px 22px}
 }
-   /* RECOMMENDATIONS */
+ /* RECOMMENDATIONS */
 .rec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .rec-card{background:var(--white);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border-top:4px solid var(--gold);transition:all .3s}
 .rec-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
@@ -187,350 +187,350 @@ p strong{color:var(--navy)}
 @media(max-width:900px){.rec-grid{grid-template-columns:1fr}} 
 /* PAGE HERO IMAGE */
 .page-hero{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:40px;
-  flex-wrap:wrap;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:40px;
+ flex-wrap:wrap;
 }
 .page-hero .hero-inner{flex:1;min-width:280px}
 .hero-image{
-  flex-shrink:0;
-  width:320px;
-  position:relative;
-  z-index:1;
+ flex-shrink:0;
+ width:320px;
+ position:relative;
+ z-index:1;
 }
 .hero-image img{
-  width:100%;
-  height:auto;
-  border-radius:var(--radius);
-  box-shadow:0 20px 60px rgba(0,0,0,.4);
-  display:block;
+ width:100%;
+ height:auto;
+ border-radius:var(--radius);
+ box-shadow:0 20px 60px rgba(0,0,0,.4);
+ display:block;
 }
 
 @media(max-width:900px){
-  .page-hero{flex-direction:column;text-align:center}
-  .hero-image{width:260px}
+ .page-hero{flex-direction:column;text-align:center}
+ .hero-image{width:260px}
 }
 @media(max-width:680px){
-  .hero-image{width:200px}
+ .hero-image{width:200px}
 }
-  </style>
+ </style>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" class="nav-link ">Home</a></li>
-      <li><a href="introduction.html" class="nav-link ">Introduction</a></li>
-      <li class="nav-item-dropdown" id="industryDropdown">
-        <button class="nav-link-dropdown " aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
-        <ul class="dropdown-menu" role="menu">
-          <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128203;</span><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
-          <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128197;</span><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
-          <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127787;&#65039;</span><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
-          <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128301;</span><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
-          <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127942;</span><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
-        </ul>
-      </li>
-      <li><a href="business.html" class="nav-link active">Business Profile</a></li>
-      <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
-      <li><a href="references.html" class="nav-link ">References</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar" id="navbar">
+ <a href="index.html" class="nav-logo"><span class="logo-text">The Holistic Student</span></a>
+ <button class="hamburger" id="hamburger" aria-label="Toggle menu"></button>
+ <ul class="nav-links" id="nav-links">
+ <li><a href="index.html" class="nav-link ">Home</a></li>
+ <li><a href="introduction.html" class="nav-link ">Introduction</a></li>
+ <li class="nav-item-dropdown" id="industryDropdown">
+ <button class="nav-link-dropdown " aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
+ <ul class="dropdown-menu" role="menu">
+ <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
+ <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
+ <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
+ <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
+ <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
+ </ul>
+ </li>
+ <li><a href="business.html" class="nav-link active">Business Profile</a></li>
+ <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
+ <li><a href="references.html" class="nav-link ">References</a></li>
+ </ul>
+ </nav>
 
  <header class="page-hero">
-      <div class="hero-inner">
-        <span class="hero-tag">03 / Business Profile</span>
-        <h1>GoNoodle:<br /><em>Where Movement Meets Wellbeing</em></h1>
-        <p>GoNoodle is a free, web-based platform that delivers short, classroom-ready movement and mindfulness videos to elementary schools, translating the science of physical activity into an accessible tool for social-emotional regulation.</p>
-      </div>
-      <div class="hero-image">
-        <img src="gonoodle.png" alt="GoNoodle platform screenshot" />
-      </div>
-    </header>
+ <div class="hero-inner">
+ <span class="hero-tag">03 / Business Profile</span>
+ <h1>GoNoodle:<br /><em>Where Movement Meets Wellbeing</em></h1>
+ <p>GoNoodle is a free, web-based platform that delivers short, classroom-ready movement and mindfulness videos to elementary schools, translating the science of physical activity into an accessible tool for social-emotional regulation.</p>
+ </div>
+ <div class="hero-image">
+ <img src="gonoodle.png" alt="GoNoodle platform screenshot" />
+ </div>
+ </header>
 
-    <main class="container">
+ <main class="container">
 
-      <div class="profile-banner fade-in">
-        <div>
-          <div class="gn-logo"><div class="gn-c">G</div>oNoodle</div>
-          <p class="profile-tag">Bridging the gap between physical activity and mental regulation for over 40 million children in K&ndash;5 classrooms.</p>
-        </div>
-        <div class="pm-grid stagger-parent">
-          <div class="pm-item"><span class="pm-val">40M+</span><span class="pm-lbl">Children Reached</span></div>
-          <div class="pm-item"><span class="pm-val">K&ndash;5</span><span class="pm-lbl">Core Grade Range</span></div>
-          <div class="pm-item"><span class="pm-val">Free</span><span class="pm-lbl">Core Platform Access</span></div>
-          <div class="pm-item"><span class="pm-val">3&ndash;5</span><span class="pm-lbl">Minute Activity Breaks</span></div>
-        </div>
-      </div>
+ <div class="profile-banner fade-in">
+ <div>
+ <div class="gn-logo">oNoodle</div>
+ <p class="profile-tag">Bridging the gap between physical activity and mental regulation for over 40 million children in K&ndash;5 classrooms.</p>
+ </div>
+ <div class="pm-grid stagger-parent">
+ <div class="pm-item"><span class="pm-val">40M+</span><span class="pm-lbl">Children Reached</span></div>
+ <div class="pm-item"><span class="pm-val">K&ndash;5</span><span class="pm-lbl">Core Grade Range</span></div>
+ <div class="pm-item"><span class="pm-val">Free</span><span class="pm-lbl">Core Platform Access</span></div>
+ <div class="pm-item"><span class="pm-val">3&ndash;5</span><span class="pm-lbl">Minute Activity Breaks</span></div>
+ </div>
+ </div>
 
-      <!-- BUSINESS MODEL CANVAS -->
-      <div class="subsection-title fade-in"><h3>Business Model Canvas</h3></div>
-      <p class="fade-in">Click any block below to explore that part of GoNoodle's business model in detail.</p>
+ <!-- BUSINESS MODEL CANVAS -->
+ <div class="subsection-title fade-in"><h3>Business Model Canvas</h3></div>
+ <p class="fade-in">Click any block below to explore that part of GoNoodle's business model in detail.</p>
 
-      <div class="bmc-grid fade-in">
-        <div class="bmc-cell" data-key="partners" style="grid-row: 1 / 3; grid-column: 1;">
-          <div class="bmc-icon">&#129309;</div>
-          <div class="bmc-title">Key Partners</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-        <div class="bmc-cell" data-key="activities" style="grid-row: 1; grid-column: 2;">
-          <div class="bmc-icon">&#9889;</div>
-          <div class="bmc-title">Key Activities</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-        <div class="bmc-cell" data-key="value" style="grid-row: 1 / 3; grid-column: 3;">
-          <div class="bmc-icon">&#128161;</div>
-          <div class="bmc-title">Value Proposition</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-        <div class="bmc-cell" data-key="relationships" style="grid-row: 1; grid-column: 4;">
-          <div class="bmc-icon">&#10084;&#65039;</div>
-          <div class="bmc-title">Customer Relationships</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-        <div class="bmc-cell" data-key="segments" style="grid-row: 1 / 3; grid-column: 5;">
-          <div class="bmc-icon">&#127919;</div>
-          <div class="bmc-title">Customer Segments</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-        <div class="bmc-cell" data-key="resources" style="grid-row: 2; grid-column: 2;">
-          <div class="bmc-icon">&#128218;</div>
-          <div class="bmc-title">Key Resources</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-        <div class="bmc-cell" data-key="channels" style="grid-row: 2; grid-column: 4;">
-          <div class="bmc-icon">&#128737;&#65039;</div>
-          <div class="bmc-title">Channels</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-        <div class="bmc-cell bmc-wide" data-key="costs" style="grid-row: 3; grid-column: 1 / 3;">
-          <div class="bmc-icon">&#128179;</div>
-          <div class="bmc-title">Cost Structure</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-        <div class="bmc-cell bmc-wide" data-key="revenue" style="grid-row: 3; grid-column: 3 / 6;">
-          <div class="bmc-icon">&#128176;</div>
-          <div class="bmc-title">Revenue Streams</div>
-          <div class="bmc-hint">Click to view</div>
-        </div>
-      </div>
+ <div class="bmc-grid fade-in">
+ <div class="bmc-cell" data-key="partners" style="grid-row: 1 / 3; grid-column: 1;">
+ 
+ <div class="bmc-title">Key Partners</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ <div class="bmc-cell" data-key="activities" style="grid-row: 1; grid-column: 2;">
+ 
+ <div class="bmc-title">Key Activities</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ <div class="bmc-cell" data-key="value" style="grid-row: 1 / 3; grid-column: 3;">
+ 
+ <div class="bmc-title">Value Proposition</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ <div class="bmc-cell" data-key="relationships" style="grid-row: 1; grid-column: 4;">
+ 
+ <div class="bmc-title">Customer Relationships</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ <div class="bmc-cell" data-key="segments" style="grid-row: 1 / 3; grid-column: 5;">
+ 
+ <div class="bmc-title">Customer Segments</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ <div class="bmc-cell" data-key="resources" style="grid-row: 2; grid-column: 2;">
+ 
+ <div class="bmc-title">Key Resources</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ <div class="bmc-cell" data-key="channels" style="grid-row: 2; grid-column: 4;">
+ 
+ <div class="bmc-title">Channels</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ <div class="bmc-cell bmc-wide" data-key="costs" style="grid-row: 3; grid-column: 1 / 3;">
+ 
+ <div class="bmc-title">Cost Structure</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ <div class="bmc-cell bmc-wide" data-key="revenue" style="grid-row: 3; grid-column: 3 / 6;">
+ 
+ <div class="bmc-title">Revenue Streams</div>
+ <div class="bmc-hint">Click to view</div>
+ </div>
+ </div>
 
-      <div id="bmc-detail" class="bmc-detail-box">
-        <div class="bmc-detail-hdr">
-          <span id="bmc-detail-icon" class="bmc-detail-icon"></span>
-          <span id="bmc-detail-title" class="bmc-detail-title"></span>
-        </div>
-        <ul id="bmc-detail-list" class="bmc-detail-list"></ul>
-      </div>
+ <div id="bmc-detail" class="bmc-detail-box">
+ <div class="bmc-detail-hdr">
+ <span id="bmc-detail-icon" class="bmc-detail-icon"></span>
+ <span id="bmc-detail-title" class="bmc-detail-title"></span>
+ </div>
+ <ul id="bmc-detail-list" class="bmc-detail-list"></ul>
+ </div>
 
-      <!-- KEY FEATURES -->
-      <div class="subsection-title fade-in"><h3>GoNoodle's Key Features</h3></div>
-      <div class="feat-grid stagger-parent fade-in">
-        <div class="feat-card">
-          <div class="fc-icon">&#127979;</div>
-          <h4>Short, Interactive Content </h4>
-          <p>GoNoodle’s core content is 3-5 minute videos that get kids moving, stretching, and even dancing. They are designed to be used in classrooms or at home to burn off energy and re-focus.</p>
-        </div>
-        <div class="feat-card">
-          <div class="fc-icon">&#127968;</div>
-          <h4>Mindfulness and Social-Emotional Learning </h4>
-          <p>Alongside burning off energy, GoNoodle’s content features mindfulness techniques and SEL skills to help children regulate their emotions, practice staying calm and in control, and learning new Social-Emotional Learning techniques. </p>
-        </div>
-        <div class="feat-card">
-          <div class="fc-icon">&#127918;</div>
-          <h4>Recognizable Characters </h4>
-          <p>GoNoodle features a cast of original characters, as well as characters from recognizable brands like Disney and Nickelodeon. This builds familiarity and engagement from the students, making them more than just a generic EdTech tool.</p>
-        </div>
-        <div class="feat-card">
-          <div class="fc-icon">&#127760;</div>
-          <h4>Free Platform for Teachers </h4>
-          <p>The core library on GoNoodle’s page is free for teachers and families. This is central to their strategy of reaching more users. Their premium tier offers a more focused curriculum and pathway.</p>
-        </div>
-      </div>
+ <!-- KEY FEATURES -->
+ <div class="subsection-title fade-in"><h3>GoNoodle's Key Features</h3></div>
+ <div class="feat-grid stagger-parent fade-in">
+ <div class="feat-card">
+ 
+ <h4>Short, Interactive Content </h4>
+ <p>GoNoodle’s core content is 3-5 minute videos that get kids moving, stretching, and even dancing. They are designed to be used in classrooms or at home to burn off energy and re-focus.</p>
+ </div>
+ <div class="feat-card">
+ 
+ <h4>Mindfulness and Social-Emotional Learning </h4>
+ <p>Alongside burning off energy, GoNoodle’s content features mindfulness techniques and SEL skills to help children regulate their emotions, practice staying calm and in control, and learning new Social-Emotional Learning techniques. </p>
+ </div>
+ <div class="feat-card">
+ 
+ <h4>Recognizable Characters </h4>
+ <p>GoNoodle features a cast of original characters, as well as characters from recognizable brands like Disney and Nickelodeon. This builds familiarity and engagement from the students, making them more than just a generic EdTech tool.</p>
+ </div>
+ <div class="feat-card">
+ 
+ <h4>Free Platform for Teachers </h4>
+ <p>The core library on GoNoodle’s page is free for teachers and families. This is central to their strategy of reaching more users. Their premium tier offers a more focused curriculum and pathway.</p>
+ </div>
+ </div>
 
-   <!-- SWOT -->
-      <div class="subsection-title fade-in"><h3>SWOT Analysis</h3></div>
-      <div class="swot-grid stagger-parent">
-        <div class="swot-card sw-s">
-          <div class="swot-badge">Strengths</div>
-          <p class="swot-text">GoNoodle is uniquely positioned across the United States. In a constantly expanding industry, GoNoodle has positioned itself in almost 600,000 classrooms across the US (How This EdTech Entrepreneur Got GoNoodle Into 600,000 Classrooms, n.d.). With such a strong stance in K-5 spaces, they make it very difficult for new entities to infiltrate. GoNoodle has centered itself on brand trust and a high-quality freemium product line, layering a paid offer on top (How This EdTech Entrepreneur Got GoNoodle Into 600,000 Classrooms, n.d.). This has set a precedent for other companies to compete with. With strong connections in the K-5 space, GoNoodle was easily able to funnel their newest addition SuperNoodle into already engaged schools, rather than fighting cold accounts. 
+ <!-- SWOT -->
+ <div class="subsection-title fade-in"><h3>SWOT Analysis</h3></div>
+ <div class="swot-grid stagger-parent">
+ <div class="swot-card sw-s">
+ <div class="swot-badge">Strengths</div>
+ <p class="swot-text">GoNoodle is uniquely positioned across the United States. In a constantly expanding industry, GoNoodle has positioned itself in almost 600,000 classrooms across the US (How This EdTech Entrepreneur Got GoNoodle Into 600,000 Classrooms, n.d.). With such a strong stance in K-5 spaces, they make it very difficult for new entities to infiltrate. GoNoodle has centered itself on brand trust and a high-quality freemium product line, layering a paid offer on top (How This EdTech Entrepreneur Got GoNoodle Into 600,000 Classrooms, n.d.). This has set a precedent for other companies to compete with. With strong connections in the K-5 space, GoNoodle was easily able to funnel their newest addition SuperNoodle into already engaged schools, rather than fighting cold accounts. 
 Another strength of GoNoodle is their top-notch track record with other brands. GoNoodle has strong, recognizable content that features their own unique characters, like Moose Fabio, as well as brands with Disney, Nickelodeon, and Dr. Seuss Enterprises who allow GoNoodle to use their characters (Covert, 2025). These connections show their users that they are a trusted source and backed by trusted companies. These partnerships allow GoNoodle to package content into licensable series and media specials, which they are able to monetize. </p>
-        </div>
-        <div class="swot-card sw-w">
-          <div class="swot-badge">Weaknesses</div>
-          <p class="swot-text">Many of GoNoodle’s weaknesses center on the tension between free, broach-reach products and the need to build sustainable and predictable revenue. Currently, GoNoodle is a relatively small group, with only about 40-50 employees (GoNoodle Knowledge Base, n.d.). This small employee base creates a limited reach for the company as a whole. Another weakness of GoNoodle is where their funding is concentrated. They have much of their revenue in brand and media partnerships, leaving them vulnerable to revenue stopping. In the future, they may need to diversify their revenue streams. The start of SuperNoodle will help with this, but establishing the platform as reliable will take time. This connects to another weakness of GoNoodle. They are at risk of relying too heavily on free distribution. Now that they have established themselves by offering such an array of free content, they will likely struggle introducing fees and premiums with new platforms. To combat this, GoNoodle should keep their monetization focused on their B2B partnerships, with districts and schools alone, while leaving content for families and teacher experiences free (GoNoodle: The Good Energy Company, 2026). </p>
-        </div>
-        <div class="swot-card sw-o">
-          <div class="swot-badge">Opportunities</div>
-          <p class="swot-text">There are a range of external trends that may prove to be beneficial for GoNoodle to build and expand. First, society is seeing a rising investment in Social-Emotional Learning in school programming. Districts are continuing to prioritize the industry, and SuperNoodle is well positioned to fill this need. To maximize their investment in this opportunity, GoNoodle could create bundles for districts and schools that promote both movement and Social-Emotional Learning and increase their own funding. Another opportunity that is unique to GoNoodle is the underdevelopment of the at-home and out-of-school market for Social-Emotional Learning. There is not a strong programming for parents and communities to use with their children and GoNoodle could expand into this market. One way to do that would be piloting an offering that is directly for families and after-school care providers. They would be able to use their existing library of videos and content, but maybe price it for a consistent income stream. Finally, GoNoodle can maximize the effects of their newest platform SuperNoodle by having it be backed by a university research center or advisory board. This would increase the legitimacy of the platform as a Social-Emotional Learning tool and improve their outputs.  </p>
-        </div>
-        <div class="swot-card sw-t">
-          <div class="swot-badge">Threats</div>
-          <p class="swot-text">The threats that are posed against GoNoodle come from differing areas. One threat that they face is the increased scrutiny of Social-Emotional Learning as an industry. At the state level, many states are already proposing bills to ban or limit Social-Emotional Learning in schools. Even though surveyed parents agreed that students should learn Social-Emotional Learning skills in school, the industry continues to be targeted by the current political climate (Abrams, 2023). This is not just a threat to GoNoodle, but the industry as a whole. Another threat to GoNoodle is the growing concern with child screen-time. Parents and educators are becoming increasingly concerned with how much screen-time children are consuming. This could make them more cautious to adopt new EdTech platforms like SuperNoodle. One way to combat this is for GoNoodle to emphasize the fact that SuperNoodle can be used in classroom settings. This eases the concern that children will need to use devices again at home for platforms. </p>
-        </div>
-      </div>
+ </div>
+ <div class="swot-card sw-w">
+ <div class="swot-badge">Weaknesses</div>
+ <p class="swot-text">Many of GoNoodle’s weaknesses center on the tension between free, broach-reach products and the need to build sustainable and predictable revenue. Currently, GoNoodle is a relatively small group, with only about 40-50 employees (GoNoodle Knowledge Base, n.d.). This small employee base creates a limited reach for the company as a whole. Another weakness of GoNoodle is where their funding is concentrated. They have much of their revenue in brand and media partnerships, leaving them vulnerable to revenue stopping. In the future, they may need to diversify their revenue streams. The start of SuperNoodle will help with this, but establishing the platform as reliable will take time. This connects to another weakness of GoNoodle. They are at risk of relying too heavily on free distribution. Now that they have established themselves by offering such an array of free content, they will likely struggle introducing fees and premiums with new platforms. To combat this, GoNoodle should keep their monetization focused on their B2B partnerships, with districts and schools alone, while leaving content for families and teacher experiences free (GoNoodle: The Good Energy Company, 2026). </p>
+ </div>
+ <div class="swot-card sw-o">
+ <div class="swot-badge">Opportunities</div>
+ <p class="swot-text">There are a range of external trends that may prove to be beneficial for GoNoodle to build and expand. First, society is seeing a rising investment in Social-Emotional Learning in school programming. Districts are continuing to prioritize the industry, and SuperNoodle is well positioned to fill this need. To maximize their investment in this opportunity, GoNoodle could create bundles for districts and schools that promote both movement and Social-Emotional Learning and increase their own funding. Another opportunity that is unique to GoNoodle is the underdevelopment of the at-home and out-of-school market for Social-Emotional Learning. There is not a strong programming for parents and communities to use with their children and GoNoodle could expand into this market. One way to do that would be piloting an offering that is directly for families and after-school care providers. They would be able to use their existing library of videos and content, but maybe price it for a consistent income stream. Finally, GoNoodle can maximize the effects of their newest platform SuperNoodle by having it be backed by a university research center or advisory board. This would increase the legitimacy of the platform as a Social-Emotional Learning tool and improve their outputs. </p>
+ </div>
+ <div class="swot-card sw-t">
+ <div class="swot-badge">Threats</div>
+ <p class="swot-text">The threats that are posed against GoNoodle come from differing areas. One threat that they face is the increased scrutiny of Social-Emotional Learning as an industry. At the state level, many states are already proposing bills to ban or limit Social-Emotional Learning in schools. Even though surveyed parents agreed that students should learn Social-Emotional Learning skills in school, the industry continues to be targeted by the current political climate (Abrams, 2023). This is not just a threat to GoNoodle, but the industry as a whole. Another threat to GoNoodle is the growing concern with child screen-time. Parents and educators are becoming increasingly concerned with how much screen-time children are consuming. This could make them more cautious to adopt new EdTech platforms like SuperNoodle. One way to combat this is for GoNoodle to emphasize the fact that SuperNoodle can be used in classroom settings. This eases the concern that children will need to use devices again at home for platforms. </p>
+ </div>
+ </div>
 
-     <!-- RECOMMENDATIONS -->
-      <div class="subsection-title fade-in"><h3>Recommendations</h3></div>
-      <p class="fade-in">Based on the SWOT analysis above, the following recommendations identify how GoNoodle can build on its strengths, address its weaknesses, and position itself for long-term growth.</p>
+ <!-- RECOMMENDATIONS -->
+ <div class="subsection-title fade-in"><h3>Recommendations</h3></div>
+ <p class="fade-in">Based on the SWOT analysis above, the following recommendations identify how GoNoodle can build on its strengths, address its weaknesses, and position itself for long-term growth.</p>
 
-      <div class="rec-grid stagger-parent fade-in">
-        <div class="rec-card">
-          <div class="rec-num">1</div>
-          <h4>Increase Diversity in Revenue Streams</h4>
-          <p>GoNoodle currently relies on brand and media partnerships as their main revenue sources. This leaves them vulnerable to losing revenue if their partnerships ever change. My first recommendation that I have for them is to diversify their revenue. They should first expand their B2B relationships with school districts so that they have consistent, recurring revenue. They should also leverage SuperNoodle as a district-wide Social-Emotional Learning tool. This would create more predictable revenue. </p>
-        </div>
-        <div class="rec-card">
-          <div class="rec-num">2</div>
-          <h4>Protect their Free Tier</h4>
-          <p>The entire GoNoodle brand has been built on reliable, free access to the majority of their content. While they need to expand their predictable revenue, GoNoodle should be selective in how they do this. Strategically expanding their revenue means keeping family-facing content free. In order to maintain the trust of their users, they should only add fees and premiums onto the content for districts and businesses looking to adopt their initiatives. This will maintain the trust already built in classrooms and homes across the nation. </p>
-        </div>
-        <div class="rec-card">
-          <div class="rec-num">3</div>
-          <h4>Pursue Credibility for SuperNoodle</h4>
-          <p>SuperNoodle can be a powerful revenue booster for GoNoodle, but they need to build more credibility into the platform. Currently, SuperNoodle was developed by the education team at GoNoodle and a group of behavior health and child development experts. While this is reliable information, they could maximize their impact by partnering with a university research center. If they could reach similar legitimization as RULER, built with Yale’s backing, GoNoodle could more easily monetize SuperNoodle and increase its impact on the company. </p>
-        </div>
-        <div class="rec-card">
-          <div class="rec-num">4</div>
-          <h4>Expand the At-Home Market</h4>
-          <p>GoNoodle and SuperNoodle alike remain underdeveloped when it comes to their at-home and after-school markets. Currently, their usage lies within classrooms. If they developed programming specifically for parents or after-school programs, they would be able to create a new revenue stream. GoNoodle should create a new content library, specifically for these groups of users and allow them specialized content. This could provide another reliable revenue stream, one that does not interrupt their free, school-facing content.</p>
-        </div>
-      </div>
+ <div class="rec-grid stagger-parent fade-in">
+ <div class="rec-card">
+ <div class="rec-num">1</div>
+ <h4>Increase Diversity in Revenue Streams</h4>
+ <p>GoNoodle currently relies on brand and media partnerships as their main revenue sources. This leaves them vulnerable to losing revenue if their partnerships ever change. My first recommendation that I have for them is to diversify their revenue. They should first expand their B2B relationships with school districts so that they have consistent, recurring revenue. They should also leverage SuperNoodle as a district-wide Social-Emotional Learning tool. This would create more predictable revenue. </p>
+ </div>
+ <div class="rec-card">
+ <div class="rec-num">2</div>
+ <h4>Protect their Free Tier</h4>
+ <p>The entire GoNoodle brand has been built on reliable, free access to the majority of their content. While they need to expand their predictable revenue, GoNoodle should be selective in how they do this. Strategically expanding their revenue means keeping family-facing content free. In order to maintain the trust of their users, they should only add fees and premiums onto the content for districts and businesses looking to adopt their initiatives. This will maintain the trust already built in classrooms and homes across the nation. </p>
+ </div>
+ <div class="rec-card">
+ <div class="rec-num">3</div>
+ <h4>Pursue Credibility for SuperNoodle</h4>
+ <p>SuperNoodle can be a powerful revenue booster for GoNoodle, but they need to build more credibility into the platform. Currently, SuperNoodle was developed by the education team at GoNoodle and a group of behavior health and child development experts. While this is reliable information, they could maximize their impact by partnering with a university research center. If they could reach similar legitimization as RULER, built with Yale’s backing, GoNoodle could more easily monetize SuperNoodle and increase its impact on the company. </p>
+ </div>
+ <div class="rec-card">
+ <div class="rec-num">4</div>
+ <h4>Expand the At-Home Market</h4>
+ <p>GoNoodle and SuperNoodle alike remain underdeveloped when it comes to their at-home and after-school markets. Currently, their usage lies within classrooms. If they developed programming specifically for parents or after-school programs, they would be able to create a new revenue stream. GoNoodle should create a new content library, specifically for these groups of users and allow them specialized content. This could provide another reliable revenue stream, one that does not interrupt their free, school-facing content.</p>
+ </div>
+ </div>
 
-      <!-- SCIENCE -->
-      <div class="subsection-title fade-in"><h3>The Science: Activity &amp; SEL</h3></div>
-      <div class="fade-in">
-        <p class="lead-text">GoNoodle's most powerful differentiator is the scientific validation of its core model: a landmark meta-analysis confirmed that physical activity directly improves children's social-emotional learning outcomes.</p>
-        <div class="sci-diag stagger-parent">
-          <div class="sd-center">Physical<br/>Movement</div>
-          <div class="sd-arrow">&rarr;</div>
-          <div class="sd-outcomes">
-            <div class="sd-outcome">Self-Regulation</div>
-            <div class="sd-outcome">Social Awareness</div>
-            <div class="sd-outcome">Emotional Health</div>
-            <div class="sd-outcome">Academic Readiness</div>
-          </div>
-        </div>
-        <div class="research-cite"><strong>Source:</strong> Moon et al. (2024). <em>Review of Education</em>, Wiley &mdash; Meta-analysis of 32 physical activity intervention studies in elementary school children, the first of its kind to link physical activity directly to SEL outcomes.</div>
-      </div>
+ <!-- SCIENCE -->
+ <div class="subsection-title fade-in"><h3>The Science: Activity &amp; SEL</h3></div>
+ <div class="fade-in">
+ <p class="lead-text">GoNoodle's most powerful differentiator is the scientific validation of its core model: a landmark meta-analysis confirmed that physical activity directly improves children's social-emotional learning outcomes.</p>
+ <div class="sci-diag stagger-parent">
+ <div class="sd-center">Physical<br/>Movement</div>
+ <div class="sd-arrow">&rarr;</div>
+ <div class="sd-outcomes">
+ <div class="sd-outcome">Self-Regulation</div>
+ <div class="sd-outcome">Social Awareness</div>
+ <div class="sd-outcome">Emotional Health</div>
+ <div class="sd-outcome">Academic Readiness</div>
+ </div>
+ </div>
+ <div class="research-cite"><strong>Source:</strong> Moon et al. (2024). <em>Review of Education</em>, Wiley &mdash; Meta-analysis of 32 physical activity intervention studies in elementary school children, the first of its kind to link physical activity directly to SEL outcomes.</div>
+ </div>
 
-      <nav class="page-nav">
-        <a href="industry.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Industry Analysis</span></a>
-        <a href="conclusion.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Conclusion</span></a>
-      </nav>
+ <nav class="page-nav">
+ <a href="industry.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Industry Analysis</span></a>
+ <a href="conclusion.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Conclusion</span></a>
+ </nav>
 
-    </main>
-  </div>
+ </main>
+ </div>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-      <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
-      <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
-    </div>
-  </footer>
+ <footer class="footer">
+ <div class="footer-inner">
+ <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-text">The Holistic Student</span></a>
+ <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
+ <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
+ </div>
+ </footer>
 
 <script>(function(){
-  // Active nav link
-  const path=window.location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
-  // Hamburger
-  const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
-  if(hb&&nm){
-    hb.addEventListener('click',()=>nm.classList.toggle('open'));
-    document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
-  }
-  // Navbar shadow
-  const nb=document.getElementById('navbar');
-  if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
-  // Fade-in observer
-  const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
-  document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
-  // Timeline (unused here but kept for consistency)
-  document.querySelectorAll('.timeline-item').forEach((item,i)=>{
-    item.style.cssText='opacity:0;transform:translateX(-20px);transition:opacity .5s ease,transform .5s ease';
-    const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){setTimeout(()=>{item.style.opacity='1';item.style.transform='translateX(0)';},(i%5)*80);o.unobserve(item);}},{threshold:.15});
-    o.observe(item);
-  });
-  // Stagger children
-  document.querySelectorAll('.stagger-parent').forEach(parent=>{
-    Array.from(parent.children).forEach((child,i)=>{
-      child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
-      const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
-      o.observe(child);
-    });
-  });
-  // Dropdown
-  const dd=document.getElementById('industryDropdown');
-  if(dd){
-    const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
-    btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
-    document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-    btn.addEventListener('keydown',e=>{
-      if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.addEventListener('keydown',e=>{
-      const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
-      if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
-      if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
-  }
-  // Business Model Canvas
-  const bmcData = {
-    partners: { icon: '&#129309;', title: 'Key Partners', items: [
-      'GoNoodle has a few key partners. The first key partner that they rely on is brands and media partnerships for revenue. They partner with brands like Disney, Dr. Seuss Enterprise, Nickelodeon, and even Great Wolf Lodge. They also partner with school districts and individual classroom teachers who adopt the platform at no direct cost. The CASEL and Social-Emotional Learning researchers are important partners for GoNoodle to align their content with. Finally, education nonprofits, physical-activity advocates, and EdTech distributors are all partners for GoNoodle.'
-    ]},
-    activities: { icon: '&#9889;', title: 'Key Activities', items: [
-      'GoNoodle produces short, classroom-ready movement and mindfulness videos that align with the CASEL 5 framework. They maintain a free platform that allows for connection across groups. Finally, they partner with researchers to validate their approach of movement-based Social-Emotional Learning. '
-    ]},
-    value: { icon: '&#128161;', title: 'Value Proposition', items: [
-      'GoNoodle brings free, research-backed content that helps improve Social-Emotional Learning outcomes to their customers. They have content that requires zero preparation and span a range of time to deploy. Their content is scientifically validated and also can extend to at-home practice.'
-    ]},
-    relationships: { icon: '&#10084;&#65039;', title: 'Customer Relationships', items: [
-      'Many of their customers are able to serve themselves on GoNoodle’s platform. With so much of their content being free, they can sign up and use it easily. GoNoodle offers emails and social media content to keep their users engaged with new releases. Also, they engage with customers through rewards and characters on their site.'
-    ]},
-    segments: { icon: '&#127919;', title: 'Customer Segments', items: [
-      'They have a few different customer segments that they engage in. GoNoodle is aimed toward K-8 teachers that are seeking engaging content, movement breaks, and Social-Emotional Learning for their students. They target district leaders that are looking to implement Social-Emotional Learning initiatives in their schools. Finally, GoNoodle is a low-cost solution to evidence-based learning so many schools look to them for programming.'
-    ]},
-    resources: { icon: '&#128218;', title: 'Key Resources', items: [
-      'GoNoodle has a few key resources that allow for their company to run smoothly. Their first key resource is a library of original movement and mindfulness videos that people access for their children and students. Another key resource they have is their brand recognition and platform. They have a unique and recognizable design that their customers rely on and trust.'
-    ]},
-    channels: { icon: '&#128737;&#65039;', title: 'Channels', items: [
-      'GoNoodle can be used on their app or on the web. They rely on word-of-mouth between teachers to gain recommendations. They have some district-level partnerships and may make appearances at conferences. In order to reach families, they rely heavily on classroom teacher recommendations, but they are not overly engaged on their site with families.'
-    ]},
-    costs: { icon: '&#128179;', title: 'Cost Structure', items: [
-      'To produce their content, GoNoodle has to consider the cost of video creation, music licensing, and the animation and talent to design content. They also have costs for platform engineering and hosting the site. Additionally, they have to consider the cost of marketing, branding and partnerships, and community management.'
-    ]},
-    revenue: { icon: '&#128176;', title: 'Revenue Streams', items: [
-      'Since their platform hosts a large freemium model, GoNoodle has to be strategic about where their revenue is coming from. First, they use advertising through ads on their platform. They also have a GoNoodle Plus feature and SuperNoodle which are subscriptions for expanded content. They also have partnerships for licensing and branding that bring money in for them.'
-    ]}
-  };
-  const bmcCells = document.querySelectorAll('.bmc-cell');
-  const bmcDetail = document.getElementById('bmc-detail');
-  const bmcIcon = document.getElementById('bmc-detail-icon');
-  const bmcTitle = document.getElementById('bmc-detail-title');
-  const bmcList = document.getElementById('bmc-detail-list');
-  bmcCells.forEach(cell => {
-    cell.addEventListener('click', () => {
-      const key = cell.dataset.key;
-      const entry = bmcData[key];
-      const wasActive = cell.classList.contains('bmc-active');
-      bmcCells.forEach(c => c.classList.remove('bmc-active'));
-      if (wasActive) { bmcDetail.classList.remove('bmc-open'); return; }
-      cell.classList.add('bmc-active');
-      bmcIcon.innerHTML = entry.icon;
-      bmcTitle.textContent = entry.title;
-      bmcList.innerHTML = entry.items.map(i => '<li>' + i + '</li>').join('');
-      bmcDetail.classList.add('bmc-open');
-      bmcDetail.scrollIntoView({behavior:'smooth', block:'nearest'});
-    });
-  });
+ // Active nav link
+ const path=window.location.pathname.split('/').pop()||'index.html';
+ document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
+ // Hamburger
+ const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
+ if(hb&&nm){
+ hb.addEventListener('click',()=>nm.classList.toggle('open'));
+ document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
+ }
+ // Navbar shadow
+ const nb=document.getElementById('navbar');
+ if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
+ // Fade-in observer
+ const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
+ document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
+ // Timeline (unused here but kept for consistency)
+ document.querySelectorAll('.timeline-item').forEach((item,i)=>{
+ item.style.cssText='opacity:0;transform:translateX(-20px);transition:opacity .5s ease,transform .5s ease';
+ const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){setTimeout(()=>{item.style.opacity='1';item.style.transform='translateX(0)';},(i%5)*80);o.unobserve(item);}},{threshold:.15});
+ o.observe(item);
+ });
+ // Stagger children
+ document.querySelectorAll('.stagger-parent').forEach(parent=>{
+ Array.from(parent.children).forEach((child,i)=>{
+ child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
+ const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
+ o.observe(child);
+ });
+ });
+ // Dropdown
+ const dd=document.getElementById('industryDropdown');
+ if(dd){
+ const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
+ btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
+ document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+ btn.addEventListener('keydown',e=>{
+ if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.addEventListener('keydown',e=>{
+ const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
+ if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
+ if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
+ }
+ // Business Model Canvas
+ const bmcData = {
+ partners: { icon: '', title: 'Key Partners', items: [
+ 'GoNoodle has a few key partners. The first key partner that they rely on is brands and media partnerships for revenue. They partner with brands like Disney, Dr. Seuss Enterprise, Nickelodeon, and even Great Wolf Lodge. They also partner with school districts and individual classroom teachers who adopt the platform at no direct cost. The CASEL and Social-Emotional Learning researchers are important partners for GoNoodle to align their content with. Finally, education nonprofits, physical-activity advocates, and EdTech distributors are all partners for GoNoodle.'
+ ]},
+ activities: { icon: '', title: 'Key Activities', items: [
+ 'GoNoodle produces short, classroom-ready movement and mindfulness videos that align with the CASEL 5 framework. They maintain a free platform that allows for connection across groups. Finally, they partner with researchers to validate their approach of movement-based Social-Emotional Learning. '
+ ]},
+ value: { icon: '', title: 'Value Proposition', items: [
+ 'GoNoodle brings free, research-backed content that helps improve Social-Emotional Learning outcomes to their customers. They have content that requires zero preparation and span a range of time to deploy. Their content is scientifically validated and also can extend to at-home practice.'
+ ]},
+ relationships: { icon: '', title: 'Customer Relationships', items: [
+ 'Many of their customers are able to serve themselves on GoNoodle’s platform. With so much of their content being free, they can sign up and use it easily. GoNoodle offers emails and social media content to keep their users engaged with new releases. Also, they engage with customers through rewards and characters on their site.'
+ ]},
+ segments: { icon: '', title: 'Customer Segments', items: [
+ 'They have a few different customer segments that they engage in. GoNoodle is aimed toward K-8 teachers that are seeking engaging content, movement breaks, and Social-Emotional Learning for their students. They target district leaders that are looking to implement Social-Emotional Learning initiatives in their schools. Finally, GoNoodle is a low-cost solution to evidence-based learning so many schools look to them for programming.'
+ ]},
+ resources: { icon: '', title: 'Key Resources', items: [
+ 'GoNoodle has a few key resources that allow for their company to run smoothly. Their first key resource is a library of original movement and mindfulness videos that people access for their children and students. Another key resource they have is their brand recognition and platform. They have a unique and recognizable design that their customers rely on and trust.'
+ ]},
+ channels: { icon: '', title: 'Channels', items: [
+ 'GoNoodle can be used on their app or on the web. They rely on word-of-mouth between teachers to gain recommendations. They have some district-level partnerships and may make appearances at conferences. In order to reach families, they rely heavily on classroom teacher recommendations, but they are not overly engaged on their site with families.'
+ ]},
+ costs: { icon: '', title: 'Cost Structure', items: [
+ 'To produce their content, GoNoodle has to consider the cost of video creation, music licensing, and the animation and talent to design content. They also have costs for platform engineering and hosting the site. Additionally, they have to consider the cost of marketing, branding and partnerships, and community management.'
+ ]},
+ revenue: { icon: '', title: 'Revenue Streams', items: [
+ 'Since their platform hosts a large freemium model, GoNoodle has to be strategic about where their revenue is coming from. First, they use advertising through ads on their platform. They also have a GoNoodle Plus feature and SuperNoodle which are subscriptions for expanded content. They also have partnerships for licensing and branding that bring money in for them.'
+ ]}
+ };
+ const bmcCells = document.querySelectorAll('.bmc-cell');
+ const bmcDetail = document.getElementById('bmc-detail');
+ const bmcIcon = document.getElementById('bmc-detail-icon');
+ const bmcTitle = document.getElementById('bmc-detail-title');
+ const bmcList = document.getElementById('bmc-detail-list');
+ bmcCells.forEach(cell => {
+ cell.addEventListener('click', () => {
+ const key = cell.dataset.key;
+ const entry = bmcData[key];
+ const wasActive = cell.classList.contains('bmc-active');
+ bmcCells.forEach(c => c.classList.remove('bmc-active'));
+ if (wasActive) { bmcDetail.classList.remove('bmc-open'); return; }
+ cell.classList.add('bmc-active');
+ bmcIcon.innerHTML = entry.icon;
+ bmcTitle.textContent = entry.title;
+ bmcList.innerHTML = entry.items.map(i => '<li>' + i + '</li>').join('');
+ bmcDetail.classList.add('bmc-open');
+ bmcDetail.scrollIntoView({behavior:'smooth', block:'nearest'});
+ });
+ });
 })();
 </script>
 </body>

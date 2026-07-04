@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>High Performing Entities | The Holistic Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>High Performing Entities | The Holistic Student</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+ <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
-  --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
-  --mid-text:#3d5a6e;--light-text:#6b8fa0;
-  --font-display:'Playfair Display',Georgia,serif;
-  --font-body:'DM Sans',system-ui,sans-serif;
-  --radius:16px;--radius-sm:8px;--nav-h:72px;
-  --shadow:0 4px 24px rgba(25,63,86,.10);
-  --shadow-lg:0 12px 48px rgba(25,63,86,.18);
+ --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
+ --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
+ --mid-text:#3d5a6e;--light-text:#6b8fa0;
+ --font-display:'Playfair Display',Georgia,serif;
+ --font-body:'DM Sans',system-ui,sans-serif;
+ --radius:16px;--radius-sm:8px;--nav-h:72px;
+ --shadow:0 4px 24px rgba(25,63,86,.10);
+ --shadow-lg:0 12px 48px rgba(25,63,86,.18);
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--font-body);color:var(--dark-text);background:var(--offwhite);overflow-x:hidden}
@@ -89,19 +89,19 @@ p strong{color:var(--navy)}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 /* RESPONSIVE NAV */
 @media(max-width:680px){
-  .navbar{padding:0 20px}
-  .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
-  .nav-links.open{display:flex}
-  .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
-  .hamburger{display:flex}
-  .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
-  .dropdown-menu::before{display:none}
-  .nav-item-dropdown.open .dropdown-menu{display:block}
-  .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
-  .page-hero{padding:48px 24px}
-  .container{padding:40px 20px}
-  .industry-breadcrumb{padding:10px 20px}
-  .industry-tabs{padding:0 20px}
+ .navbar{padding:0 20px}
+ .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+ .nav-links.open{display:flex}
+ .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
+ .hamburger{display:flex}
+ .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
+ .dropdown-menu::before{display:none}
+ .nav-item-dropdown.open .dropdown-menu{display:block}
+ .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
+ .page-hero{padding:48px 24px}
+ .container{padding:40px 20px}
+ .industry-breadcrumb{padding:10px 20px}
+ .industry-tabs{padding:0 20px}
 }
 
 /* HIGH PERFORMING ENTITIES PAGE STYLES */
@@ -111,62 +111,62 @@ p strong{color:var(--navy)}
 .hpe-stat-lbl{font-size:.78rem;color:var(--mid-text);line-height:1.4}
 
 .entity-card{
-  background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
-  margin-bottom:32px;overflow:hidden;transition:box-shadow .3s;
+ background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
+ margin-bottom:32px;overflow:hidden;transition:box-shadow .3s;
 }
 .entity-card:hover{box-shadow:var(--shadow-lg)}
 .entity-hdr{
-  display:flex;align-items:center;gap:20px;padding:28px 36px;flex-wrap:wrap;
-  background:linear-gradient(135deg,var(--navy),#1a4a66);
+ display:flex;align-items:center;gap:20px;padding:28px 36px;flex-wrap:wrap;
+ background:linear-gradient(135deg,var(--navy),#1a4a66);
 }
 .entity-rank{
-  flex-shrink:0;width:54px;height:54px;border-radius:50%;
-  background:var(--gold);color:var(--navy);
-  font-family:var(--font-display);font-weight:900;font-size:1.3rem;
-  display:flex;align-items:center;justify-content:center;
+ flex-shrink:0;width:54px;height:54px;border-radius:50%;
+ background:var(--gold);color:var(--navy);
+ font-family:var(--font-display);font-weight:900;font-size:1.3rem;
+ display:flex;align-items:center;justify-content:center;
 }
 .entity-rank--featured{background:var(--white)}
 .entity-titles{flex:1;min-width:200px}
 .entity-name{font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--white)}
 .entity-focus{font-size:.85rem;color:var(--teal);margin-top:4px}
 .entity-badge{
-  background:rgba(255,161,20,.18);color:var(--gold);
-  border:1px solid rgba(255,161,20,.3);border-radius:50px;
-  padding:6px 14px;font-size:.72rem;font-weight:700;white-space:nowrap;
+ background:rgba(255,161,20,.18);color:var(--gold);
+ border:1px solid rgba(255,161,20,.3);border-radius:50px;
+ padding:6px 14px;font-size:.72rem;font-weight:700;white-space:nowrap;
 }
 .entity-body{padding:32px 36px;display:flex;flex-direction:column;gap:18px}
 .entity-body p{margin:0;font-size:.93rem;color:var(--mid-text);line-height:1.8}
 
 .evidence-box{
-  background:var(--offwhite);border-radius:var(--radius-sm);
-  padding:20px 24px;border-left:4px solid var(--gold);
+ background:var(--offwhite);border-radius:var(--radius-sm);
+ padding:20px 24px;border-left:4px solid var(--gold);
 }
 .evidence-box h5{
-  font-size:.76rem;font-weight:700;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--navy);margin-bottom:12px;
+ font-size:.76rem;font-weight:700;letter-spacing:.09em;
+ text-transform:uppercase;color:var(--navy);margin-bottom:12px;
 }
 .evidence-box ul{list-style:none;display:flex;flex-direction:column;gap:8px}
 .evidence-box li{
-  font-size:.87rem;color:var(--mid-text);line-height:1.65;
-  padding-left:18px;position:relative;
+ font-size:.87rem;color:var(--mid-text);line-height:1.65;
+ padding-left:18px;position:relative;
 }
 .evidence-box li::before{content:'\2192';position:absolute;left:0;color:var(--gold);font-size:.8rem}
 
 .entity-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .em-item{
-  background:var(--white);border:1px solid rgba(25,63,86,.1);
-  border-radius:var(--radius-sm);padding:14px 12px;text-align:center;
+ background:var(--white);border:1px solid rgba(25,63,86,.1);
+ border-radius:var(--radius-sm);padding:14px 12px;text-align:center;
 }
 .em-val{display:block;font-family:var(--font-display);font-size:1.25rem;font-weight:900;color:var(--navy);margin-bottom:4px}
 .em-lbl{font-size:.68rem;color:var(--light-text);line-height:1.3}
 
 .selection-criteria{
-  background:linear-gradient(135deg,#fffbea,var(--white));
-  border-top:4px solid var(--gold);border-radius:var(--radius);
-  padding:36px 40px;margin:48px 0;
+ background:linear-gradient(135deg,#fffbea,var(--white));
+ border-top:4px solid var(--gold);border-radius:var(--radius);
+ padding:36px 40px;margin:48px 0;
 }
 .selection-criteria h3{
-  font-family:var(--font-display);font-size:1.3rem;color:var(--navy);margin-bottom:20px;
+ font-family:var(--font-display);font-size:1.3rem;color:var(--navy);margin-bottom:20px;
 }
 .criteria-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .criteria-item{display:flex;flex-direction:column;gap:8px}
@@ -175,249 +175,249 @@ p strong{color:var(--navy)}
 .criteria-item p{font-size:.85rem;margin:0;color:var(--mid-text);line-height:1.65}
 
 @media(max-width:900px){
-  .hpe-intro-grid{grid-template-columns:1fr 1fr}
-  .entity-metrics{grid-template-columns:repeat(2,1fr)}
-  .criteria-grid{grid-template-columns:1fr}
+ .hpe-intro-grid{grid-template-columns:1fr 1fr}
+ .entity-metrics{grid-template-columns:repeat(2,1fr)}
+ .criteria-grid{grid-template-columns:1fr}
 }
 @media(max-width:680px){
-  .hpe-intro-grid{grid-template-columns:1fr}
-  .entity-hdr,.entity-body{padding:22px 24px}
-  .selection-criteria{padding:24px 24px}
+ .hpe-intro-grid{grid-template-columns:1fr}
+ .entity-hdr,.entity-body{padding:22px 24px}
+ .selection-criteria{padding:24px 24px}
 }
-  </style>
+ </style>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" class="nav-link ">Home</a></li>
-      <li><a href="introduction.html" class="nav-link ">Introduction</a></li>
-      <li class="nav-item-dropdown" id="industryDropdown">
-        <button class="nav-link-dropdown active" aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
-        <ul class="dropdown-menu" role="menu">
-          <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128203;</span><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
-          <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128197;</span><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
-          <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127787;&#65039;</span><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
-          <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128301;</span><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
-          <li><a href="industry-entities.html" class="dropdown-link active" role="menuitem"><span class="dd-icon">&#127942;</span><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
-        </ul>
-      </li>
-      <li><a href="business.html" class="nav-link ">Business Profile</a></li>
-      <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
-      <li><a href="references.html" class="nav-link ">References</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar" id="navbar">
+ <a href="index.html" class="nav-logo"><span class="logo-text">The Holistic Student</span></a>
+ <button class="hamburger" id="hamburger" aria-label="Toggle menu"></button>
+ <ul class="nav-links" id="nav-links">
+ <li><a href="index.html" class="nav-link ">Home</a></li>
+ <li><a href="introduction.html" class="nav-link ">Introduction</a></li>
+ <li class="nav-item-dropdown" id="industryDropdown">
+ <button class="nav-link-dropdown active" aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
+ <ul class="dropdown-menu" role="menu">
+ <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
+ <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
+ <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
+ <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
+ <li><a href="industry-entities.html" class="dropdown-link active" role="menuitem"><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
+ </ul>
+ </li>
+ <li><a href="business.html" class="nav-link ">Business Profile</a></li>
+ <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
+ <li><a href="references.html" class="nav-link ">References</a></li>
+ </ul>
+ </nav>
 
-  <div class="page-wrapper">
-    <div class="industry-breadcrumb"><a href="industry.html">Industry Analysis</a><span class="bc-sep">&rsaquo;</span><span class="bc-current">High Performing Entities</span></div>
+ <div class="page-wrapper">
+ <div class="industry-breadcrumb"><a href="industry.html">Industry Analysis</a><span class="bc-sep">&rsaquo;</span><span class="bc-current">High Performing Entities</span></div>
 
-    <header class="page-hero">
-      <div class="hero-inner">
-        <span class="hero-tag">Industry Analysis &middot; High Performing Entities</span>
-        <h1>The Major Players<br /><em>Shaping SEL</em></h1>
-        <p>Identifying and evaluating the three organizations whose research base, framework influence, and classroom reach make them the defining entities in the Social-Emotional Learning industry today.</p>
-      </div>
-    </header>
+ <header class="page-hero">
+ <div class="hero-inner">
+ <span class="hero-tag">Industry Analysis &middot; High Performing Entities</span>
+ <h1>The Major Players<br /><em>Shaping SEL</em></h1>
+ <p>Identifying and evaluating the three organizations whose research base, framework influence, and classroom reach make them the defining entities in the Social-Emotional Learning industry today.</p>
+ </div>
+ </header>
 
-    <div class="industry-tabs"><a href="industry.html" class="industry-tab "><span class="tab-icon">&#128203;</span> Overview</a><a href="industry-timeline.html" class="industry-tab "><span class="tab-icon">&#128197;</span> Timeline</a><a href="industry-trends.html" class="industry-tab "><span class="tab-icon">&#127787;&#65039;</span> Industry Trends</a><a href="industry-future.html" class="industry-tab "><span class="tab-icon">&#128301;</span> Future Predictions</a><a href="industry-entities.html" class="industry-tab active"><span class="tab-icon">&#127942;</span> High Performing Entities</a></div>
+ <div class="industry-tabs"><a href="industry.html" class="industry-tab ">Overview</a><a href="industry-timeline.html" class="industry-tab ">Timeline</a><a href="industry-trends.html" class="industry-tab ">Industry Trends</a><a href="industry-future.html" class="industry-tab ">Future Predictions</a><a href="industry-entities.html" class="industry-tab active">High Performing Entities</a></div>
 
-    <main class="container">
+ <main class="container">
 
-      <div class="section-header fade-in">
-        <span class="section-tag">Industry Analysis</span>
-        <h2 class="section-title">Identifying the Major Players</h2>
-      </div>
+ <div class="section-header fade-in">
+ <span class="section-tag">Industry Analysis</span>
+ <h2 class="section-title">Identifying the Major Players</h2>
+ </div>
 
-      <p class="lead-text fade-in">The Social-Emotional Learning industry spans hundreds of platforms, nonprofits, and curriculum providers &mdash; but three entities stand apart, each representing a distinct and dominant approach to defining, researching, and delivering SEL at scale.</p>
+ <p class="lead-text fade-in">The Social-Emotional Learning industry spans hundreds of platforms, nonprofits, and curriculum providers &mdash; but three entities stand apart, each representing a distinct and dominant approach to defining, researching, and delivering SEL at scale.</p>
 
-      <div class="hpe-intro-grid stagger-parent fade-in">
-        <div class="hpe-stat-card">
-          <span class="hpe-stat-val">1994</span>
-          <span class="hpe-stat-lbl">Year CASEL established the universal SEL framework</span>
-        </div>
-        <div class="hpe-stat-card">
-          <span class="hpe-stat-val">2002</span>
-          <span class="hpe-stat-lbl">Year RULER was developed at the Yale Center for Emotional Intelligence</span>
-        </div>
-        <div class="hpe-stat-card">
-          <span class="hpe-stat-val">25+ yrs</span>
-          <span class="hpe-stat-lbl">Second Step's track record as a leading evidence-based curriculum</span>
-        </div>
-      </div>
+ <div class="hpe-intro-grid stagger-parent fade-in">
+ <div class="hpe-stat-card">
+ <span class="hpe-stat-val">1994</span>
+ <span class="hpe-stat-lbl">Year CASEL established the universal SEL framework</span>
+ </div>
+ <div class="hpe-stat-card">
+ <span class="hpe-stat-val">2002</span>
+ <span class="hpe-stat-lbl">Year RULER was developed at the Yale Center for Emotional Intelligence</span>
+ </div>
+ <div class="hpe-stat-card">
+ <span class="hpe-stat-val">25+ yrs</span>
+ <span class="hpe-stat-lbl">Second Step's track record as a leading evidence-based curriculum</span>
+ </div>
+ </div>
 
-      <!-- SELECTION CRITERIA -->
-      <div class="selection-criteria fade-in">
-        <h3>Why These Three?</h3>
-        <p style="margin-bottom:20px;">Each entity below was selected because it leads its category on a distinct, evidence-based dimension of the SEL industry &mdash; not simply because it is well known. Together they represent three different but complementary roles: the framework-setting authority, the research-driven emotional intelligence model, and the evidence-based curriculum provider.</p>
-        <div class="criteria-grid stagger-parent">
-          <div class="criteria-item">
-            <span class="criteria-icon">&#127919;</span>
-            <h4>Market Scale</h4>
-            <p>Demonstrated reach across thousands of schools and districts &mdash; not a pilot program or niche tool.</p>
-          </div>
-          <div class="criteria-item">
-            <span class="criteria-icon">&#128300;</span>
-            <h4>Evidence Base</h4>
-            <p>Peer-reviewed research, published outcome data, or industry-standard frameworks underpinning the entity's model.</p>
-          </div>
-          <div class="criteria-item">
-            <span class="criteria-icon">&#127757;</span>
-            <h4>Category Leadership</h4>
-            <p>Recognized by researchers, districts, or industry reports as the defining example of its specific SEL approach.</p>
-          </div>
-        </div>
-      </div>
+ <!-- SELECTION CRITERIA -->
+ <div class="selection-criteria fade-in">
+ <h3>Why These Three?</h3>
+ <p style="margin-bottom:20px;">Each entity below was selected because it leads its category on a distinct, evidence-based dimension of the SEL industry &mdash; not simply because it is well known. Together they represent three different but complementary roles: the framework-setting authority, the research-driven emotional intelligence model, and the evidence-based curriculum provider.</p>
+ <div class="criteria-grid stagger-parent">
+ <div class="criteria-item">
+ 
+ <h4>Market Scale</h4>
+ <p>Demonstrated reach across thousands of schools and districts &mdash; not a pilot program or niche tool.</p>
+ </div>
+ <div class="criteria-item">
+ 
+ <h4>Evidence Base</h4>
+ <p>Peer-reviewed research, published outcome data, or industry-standard frameworks underpinning the entity's model.</p>
+ </div>
+ <div class="criteria-item">
+ 
+ <h4>Category Leadership</h4>
+ <p>Recognized by researchers, districts, or industry reports as the defining example of its specific SEL approach.</p>
+ </div>
+ </div>
+ </div>
 
-      <!-- ENTITY 1: CASEL -->
-      <div class="entity-card fade-in">
-        <div class="entity-hdr">
-          <div class="entity-rank entity-rank--featured">01</div>
-          <div class="entity-titles">
-            <div class="entity-name">CASEL</div>
-            <div class="entity-focus">Collaborative for Academic, Social, and Emotional Learning</div>
-          </div>
-          <div class="entity-badge">Framework Authority</div>
-        </div>
-        <div class="entity-body">
-          <p>CASEL  holds a different kind of power when it comes to the Social-Emotional Learning space as an industry. The Collaborative for Academic, Social, and Emotional Learning is widely regarded as the nation’s leader in supporting and influencing Social-Emotional Learning practices. They are a structural player in this field, rather than a commercial player (“What Is SEL?,” n.d.). Their five-competency framework is one of the most ubiquitous models for organizing Social-Emotional Learning (Niemi, 2020). CASEL functions as less of a competitor in the market and more of the market’s rulebook. They frame implementation as systematic, believing it is a long-term process that goes beyond just teaching a set of skills (“What Is SEL?,” n.d.). They aim to embed Social-Emotional Learning into every aspect of daily school life and believe it is a practice that should be used by schools, families, communities, and beyond (“What Is SEL?,” n.d.).  CASEL was chosen as a major player because they hold leverage at such a scale that money cannot buy; for someone to compete with the CASEL they would need to replace their approach at a conceptual level. Having a dual role as standard-setter and evaluator of other’s approaches, CASEL separates itself from every curriculum provider and assessment company (“What Is SEL?,” n.d.).</p>
-          <div class="evidence-box">
-            <h5>Evidence of Major-Player Status</h5>
-            <ul>
-              <li>Originated the CASEL 5 framework, now the universal language of SEL used industry-wide since 1994</li>
-              <li>Authored the first formal SEL guidelines via Elias, Zins, and Weissberg's 1997 book establishing 39 implementation guidelines</li>
-              <li>Cited as the foundational source across virtually every competing curriculum and program's design and marketing</li>
-              <li>Continues to publish implementation tools that shape federal and state policy guidance on SEL</li>
-            </ul>
-          </div>
-          <div class="entity-metrics stagger-parent">
-            <div class="em-item"><span class="em-val">1994</span><span class="em-lbl">Founded</span></div>
-            <div class="em-item"><span class="em-val">5</span><span class="em-lbl">Core Competencies</span></div>
-            <div class="em-item"><span class="em-val">30+ yrs</span><span class="em-lbl">Industry Standard</span></div>
-            <div class="em-item"><span class="em-val">Global</span><span class="em-lbl">Adoption Reach</span></div>
-          </div>
-        </div>
-      </div>
+ <!-- ENTITY 1: CASEL -->
+ <div class="entity-card fade-in">
+ <div class="entity-hdr">
+ <div class="entity-rank entity-rank--featured">01</div>
+ <div class="entity-titles">
+ <div class="entity-name">CASEL</div>
+ <div class="entity-focus">Collaborative for Academic, Social, and Emotional Learning</div>
+ </div>
+ <div class="entity-badge">Framework Authority</div>
+ </div>
+ <div class="entity-body">
+ <p>CASEL holds a different kind of power when it comes to the Social-Emotional Learning space as an industry. The Collaborative for Academic, Social, and Emotional Learning is widely regarded as the nation’s leader in supporting and influencing Social-Emotional Learning practices. They are a structural player in this field, rather than a commercial player (“What Is SEL?,” n.d.). Their five-competency framework is one of the most ubiquitous models for organizing Social-Emotional Learning (Niemi, 2020). CASEL functions as less of a competitor in the market and more of the market’s rulebook. They frame implementation as systematic, believing it is a long-term process that goes beyond just teaching a set of skills (“What Is SEL?,” n.d.). They aim to embed Social-Emotional Learning into every aspect of daily school life and believe it is a practice that should be used by schools, families, communities, and beyond (“What Is SEL?,” n.d.). CASEL was chosen as a major player because they hold leverage at such a scale that money cannot buy; for someone to compete with the CASEL they would need to replace their approach at a conceptual level. Having a dual role as standard-setter and evaluator of other’s approaches, CASEL separates itself from every curriculum provider and assessment company (“What Is SEL?,” n.d.).</p>
+ <div class="evidence-box">
+ <h5>Evidence of Major-Player Status</h5>
+ <ul>
+ <li>Originated the CASEL 5 framework, now the universal language of SEL used industry-wide since 1994</li>
+ <li>Authored the first formal SEL guidelines via Elias, Zins, and Weissberg's 1997 book establishing 39 implementation guidelines</li>
+ <li>Cited as the foundational source across virtually every competing curriculum and program's design and marketing</li>
+ <li>Continues to publish implementation tools that shape federal and state policy guidance on SEL</li>
+ </ul>
+ </div>
+ <div class="entity-metrics stagger-parent">
+ <div class="em-item"><span class="em-val">1994</span><span class="em-lbl">Founded</span></div>
+ <div class="em-item"><span class="em-val">5</span><span class="em-lbl">Core Competencies</span></div>
+ <div class="em-item"><span class="em-val">30+ yrs</span><span class="em-lbl">Industry Standard</span></div>
+ <div class="em-item"><span class="em-val">Global</span><span class="em-lbl">Adoption Reach</span></div>
+ </div>
+ </div>
+ </div>
 
-      <!-- ENTITY 2: RULER / YALE CENTER FOR EMOTIONAL INTELLIGENCE -->
-      <div class="entity-card fade-in">
-        <div class="entity-hdr">
-          <div class="entity-rank">02</div>
-          <div class="entity-titles">
-            <div class="entity-name">RULER</div>
-            <div class="entity-focus">Yale Center for Emotional Intelligence</div>
-          </div>
-          <div class="entity-badge">Research &amp; Emotional Intelligence Authority</div>
-        </div>
-        <div class="entity-body">
-          <p>RULER’s standing in the field rests less on commercial reach and more on research. RULER is an evidence-based framework for cultivating emotional intelligence and is now implemented in more than 5,000 schools worldwide (“What Is RULER?,” n.d.). They aim to improve the lives of millions of children and adults. RULER is not just a curriculum seller, like Second Step. It started inside a university research center and is now adopted across large districts like New York City (“What Is RULER?,” n.d.). RULER puts out skill development tools that begin with staff and professional learning. Staff then bring their learning into classroom instruction and uplift students. Finally, RULER has content available to families for continued engagement and education. Being housed at Yale gives RULER a layer of legitimacy that is hard for commercial enterprises to compete with. RULER is designed to improve student connectedness. Schools that have implemented RULER, compared to those without, have demonstrated less bullying and aggressive behaviors after one year, as well as higher student connectedness with peers and teachers (“Evidence for RULER,” n.d.). RULER’s growth is tied to the ongoing peer-reviewed research at Yale, and does not need to rely on sales teams to funnel their products as much. RULER is currently helping lead Connecticut’s first statewide emotionally intelligent education system. This level of statewide adoption further shows their institutional trust across the nation. Students who receive RULER perform better academically and are rated by their teachers as having better work habits (“Evidence for RULER,” n.d.). RULER was selected as a major player because they reach schools and children worldwide. They have established themselves as a research-backed program in the Social-Emotional Learning field. The Yale Center for Emotional Intelligence has allowed them to carry a level of academic rigor and peer-reviewed validation that CASEL and Second Step lack. Their tool has become a widely accepted model for schools and districts that are seeking a research-first approach. </p>
-          <div class="evidence-box">
-            <h5>Evidence of Major-Player Status</h5>
-            <ul>
-              <li>Developed and maintained by the Yale Center for Emotional Intelligence, providing direct academic and research credibility</li>
-              <li>Built on the foundational emotional intelligence theory established by Salovey and Mayer in 1989, giving it a direct lineage to the scientific origins of the field</li>
-              <li>Implemented in thousands of schools nationally and internationally as a leading research-based emotional intelligence curriculum</li>
-              <li>Continuously studied and refined through ongoing university-led research, distinguishing it from purely commercial competitors</li>
-            </ul>
-          </div>
-          <div class="entity-metrics stagger-parent">
-            <div class="em-item"><span class="em-val">2005</span><span class="em-lbl">Developed by Marc Brackett and Susan Rivers</span></div>
-            <div class="em-item"><span class="em-val">5</span><span class="em-lbl">Core RULER Skills</span></div>
-            <div class="em-item"><span class="em-val">Yale</span><span class="em-lbl">Research Institution</span></div>
-            <div class="em-item"><span class="em-val">K&ndash;12</span><span class="em-lbl">Grade Coverage</span></div>
-          </div>
-        </div>
-      </div>
+ <!-- ENTITY 2: RULER / YALE CENTER FOR EMOTIONAL INTELLIGENCE -->
+ <div class="entity-card fade-in">
+ <div class="entity-hdr">
+ <div class="entity-rank">02</div>
+ <div class="entity-titles">
+ <div class="entity-name">RULER</div>
+ <div class="entity-focus">Yale Center for Emotional Intelligence</div>
+ </div>
+ <div class="entity-badge">Research &amp; Emotional Intelligence Authority</div>
+ </div>
+ <div class="entity-body">
+ <p>RULER’s standing in the field rests less on commercial reach and more on research. RULER is an evidence-based framework for cultivating emotional intelligence and is now implemented in more than 5,000 schools worldwide (“What Is RULER?,” n.d.). They aim to improve the lives of millions of children and adults. RULER is not just a curriculum seller, like Second Step. It started inside a university research center and is now adopted across large districts like New York City (“What Is RULER?,” n.d.). RULER puts out skill development tools that begin with staff and professional learning. Staff then bring their learning into classroom instruction and uplift students. Finally, RULER has content available to families for continued engagement and education. Being housed at Yale gives RULER a layer of legitimacy that is hard for commercial enterprises to compete with. RULER is designed to improve student connectedness. Schools that have implemented RULER, compared to those without, have demonstrated less bullying and aggressive behaviors after one year, as well as higher student connectedness with peers and teachers (“Evidence for RULER,” n.d.). RULER’s growth is tied to the ongoing peer-reviewed research at Yale, and does not need to rely on sales teams to funnel their products as much. RULER is currently helping lead Connecticut’s first statewide emotionally intelligent education system. This level of statewide adoption further shows their institutional trust across the nation. Students who receive RULER perform better academically and are rated by their teachers as having better work habits (“Evidence for RULER,” n.d.). RULER was selected as a major player because they reach schools and children worldwide. They have established themselves as a research-backed program in the Social-Emotional Learning field. The Yale Center for Emotional Intelligence has allowed them to carry a level of academic rigor and peer-reviewed validation that CASEL and Second Step lack. Their tool has become a widely accepted model for schools and districts that are seeking a research-first approach. </p>
+ <div class="evidence-box">
+ <h5>Evidence of Major-Player Status</h5>
+ <ul>
+ <li>Developed and maintained by the Yale Center for Emotional Intelligence, providing direct academic and research credibility</li>
+ <li>Built on the foundational emotional intelligence theory established by Salovey and Mayer in 1989, giving it a direct lineage to the scientific origins of the field</li>
+ <li>Implemented in thousands of schools nationally and internationally as a leading research-based emotional intelligence curriculum</li>
+ <li>Continuously studied and refined through ongoing university-led research, distinguishing it from purely commercial competitors</li>
+ </ul>
+ </div>
+ <div class="entity-metrics stagger-parent">
+ <div class="em-item"><span class="em-val">2005</span><span class="em-lbl">Developed by Marc Brackett and Susan Rivers</span></div>
+ <div class="em-item"><span class="em-val">5</span><span class="em-lbl">Core RULER Skills</span></div>
+ <div class="em-item"><span class="em-val">Yale</span><span class="em-lbl">Research Institution</span></div>
+ <div class="em-item"><span class="em-val">K&ndash;12</span><span class="em-lbl">Grade Coverage</span></div>
+ </div>
+ </div>
+ </div>
 
-      <!-- ENTITY 3: COMMITTEE FOR CHILDREN / SECOND STEP -->
-      <div class="entity-card fade-in">
-        <div class="entity-hdr">
-          <div class="entity-rank">03</div>
-          <div class="entity-titles">
-            <div class="entity-name">Committee for Children &mdash; Second Step</div>
-            <div class="entity-focus">Evidence-Based SEL Curriculum Provider</div>
-          </div>
-          <div class="entity-badge">Curriculum &amp; Classroom Implementation Leader</div>
-        </div>
-        <div class="entity-body">
-          <p>The Committee for Children has been a leader in advancing the safety and well-being of children since 1979. Through research-based programs, like Second Step, they aim to create safer, more supportive environments. Second Step was developed in 1986 as a school curriculum for Social-Emotional Learning. They were first adopted by the Los Angeles Unified School District, and are now adopted in more than 46,000 schools across all 50 states, reaching roughly 26.9 million children nationwide (Second Step® Evidence-Based Human Skills K-12 Programs, n.d.). They now operate as a 501(c)(3) nonprofit, despite their functioning as a market leader. The program operates as an evidence-based curriculum program that has a depth of research behind itself. Second Step’s classroom based social-skills has a distinct curriculum for all grades K-12. Their programming has been shown to reduce impulsive, high-risk, and other aggressive behaviors in children (WWC | Second Step, n.d.). They have also seen an increase in children’s social competence and other protective factors after just one year of Second Step Curriculum (WWC | Second Step, n.d.). In addition to research backing, Second Step has received federal validation through funding and recognition as a Model Program by the US Department of Education  (Second Step® Evidence-Based Human Skills K-12 Programs, n.d.). Second Step was chosen as a major player in Social-Emotional Learning because of their reach across the United States and prevalence in schools. They are one of the longest running programs, and one of the most widely implemented. With CASEL setting the framework and RULER providing research driven models, Second Step covers the implementation of tools for Social-Emotional Learning. </p>
-          <div class="evidence-box">
-            <h5>Evidence of Major-Player Status</h5>
-            <ul>
-              <li>One of the most established and widely adopted evidence-based SEL curricula, with over two decades of classroom implementation</li>
-              <li>Backed by Committee for Children, a long-standing nonprofit dedicated specifically to child safety and SEL curriculum development</li>
-              <li>Independently studied for its impact on student social competence and behavior outcomes across diverse school settings</li>
-              <li>Provides a structured Pre-K through 12th grade scope-and-sequence model that has become a benchmark for curriculum-based SEL delivery</li>
-            </ul>
-          </div>
-          <div class="entity-metrics stagger-parent">
-            <div class="em-item"><span class="em-val">25+ yrs</span><span class="em-lbl">Track Record</span></div>
-            <div class="em-item"><span class="em-val">PreK&ndash;12</span><span class="em-lbl">Grade Range</span></div>
-            <div class="em-item"><span class="em-val">Nonprofit</span><span class="em-lbl">Organization Type</span></div>
-            <div class="em-item"><span class="em-val">Curriculum</span><span class="em-lbl">Delivery Model</span></div>
-          </div>
-        </div>
-      </div>
+ <!-- ENTITY 3: COMMITTEE FOR CHILDREN / SECOND STEP -->
+ <div class="entity-card fade-in">
+ <div class="entity-hdr">
+ <div class="entity-rank">03</div>
+ <div class="entity-titles">
+ <div class="entity-name">Committee for Children &mdash; Second Step</div>
+ <div class="entity-focus">Evidence-Based SEL Curriculum Provider</div>
+ </div>
+ <div class="entity-badge">Curriculum &amp; Classroom Implementation Leader</div>
+ </div>
+ <div class="entity-body">
+ <p>The Committee for Children has been a leader in advancing the safety and well-being of children since 1979. Through research-based programs, like Second Step, they aim to create safer, more supportive environments. Second Step was developed in 1986 as a school curriculum for Social-Emotional Learning. They were first adopted by the Los Angeles Unified School District, and are now adopted in more than 46,000 schools across all 50 states, reaching roughly 26.9 million children nationwide (Second Step® Evidence-Based Human Skills K-12 Programs, n.d.). They now operate as a 501(c)(3) nonprofit, despite their functioning as a market leader. The program operates as an evidence-based curriculum program that has a depth of research behind itself. Second Step’s classroom based social-skills has a distinct curriculum for all grades K-12. Their programming has been shown to reduce impulsive, high-risk, and other aggressive behaviors in children (WWC | Second Step, n.d.). They have also seen an increase in children’s social competence and other protective factors after just one year of Second Step Curriculum (WWC | Second Step, n.d.). In addition to research backing, Second Step has received federal validation through funding and recognition as a Model Program by the US Department of Education (Second Step® Evidence-Based Human Skills K-12 Programs, n.d.). Second Step was chosen as a major player in Social-Emotional Learning because of their reach across the United States and prevalence in schools. They are one of the longest running programs, and one of the most widely implemented. With CASEL setting the framework and RULER providing research driven models, Second Step covers the implementation of tools for Social-Emotional Learning. </p>
+ <div class="evidence-box">
+ <h5>Evidence of Major-Player Status</h5>
+ <ul>
+ <li>One of the most established and widely adopted evidence-based SEL curricula, with over two decades of classroom implementation</li>
+ <li>Backed by Committee for Children, a long-standing nonprofit dedicated specifically to child safety and SEL curriculum development</li>
+ <li>Independently studied for its impact on student social competence and behavior outcomes across diverse school settings</li>
+ <li>Provides a structured Pre-K through 12th grade scope-and-sequence model that has become a benchmark for curriculum-based SEL delivery</li>
+ </ul>
+ </div>
+ <div class="entity-metrics stagger-parent">
+ <div class="em-item"><span class="em-val">25+ yrs</span><span class="em-lbl">Track Record</span></div>
+ <div class="em-item"><span class="em-val">PreK&ndash;12</span><span class="em-lbl">Grade Range</span></div>
+ <div class="em-item"><span class="em-val">Nonprofit</span><span class="em-lbl">Organization Type</span></div>
+ <div class="em-item"><span class="em-val">Curriculum</span><span class="em-lbl">Delivery Model</span></div>
+ </div>
+ </div>
+ </div>
 
-      <!-- SYNTHESIS -->
-      <div class="subsection-title fade-in"><h3>How the Three Players Fit Together</h3></div>
-      <div class="fade-in">
-        <p>These three entities are not competitors so much as complementary forces occupying distinct layers of the same industry. <strong>CASEL</strong> sets the definitional framework that the entire field operates within. <strong>RULER</strong>, through the Yale Center for Emotional Intelligence, sits at the research and theory layer, providing an academically rigorous model of emotional intelligence grounded in continuously updated science. <strong>Committee for Children's Second Step</strong> sits at the implementation layer, translating shared SEL principles into a structured, teachable curriculum that classrooms can adopt directly.</p>
-        <p>Understanding SEL as an industry requires understanding all three layers simultaneously: a framework without research risks becoming outdated, research without classroom-ready implementation remains theoretical, and curriculum without a shared framework has no common standard to build toward. The major players profiled here are major precisely because each is indispensable to a different layer of that structure.</p>
-      </div>
+ <!-- SYNTHESIS -->
+ <div class="subsection-title fade-in"><h3>How the Three Players Fit Together</h3></div>
+ <div class="fade-in">
+ <p>These three entities are not competitors so much as complementary forces occupying distinct layers of the same industry. <strong>CASEL</strong> sets the definitional framework that the entire field operates within. <strong>RULER</strong>, through the Yale Center for Emotional Intelligence, sits at the research and theory layer, providing an academically rigorous model of emotional intelligence grounded in continuously updated science. <strong>Committee for Children's Second Step</strong> sits at the implementation layer, translating shared SEL principles into a structured, teachable curriculum that classrooms can adopt directly.</p>
+ <p>Understanding SEL as an industry requires understanding all three layers simultaneously: a framework without research risks becoming outdated, research without classroom-ready implementation remains theoretical, and curriculum without a shared framework has no common standard to build toward. The major players profiled here are major precisely because each is indispensable to a different layer of that structure.</p>
+ </div>
 
-      <nav class="page-nav">
-        <a href="industry-future.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Future Predictions</span></a>
-        <a href="business.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Business Profile</span></a>
-      </nav>
+ <nav class="page-nav">
+ <a href="industry-future.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Future Predictions</span></a>
+ <a href="business.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Business Profile</span></a>
+ </nav>
 
-    </main>
-  </div>
+ </main>
+ </div>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-      <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
-      <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
-    </div>
-  </footer>
+ <footer class="footer">
+ <div class="footer-inner">
+ <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-text">The Holistic Student</span></a>
+ <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
+ <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
+ </div>
+ </footer>
 
 <script>(function(){
-  const path=window.location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
-  const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
-  if(hb&&nm){
-    hb.addEventListener('click',()=>nm.classList.toggle('open'));
-    document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
-  }
-  const nb=document.getElementById('navbar');
-  if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
-  const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
-  document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
-  document.querySelectorAll('.stagger-parent').forEach(parent=>{
-    Array.from(parent.children).forEach((child,i)=>{
-      child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
-      const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
-      o.observe(child);
-    });
-  });
-  const dd=document.getElementById('industryDropdown');
-  if(dd){
-    const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
-    btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
-    document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-    btn.addEventListener('keydown',e=>{
-      if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.addEventListener('keydown',e=>{
-      const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
-      if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
-      if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
-  }
+ const path=window.location.pathname.split('/').pop()||'index.html';
+ document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
+ const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
+ if(hb&&nm){
+ hb.addEventListener('click',()=>nm.classList.toggle('open'));
+ document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
+ }
+ const nb=document.getElementById('navbar');
+ if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
+ const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
+ document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
+ document.querySelectorAll('.stagger-parent').forEach(parent=>{
+ Array.from(parent.children).forEach((child,i)=>{
+ child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
+ const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
+ o.observe(child);
+ });
+ });
+ const dd=document.getElementById('industryDropdown');
+ if(dd){
+ const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
+ btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
+ document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+ btn.addEventListener('keydown',e=>{
+ if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.addEventListener('keydown',e=>{
+ const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
+ if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
+ if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
+ }
 })();
 </script>
 </body>

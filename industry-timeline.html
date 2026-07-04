@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timeline | The Holistic Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>/* ═══════════════════════════════════════
-   ROOT & RESET
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Timeline | The Holistic Student</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+ <style>/* ═══════════════════════════════════════
+ ROOT & RESET
 ═══════════════════════════════════════ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
-  --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
-  --mid-text:#3d5a6e;--light-text:#6b8fa0;
-  --font-display:'Playfair Display',Georgia,serif;
-  --font-body:'DM Sans',system-ui,sans-serif;
-  --radius:16px;--radius-sm:8px;--nav-h:72px;
-  --shadow:0 4px 24px rgba(25,63,86,.10);
-  --shadow-lg:0 12px 48px rgba(25,63,86,.18);
+ --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
+ --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
+ --mid-text:#3d5a6e;--light-text:#6b8fa0;
+ --font-display:'Playfair Display',Georgia,serif;
+ --font-body:'DM Sans',system-ui,sans-serif;
+ --radius:16px;--radius-sm:8px;--nav-h:72px;
+ --shadow:0 4px 24px rgba(25,63,86,.10);
+ --shadow-lg:0 12px 48px rgba(25,63,86,.18);
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--font-body);color:var(--dark-text);background:var(--offwhite);overflow-x:hidden}
@@ -98,19 +98,19 @@ p strong{color:var(--navy)}
 /* RESPONSIVE */
 @media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
 @media(max-width:680px){
-  .navbar{padding:0 20px}
-  .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
-  .nav-links.open{display:flex}
-  .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
-  .hamburger{display:flex}
-  .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
-  .dropdown-menu::before{display:none}
-  .nav-item-dropdown.open .dropdown-menu{display:block}
-  .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
-  .page-hero{padding:48px 24px}
-  .container{padding:40px 20px}
-  .industry-breadcrumb{padding:10px 20px}
-  .industry-tabs{padding:0 20px}
+ .navbar{padding:0 20px}
+ .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+ .nav-links.open{display:flex}
+ .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
+ .hamburger{display:flex}
+ .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
+ .dropdown-menu::before{display:none}
+ .nav-item-dropdown.open .dropdown-menu{display:block}
+ .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
+ .page-hero{padding:48px 24px}
+ .container{padding:40px 20px}
+ .industry-breadcrumb{padding:10px 20px}
+ .industry-tabs{padding:0 20px}
 }
 
 .timeline{position:relative;padding-left:44px;margin-bottom:40px}
@@ -127,268 +127,268 @@ p strong{color:var(--navy)}
 .tl-content p:last-child{margin-bottom:0}
 /* TIMELINE SIDE-BY-SIDE IMAGE LAYOUT */
 .tl-content--with-img {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 24px 28px;
-  box-shadow: var(--shadow);
-  border-top: 3px solid var(--teal);
-  transition: all .3s;
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 20px;
-  align-items: start;
+ background: var(--white);
+ border-radius: var(--radius);
+ padding: 24px 28px;
+ box-shadow: var(--shadow);
+ border-top: 3px solid var(--teal);
+ transition: all .3s;
+ display: grid;
+ grid-template-columns: 1fr 200px;
+ gap: 20px;
+ align-items: start;
 }
 .tl-content--with-img:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-  border-top-color: var(--gold);
+ transform: translateY(-3px);
+ box-shadow: var(--shadow-lg);
+ border-top-color: var(--gold);
 }
 .tl-content--with-img .tl-text { min-width: 0; }
 .tl-img-side {
-  width: 100%;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow);
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 4/5;
+ width: 100%;
+ border-radius: var(--radius-sm);
+ box-shadow: var(--shadow);
+ display: block;
+ object-fit: cover;
+ aspect-ratio: 4/5;
 }
 .tl-img-caption {
-  font-size: .72rem;
-  color: var(--light-text);
-  font-style: italic;
-  margin-top: 6px;
-  text-align: center;
+ font-size: .72rem;
+ color: var(--light-text);
+ font-style: italic;
+ margin-top: 6px;
+ text-align: center;
 }
 .tl-img-side--wide {
-  aspect-ratio: 16/9;
+ aspect-ratio: 16/9;
 }
 @media (max-width: 680px) {
-  .tl-content--with-img {
-    grid-template-columns: 1fr;
-  }
-  .tl-img-side { aspect-ratio: 16/9; }
+ .tl-content--with-img {
+ grid-template-columns: 1fr;
+ }
+ .tl-img-side { aspect-ratio: 16/9; }
 }
 </style>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" class="nav-link ">Home</a></li>
-      <li><a href="introduction.html" class="nav-link ">Introduction</a></li>
-      <li class="nav-item-dropdown" id="industryDropdown">
-        <button class="nav-link-dropdown active" aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
-        <ul class="dropdown-menu" role="menu">
-          <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128203;</span><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
-          <li><a href="industry-timeline.html" class="dropdown-link active" role="menuitem"><span class="dd-icon">&#128197;</span><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
-          <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127787;&#65039;</span><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
-          <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128301;</span><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
-          <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127942;</span><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
-        </ul>
-      </li>
-      <li><a href="business.html" class="nav-link ">Business Profile</a></li>
-      <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
-      <li><a href="references.html" class="nav-link ">References</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar" id="navbar">
+ <a href="index.html" class="nav-logo"><span class="logo-text">The Holistic Student</span></a>
+ <button class="hamburger" id="hamburger" aria-label="Toggle menu"></button>
+ <ul class="nav-links" id="nav-links">
+ <li><a href="index.html" class="nav-link ">Home</a></li>
+ <li><a href="introduction.html" class="nav-link ">Introduction</a></li>
+ <li class="nav-item-dropdown" id="industryDropdown">
+ <button class="nav-link-dropdown active" aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
+ <ul class="dropdown-menu" role="menu">
+ <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
+ <li><a href="industry-timeline.html" class="dropdown-link active" role="menuitem"><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
+ <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
+ <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
+ <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
+ </ul>
+ </li>
+ <li><a href="business.html" class="nav-link ">Business Profile</a></li>
+ <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
+ <li><a href="references.html" class="nav-link ">References</a></li>
+ </ul>
+ </nav>
 
-  <div class="page-wrapper">
-    <div class="industry-breadcrumb"><a href="industry.html">Industry Analysis</a><span class="bc-sep">&rsaquo;</span><span class="bc-current">Timeline</span></div>
-        <header class="page-hero">
-      <div class="hero-inner">
-        <span class="hero-tag">Industry Analysis &middot; Timeline</span>
-        <h1>A History of<br /><em>Social-Emotional Learning</em></h1>
-        <p>From Plato's Republic to a $21 billion industry — tracing the ideas, people, and moments that shaped SEL.</p>
-      </div>
-    </header>
-    <div class="industry-tabs"><a href="industry.html" class="industry-tab "><span class="tab-icon">&#128203;</span> Overview</a><a href="industry-timeline.html" class="industry-tab active"><span class="tab-icon">&#128197;</span> Timeline</a><a href="industry-trends.html" class="industry-tab "><span class="tab-icon">&#127787;&#65039;</span> Industry Trends</a><a href="industry-future.html" class="industry-tab "><span class="tab-icon">&#128301;</span> Future Predictions</a><a href="industry-entities.html" class="industry-tab "><span class="tab-icon">&#127942;</span> High Performing Entities</a></div>
-    <main class="container">
-      <div class="section-header fade-in"><span class="section-tag">Industry Analysis</span><h2 class="section-title">The Complete SEL Timeline</h2></div>
-      <div class="timeline">
-        <div class="timeline-item">
-  <div class="tl-dot"></div>
-  <div class="tl-content--with-img">
-    <div class="tl-text">
-      <span class="tl-date">Ancient Origins</span>
-      <h4>The Whole Child Always Mattered</h4>
-      <p>The roots of Social and Emotional Learning (SEL) are sewn deep into Ancient Greece, written in Plato’s ideas about education in The Republic (Social and Emotional Learning, n.d.). In his work, Plato touches on a “holistic curriculum that requires balance of training” in all areas, such as physical movement, arts, math, science, character, and moral judgment (Social and Emotional Learning, n.d.). Plato was convinced that a thorough and balanced education was how a society would produce “citizens of good character” (Social and Emotional Learning, n.d.). </p>
-    </div>
-    <div>
-      <img src="Plato.jpg" alt="Plato Bust" class="tl-img-side" />
-      <p class="tl-img-caption">(Plato | Life, Philosophy, &amp; Works | Britannica)</p>
-    </div>
-  </div>
+ <div class="page-wrapper">
+ <div class="industry-breadcrumb"><a href="industry.html">Industry Analysis</a><span class="bc-sep">&rsaquo;</span><span class="bc-current">Timeline</span></div>
+ <header class="page-hero">
+ <div class="hero-inner">
+ <span class="hero-tag">Industry Analysis &middot; Timeline</span>
+ <h1>A History of<br /><em>Social-Emotional Learning</em></h1>
+ <p>From Plato's Republic to a $21 billion industry — tracing the ideas, people, and moments that shaped SEL.</p>
+ </div>
+ </header>
+ <div class="industry-tabs"><a href="industry.html" class="industry-tab ">Overview</a><a href="industry-timeline.html" class="industry-tab active">Timeline</a><a href="industry-trends.html" class="industry-tab ">Industry Trends</a><a href="industry-future.html" class="industry-tab ">Future Predictions</a><a href="industry-entities.html" class="industry-tab ">High Performing Entities</a></div>
+ <main class="container">
+ <div class="section-header fade-in"><span class="section-tag">Industry Analysis</span><h2 class="section-title">The Complete SEL Timeline</h2></div>
+ <div class="timeline">
+ <div class="timeline-item">
+ <div class="tl-dot"></div>
+ <div class="tl-content--with-img">
+ <div class="tl-text">
+ <span class="tl-date">Ancient Origins</span>
+ <h4>The Whole Child Always Mattered</h4>
+ <p>The roots of Social and Emotional Learning (SEL) are sewn deep into Ancient Greece, written in Plato’s ideas about education in The Republic (Social and Emotional Learning, n.d.). In his work, Plato touches on a “holistic curriculum that requires balance of training” in all areas, such as physical movement, arts, math, science, character, and moral judgment (Social and Emotional Learning, n.d.). Plato was convinced that a thorough and balanced education was how a society would produce “citizens of good character” (Social and Emotional Learning, n.d.). </p>
+ </div>
+ <div>
+ <img src="Plato.jpg" alt="Plato Bust" class="tl-img-side" />
+ <p class="tl-img-caption">(Plato | Life, Philosophy, &amp; Works | Britannica)</p>
+ </div>
+ </div>
 </div>
-        <div class="timeline-item"><div class="tl-dot"></div><div class="tl-content--with-img"><div class="tl-text"><span class="tl-date">1920s&ndash;1930s</span><h4>Foundational Frameworks</h4><p>Influenced by Plato’s The Republic, Lev Vygotsky emphasized the key role that social interaction plays in the development of cognition. Vygotsky’s work in sociocultural theory suggested that the ways in which people interact with others and the culture they live in shapes their mental abilities (University, F.P.,  n.d.). His work on Zone of Proximal Development was critical in developing the frameworks for social-emotional learning. In this theory, Vygotsky argues that learning should be related to the child’s developmental level and their potential learning ability; this approach relates to more than just academic abilities, but a student’s mental and emotional abilities as well (Social Emotional Learning History, n.d.). These foundational thinkers established an approach that would become the core of social-emotional learning guidelines decades later, establishing something essential: academic achievement cannot be separated from emotional and social development.</p>
-            </div>
-    <div>
-      <img src="Vygotsky.jpg" alt="Vygotsky Image" class="tl-img-side" />
-      <p class="tl-img-caption">(Soviet psychology: Lev Vygotsky photo archive)</p>
-    </div>
-  </div>
+ <div class="timeline-item"><div class="tl-dot"></div><div class="tl-content--with-img"><div class="tl-text"><span class="tl-date">1920s&ndash;1930s</span><h4>Foundational Frameworks</h4><p>Influenced by Plato’s The Republic, Lev Vygotsky emphasized the key role that social interaction plays in the development of cognition. Vygotsky’s work in sociocultural theory suggested that the ways in which people interact with others and the culture they live in shapes their mental abilities (University, F.P., n.d.). His work on Zone of Proximal Development was critical in developing the frameworks for social-emotional learning. In this theory, Vygotsky argues that learning should be related to the child’s developmental level and their potential learning ability; this approach relates to more than just academic abilities, but a student’s mental and emotional abilities as well (Social Emotional Learning History, n.d.). These foundational thinkers established an approach that would become the core of social-emotional learning guidelines decades later, establishing something essential: academic achievement cannot be separated from emotional and social development.</p>
+ </div>
+ <div>
+ <img src="Vygotsky.jpg" alt="Vygotsky Image" class="tl-img-side" />
+ <p class="tl-img-caption">(Soviet psychology: Lev Vygotsky photo archive)</p>
+ </div>
+ </div>
 </div>
-        <div class="timeline-item"><div class="tl-dot"></div><div class="tl-content--with-img"><div class="tl-text"><span class="tl-date">1960s</span><h4>Proof of a Concept</h4><p>Before social-emotional learning was named a discipline, it was used as a proven intervention. In 1968, Dr. James Comer of Yale University’s Child Study Center began piloting what would become the Comer School Development Program in two of New Haven’s most underperforming schools serving predominantly Black student populations (Social and Emotional Learning, n.d.). His theory was to support the whole child in order to improve the educational experience of poor ethnic youth. Comer’s program focused on two poor, low-achieving elementary schools in New Haven, Connecticut; both schools had the lowest academic achievement and worst attendance in the city. In the program, the schools established a collaborative-management team consisting of teachers, parents, the principal, and a mental health worker to make decisions together on the schools’ academic and social programs. Their goal was to work together and adjust the ways in which schools were engaging with behavioral problems by better supporting the whole student (Our History - CASEL, n.d.). The results were striking; by the early 1980s both schools had shown significant academic growth, exceeding the national averages. In addition, both schools saw a decline in truancy and behavior problems (Our History - CASEL, n.d.). This change sparked a momentum to the social-emotional learning movement across the nation. </p>
-    </div>
-    <div>
-      <img src="Comer.jpg" alt="Comer School" class="tl-img-side tl-img-side--wide" />
-      <p class="tl-img-caption">(Comer School Development Program celebrates 50 years of work in Education | Yale News)</p>
-    </div>
-  </div>
+ <div class="timeline-item"><div class="tl-dot"></div><div class="tl-content--with-img"><div class="tl-text"><span class="tl-date">1960s</span><h4>Proof of a Concept</h4><p>Before social-emotional learning was named a discipline, it was used as a proven intervention. In 1968, Dr. James Comer of Yale University’s Child Study Center began piloting what would become the Comer School Development Program in two of New Haven’s most underperforming schools serving predominantly Black student populations (Social and Emotional Learning, n.d.). His theory was to support the whole child in order to improve the educational experience of poor ethnic youth. Comer’s program focused on two poor, low-achieving elementary schools in New Haven, Connecticut; both schools had the lowest academic achievement and worst attendance in the city. In the program, the schools established a collaborative-management team consisting of teachers, parents, the principal, and a mental health worker to make decisions together on the schools’ academic and social programs. Their goal was to work together and adjust the ways in which schools were engaging with behavioral problems by better supporting the whole student (Our History - CASEL, n.d.). The results were striking; by the early 1980s both schools had shown significant academic growth, exceeding the national averages. In addition, both schools saw a decline in truancy and behavior problems (Our History - CASEL, n.d.). This change sparked a momentum to the social-emotional learning movement across the nation. </p>
+ </div>
+ <div>
+ <img src="Comer.jpg" alt="Comer School" class="tl-img-side tl-img-side--wide" />
+ <p class="tl-img-caption">(Comer School Development Program celebrates 50 years of work in Education | Yale News)</p>
+ </div>
+ </div>
 </div>
-      <div class="timeline-item">
-  <div class="tl-dot"></div>
-  <div class="tl-content--with-img">
-    <div class="tl-text">
-      <span class="tl-date">1980s</span>
-      <h4>A Push for More</h4>
-      <p>After seeing profound results from Dr. Comer’s program, the superintendent of the district in which the pilot schools resided called for a focus on social development of students. This birthed the New Haven Social Development Program that pioneered social-emotional learning strategies in K-12 classrooms. Around the same time, educator and researcher Dr. Weissberg and Dr. Elias chaired the Grant Consortium on the School-Based Promotion of Social Competence, bringing leaders together to build a framework for social-emotional learning in schools (Our History - CASEL, n.d.). Finally, in 1989 the term “emotional intelligence” was coined by psychologists Peter Salovey and John D. Mayer, using it to describe the ability to monitor the needs of oneself and others, and use them to guide behaviors (Our History - CASEL, n.d.). </p>
-    </div>
-    <div>
-      <img src="salvoy.jpg" alt="Peter Salovey" class="tl-img-side" />
-      <p class="tl-img-caption">(Salovey &amp; Mayer - intelligence and testing)</p>
-    </div>
-  </div>
+ <div class="timeline-item">
+ <div class="tl-dot"></div>
+ <div class="tl-content--with-img">
+ <div class="tl-text">
+ <span class="tl-date">1980s</span>
+ <h4>A Push for More</h4>
+ <p>After seeing profound results from Dr. Comer’s program, the superintendent of the district in which the pilot schools resided called for a focus on social development of students. This birthed the New Haven Social Development Program that pioneered social-emotional learning strategies in K-12 classrooms. Around the same time, educator and researcher Dr. Weissberg and Dr. Elias chaired the Grant Consortium on the School-Based Promotion of Social Competence, bringing leaders together to build a framework for social-emotional learning in schools (Our History - CASEL, n.d.). Finally, in 1989 the term “emotional intelligence” was coined by psychologists Peter Salovey and John D. Mayer, using it to describe the ability to monitor the needs of oneself and others, and use them to guide behaviors (Our History - CASEL, n.d.). </p>
+ </div>
+ <div>
+ <img src="salvoy.jpg" alt="Peter Salovey" class="tl-img-side" />
+ <p class="tl-img-caption">(Salovey &amp; Mayer - intelligence and testing)</p>
+ </div>
+ </div>
 </div>
 
 <div class="timeline-item">
-  <div class="tl-dot"></div>
-  <div class="tl-content--with-img">
-    <div class="tl-text">
-      <span class="tl-date">1994</span>
-      <h4>The Birth of Social-Emotional Learning as a Field</h4>
-      <p>In 1994, a group of researchers, educators, child advocates, and practitioners with expertise across fields in emotional intelligence, child development, public health, prevention science, and more, came together to address the “missing piece” in education (Our History - CASEL, n.d.) . They shared common ground that schools must attend to all needs of a child, including social and emotional needs. From this meeting, the Collaborative for Academic, Social, and Emotional Learning (CASEL) began from this small conference in Kalamazoo, Michigan. This meeting also gave rise to the term “social and emotional learning” (Our History - CASEL, n.d.). 
+ <div class="tl-dot"></div>
+ <div class="tl-content--with-img">
+ <div class="tl-text">
+ <span class="tl-date">1994</span>
+ <h4>The Birth of Social-Emotional Learning as a Field</h4>
+ <p>In 1994, a group of researchers, educators, child advocates, and practitioners with expertise across fields in emotional intelligence, child development, public health, prevention science, and more, came together to address the “missing piece” in education (Our History - CASEL, n.d.) . They shared common ground that schools must attend to all needs of a child, including social and emotional needs. From this meeting, the Collaborative for Academic, Social, and Emotional Learning (CASEL) began from this small conference in Kalamazoo, Michigan. This meeting also gave rise to the term “social and emotional learning” (Our History - CASEL, n.d.). 
 The first foundational contribution of CASEL was the CASEL 5, a framework of five broad, interrelated areas that would define the industry for decades to come. The CASEL 5, defined as self-awareness, self-management, social awareness, relationship skills, and responsible decision-making, established a universal language for SEL and remains the framework used today (Our History - CASEL, n.d.). </p>
-    </div>
-    <div>
-      <img src="CASEL.jpg" alt="CASEL Logo" class="tl-img-side" />
-      <p class="tl-img-caption">(Advancing Social and emotional learning - casel)</p>
-    </div>
-  </div>
+ </div>
+ <div>
+ <img src="CASEL.jpg" alt="CASEL Logo" class="tl-img-side" />
+ <p class="tl-img-caption">(Advancing Social and emotional learning - casel)</p>
+ </div>
+ </div>
 </div>
 
 <div class="timeline-item">
-  <div class="tl-dot"></div>
-  <div class="tl-content--with-img">
-    <div class="tl-text">
-      <span class="tl-date">Late 1990s</span>
-      <h4>Social-Emotional Learning Goes Mainstream</h4>
-      <p>In 1995, American psychologist, Daniel Goleman released the book, Emotional Intelligence: Why it Matters More Than IQ in which he detailed the concept of emotional intelligence. This was a cultural catalyst, as it was the first time that the concept of social-emotional learning was popularized in the public sphere (Social Emotional Learning History, n.d.). In his book, Goleman emphasized the importance of social skills and personal character, as well as the fact that these attributes can be taught (Social Emotional Learning History, n.d.). The book became a bestseller and made the case to parents, policymakers, and educators that emotional intelligence needed to be seen as more than a soft skill. With this book, Goleman created a public appetite to drive investment and policy action in social-emotional learning for decades to come (Social Emotional Learning History, n.d.).</p>
-    </div>
-    <div>
-      <img src="emotional-intelligence.jpg" alt="Emotional Intelligence Book Cover" class="tl-img-side" />
-      <p class="tl-img-caption">(Review of emotional intelligence by Daniel Goleman)</p>
-    </div>
-  </div>
+ <div class="tl-dot"></div>
+ <div class="tl-content--with-img">
+ <div class="tl-text">
+ <span class="tl-date">Late 1990s</span>
+ <h4>Social-Emotional Learning Goes Mainstream</h4>
+ <p>In 1995, American psychologist, Daniel Goleman released the book, Emotional Intelligence: Why it Matters More Than IQ in which he detailed the concept of emotional intelligence. This was a cultural catalyst, as it was the first time that the concept of social-emotional learning was popularized in the public sphere (Social Emotional Learning History, n.d.). In his book, Goleman emphasized the importance of social skills and personal character, as well as the fact that these attributes can be taught (Social Emotional Learning History, n.d.). The book became a bestseller and made the case to parents, policymakers, and educators that emotional intelligence needed to be seen as more than a soft skill. With this book, Goleman created a public appetite to drive investment and policy action in social-emotional learning for decades to come (Social Emotional Learning History, n.d.).</p>
+ </div>
+ <div>
+ <img src="emotional-intelligence.jpg" alt="Emotional Intelligence Book Cover" class="tl-img-side" />
+ <p class="tl-img-caption">(Review of emotional intelligence by Daniel Goleman)</p>
+ </div>
+ </div>
 </div>
 
 <div class="timeline-item">
-  <div class="tl-dot"></div>
-  <div class="tl-content--with-img">
-    <div class="tl-text">
-      <span class="tl-date">2015</span>
-      <h4>First Legitimization by Federal Policy</h4>
-      <p>While widely supported across the globe, social-emotional learning did not see true federal action and support until the passing of the Every Student Succeeds Act, a reform of No Child Left Behind (Social Emotional Learning History, n.d.). In the Every Student Succeeds Act, the federal government authorized K-12 policy in support of higher quality K-12 education. Although the phrase “social and emotional learning” did not explicitly appear in  the legislation, ESSA created multiple funding pathways for social-emotional learning programming in schools (Grant et al., 2017). School leaders were now able to use funding for nonacademic indicators of success, supporting student mental and behavioral health, as well as hiring support personnel to develop school climate and safety (Social Emotional Learning History, n.d.). This was the first time government money institutionalized social-emotional learning as a school priority. </p>
-    </div>
-    <div>
-      <img src="ESSA.jpg" alt="ESSA Federal Policy" class="tl-img-side" />
-      <p class="tl-img-caption">(Every Student Succeeds Act pivotal point in U.S. Education | by Sonya Romero | Aft Voices)</p>
-    </div>
-  </div>
+ <div class="tl-dot"></div>
+ <div class="tl-content--with-img">
+ <div class="tl-text">
+ <span class="tl-date">2015</span>
+ <h4>First Legitimization by Federal Policy</h4>
+ <p>While widely supported across the globe, social-emotional learning did not see true federal action and support until the passing of the Every Student Succeeds Act, a reform of No Child Left Behind (Social Emotional Learning History, n.d.). In the Every Student Succeeds Act, the federal government authorized K-12 policy in support of higher quality K-12 education. Although the phrase “social and emotional learning” did not explicitly appear in the legislation, ESSA created multiple funding pathways for social-emotional learning programming in schools (Grant et al., 2017). School leaders were now able to use funding for nonacademic indicators of success, supporting student mental and behavioral health, as well as hiring support personnel to develop school climate and safety (Social Emotional Learning History, n.d.). This was the first time government money institutionalized social-emotional learning as a school priority. </p>
+ </div>
+ <div>
+ <img src="ESSA.jpg" alt="ESSA Federal Policy" class="tl-img-side" />
+ <p class="tl-img-caption">(Every Student Succeeds Act pivotal point in U.S. Education | by Sonya Romero | Aft Voices)</p>
+ </div>
+ </div>
 </div>
 
 <div class="timeline-item">
-  <div class="tl-dot"></div>
-  <div class="tl-content--with-img">
-    <div class="tl-text">
-      <span class="tl-date">2015-2020s</span>
-      <h4>Smartphones and Technological Rise</h4>
-      <p>Social media, the rise of AI,  and advancements in digital technology dramatically changed education through the 2000s, and Social-Emotional Learning was not immune to this change. With smartphones landing in the hands of younger generations, educators saw dramatic changes in how students communicate, treat others, how isolated they feel, and how they perceive themselves (Langreo et al., 2024). According to a national survey carried out by EdWeek Research Center, 595 teachers, school leaders, and district leaders felt concerned about K-12 students being constantly online (Langreo et al., 2024). 
+ <div class="tl-dot"></div>
+ <div class="tl-content--with-img">
+ <div class="tl-text">
+ <span class="tl-date">2015-2020s</span>
+ <h4>Smartphones and Technological Rise</h4>
+ <p>Social media, the rise of AI, and advancements in digital technology dramatically changed education through the 2000s, and Social-Emotional Learning was not immune to this change. With smartphones landing in the hands of younger generations, educators saw dramatic changes in how students communicate, treat others, how isolated they feel, and how they perceive themselves (Langreo et al., 2024). According to a national survey carried out by EdWeek Research Center, 595 teachers, school leaders, and district leaders felt concerned about K-12 students being constantly online (Langreo et al., 2024). 
 As technology continues to rise, schools have been searching for ways to engage students in Social-Emotional Learning through technology. Instead of trying to simply remove technology from students, educators worked toward “helping students learn to use social media in ways that support their mental health and well-being” (Langreo et al., 2024).</p>
-    </div>
-    <div>
-      <img src="mobile-phones.jpg" alt="Smartphones and Technology" class="tl-img-side" />
-      <p class="tl-img-caption">(Edtech images)</p>
-    </div>
-  </div>
+ </div>
+ <div>
+ <img src="mobile-phones.jpg" alt="Smartphones and Technology" class="tl-img-side" />
+ <p class="tl-img-caption">(Edtech images)</p>
+ </div>
+ </div>
 </div>
 
 <div class="timeline-item">
-  <div class="tl-dot tl-dot--gold"></div>
-  <div class="tl-content--with-img tl-content--featured">
-    <div class="tl-text">
-      <span class="tl-date">2020-Present</span>
-      <h4>A Multi-Billion Dollar Industry is Born</h4>
-      <p>Social media, the rise of AI,  and advancements in digital technology dramatically changed education through the 2000s, and Social-Emotional Learning was not immune to this change. With smartphones landing in the hands of younger generations, educators saw dramatic changes in how students communicate, treat others, how isolated they feel, and how they perceive themselves (Langreo et al., 2024). According to a national survey carried out by EdWeek Research Center, 595 teachers, school leaders, and district leaders felt concerned about K-12 students being constantly online (Langreo et al., 2024). 
+ <div class="tl-dot tl-dot--gold"></div>
+ <div class="tl-content--with-img tl-content--featured">
+ <div class="tl-text">
+ <span class="tl-date">2020-Present</span>
+ <h4>A Multi-Billion Dollar Industry is Born</h4>
+ <p>Social media, the rise of AI, and advancements in digital technology dramatically changed education through the 2000s, and Social-Emotional Learning was not immune to this change. With smartphones landing in the hands of younger generations, educators saw dramatic changes in how students communicate, treat others, how isolated they feel, and how they perceive themselves (Langreo et al., 2024). According to a national survey carried out by EdWeek Research Center, 595 teachers, school leaders, and district leaders felt concerned about K-12 students being constantly online (Langreo et al., 2024). 
 As technology continues to rise, schools have been searching for ways to engage students in Social-Emotional Learning through technology. Instead of trying to simply remove technology from students, educators worked toward “helping students learn to use social media in ways that support their mental health and well-being” (Langreo et al., 2024).</p>
-    </div>
-    <div>
-      <img src="edtech.jpg" alt="SEL Industry Growth" class="tl-img-side" />
-      <p class="tl-img-caption">(Edtech images)</p>
-    </div>
-  </div>
+ </div>
+ <div>
+ <img src="edtech.jpg" alt="SEL Industry Growth" class="tl-img-side" />
+ <p class="tl-img-caption">(Edtech images)</p>
+ </div>
+ </div>
 </div>
-            <nav class="page-nav">
-        <a href="industry.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Industry Overview</span></a>
-        <a href="industry-future.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Future Predictions</span></a>
-      </nav>
-    </main>
-  </div>
-  <footer class="footer">
-    <div class="footer-inner">
-      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-      <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
-      <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
-    </div>
-  </footer>
+ <nav class="page-nav">
+ <a href="industry.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Industry Overview</span></a>
+ <a href="industry-future.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Future Predictions</span></a>
+ </nav>
+ </main>
+ </div>
+ <footer class="footer">
+ <div class="footer-inner">
+ <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-text">The Holistic Student</span></a>
+ <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
+ <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
+ </div>
+ </footer>
 <script>(function(){
-  // Active nav link
-  const path=window.location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
-  // Hamburger
-  const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
-  if(hb&&nm){
-    hb.addEventListener('click',()=>nm.classList.toggle('open'));
-    document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
-  }
-  // Navbar shadow
-  const nb=document.getElementById('navbar');
-  if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
-  // Fade-in observer
-  const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
-  document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
-  // Timeline
-  document.querySelectorAll('.timeline-item').forEach((item,i)=>{
-    item.style.cssText='opacity:0;transform:translateX(-20px);transition:opacity .5s ease,transform .5s ease';
-    const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){setTimeout(()=>{item.style.opacity='1';item.style.transform='translateX(0)';},(i%5)*80);o.unobserve(item);}},{threshold:.15});
-    o.observe(item);
-  });
-  // Stagger children
-  document.querySelectorAll('.stagger-parent').forEach(parent=>{
-    Array.from(parent.children).forEach((child,i)=>{
-      child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
-      const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
-      o.observe(child);
-    });
-  });
-  // Dropdown
-  const dd=document.getElementById('industryDropdown');
-  if(dd){
-    const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
-    btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
-    document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-    btn.addEventListener('keydown',e=>{
-      if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.addEventListener('keydown',e=>{
-      const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
-      if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
-      if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
-  }
+ // Active nav link
+ const path=window.location.pathname.split('/').pop()||'index.html';
+ document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
+ // Hamburger
+ const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
+ if(hb&&nm){
+ hb.addEventListener('click',()=>nm.classList.toggle('open'));
+ document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
+ }
+ // Navbar shadow
+ const nb=document.getElementById('navbar');
+ if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
+ // Fade-in observer
+ const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
+ document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
+ // Timeline
+ document.querySelectorAll('.timeline-item').forEach((item,i)=>{
+ item.style.cssText='opacity:0;transform:translateX(-20px);transition:opacity .5s ease,transform .5s ease';
+ const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){setTimeout(()=>{item.style.opacity='1';item.style.transform='translateX(0)';},(i%5)*80);o.unobserve(item);}},{threshold:.15});
+ o.observe(item);
+ });
+ // Stagger children
+ document.querySelectorAll('.stagger-parent').forEach(parent=>{
+ Array.from(parent.children).forEach((child,i)=>{
+ child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
+ const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
+ o.observe(child);
+ });
+ });
+ // Dropdown
+ const dd=document.getElementById('industryDropdown');
+ if(dd){
+ const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
+ btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
+ document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+ btn.addEventListener('keydown',e=>{
+ if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.addEventListener('keydown',e=>{
+ const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
+ if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
+ if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
+ }
 })();
 </script>
 </body>

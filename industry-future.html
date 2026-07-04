@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Future Predictions | The Holistic Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Future Predictions | The Holistic Student</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+ <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
-  --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
-  --mid-text:#3d5a6e;--light-text:#6b8fa0;
-  --font-display:'Playfair Display',Georgia,serif;
-  --font-body:'DM Sans',system-ui,sans-serif;
-  --radius:16px;--radius-sm:8px;--nav-h:72px;
-  --shadow:0 4px 24px rgba(25,63,86,.10);
-  --shadow-lg:0 12px 48px rgba(25,63,86,.18);
+ --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
+ --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
+ --mid-text:#3d5a6e;--light-text:#6b8fa0;
+ --font-display:'Playfair Display',Georgia,serif;
+ --font-body:'DM Sans',system-ui,sans-serif;
+ --radius:16px;--radius-sm:8px;--nav-h:72px;
+ --shadow:0 4px 24px rgba(25,63,86,.10);
+ --shadow-lg:0 12px 48px rgba(25,63,86,.18);
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--font-body);color:var(--dark-text);background:var(--offwhite);overflow-x:hidden}
@@ -95,19 +95,19 @@ p strong{color:var(--navy)}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 /* RESPONSIVE NAV */
 @media(max-width:680px){
-  .navbar{padding:0 20px}
-  .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
-  .nav-links.open{display:flex}
-  .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
-  .hamburger{display:flex}
-  .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
-  .dropdown-menu::before{display:none}
-  .nav-item-dropdown.open .dropdown-menu{display:block}
-  .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
-  .page-hero{padding:48px 24px}
-  .container{padding:40px 20px}
-  .industry-breadcrumb{padding:10px 20px}
-  .industry-tabs{padding:0 20px}
+ .navbar{padding:0 20px}
+ .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+ .nav-links.open{display:flex}
+ .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
+ .hamburger{display:flex}
+ .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
+ .dropdown-menu::before{display:none}
+ .nav-item-dropdown.open .dropdown-menu{display:block}
+ .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
+ .page-hero{padding:48px 24px}
+ .container{padding:40px 20px}
+ .industry-breadcrumb{padding:10px 20px}
+ .industry-tabs{padding:0 20px}
 }
 
 /* MARKET SNAPSHOT */
@@ -140,186 +140,186 @@ p strong{color:var(--navy)}
 
 @media(max-width:900px){.mkt-snap{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.pred-hdr,.pred-body{padding:20px 24px}.mkt-snap{grid-template-columns:1fr}}
-  </style>
+ </style>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" class="nav-link ">Home</a></li>
-      <li><a href="introduction.html" class="nav-link ">Introduction</a></li>
-      <li class="nav-item-dropdown" id="industryDropdown">
-        <button class="nav-link-dropdown active" aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
-        <ul class="dropdown-menu" role="menu">
-          <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128203;</span><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
-          <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128197;</span><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
-          <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127787;&#65039;</span><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
-          <li><a href="industry-future.html" class="dropdown-link active" role="menuitem"><span class="dd-icon">&#128301;</span><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
-          <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127942;</span><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
-        </ul>
-      </li>
-      <li><a href="business.html" class="nav-link ">Business Profile</a></li>
-      <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
-      <li><a href="references.html" class="nav-link ">References</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar" id="navbar">
+ <a href="index.html" class="nav-logo"><span class="logo-text">The Holistic Student</span></a>
+ <button class="hamburger" id="hamburger" aria-label="Toggle menu"></button>
+ <ul class="nav-links" id="nav-links">
+ <li><a href="index.html" class="nav-link ">Home</a></li>
+ <li><a href="introduction.html" class="nav-link ">Introduction</a></li>
+ <li class="nav-item-dropdown" id="industryDropdown">
+ <button class="nav-link-dropdown active" aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
+ <ul class="dropdown-menu" role="menu">
+ <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
+ <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
+ <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
+ <li><a href="industry-future.html" class="dropdown-link active" role="menuitem"><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
+ <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
+ </ul>
+ </li>
+ <li><a href="business.html" class="nav-link ">Business Profile</a></li>
+ <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
+ <li><a href="references.html" class="nav-link ">References</a></li>
+ </ul>
+ </nav>
 
-  <div class="page-wrapper">
-    <div class="industry-breadcrumb"><a href="industry.html">Industry Analysis</a><span class="bc-sep">&rsaquo;</span><span class="bc-current">Future Predictions</span></div>
+ <div class="page-wrapper">
+ <div class="industry-breadcrumb"><a href="industry.html">Industry Analysis</a><span class="bc-sep">&rsaquo;</span><span class="bc-current">Future Predictions</span></div>
 
-    <header class="page-hero">
-      <div class="hero-inner">
-        <span class="hero-tag">Industry Analysis &middot; Future Predictions</span>
-        <h1>Where SEL Is<br /><em>Heading Next</em></h1>
-        <p>Wellbeing-as-a-Service, AI personalization, and the science of movement &mdash; three forces shaping where Social-Emotional Learning is heading next.</p>
-      </div>
-    </header>
+ <header class="page-hero">
+ <div class="hero-inner">
+ <span class="hero-tag">Industry Analysis &middot; Future Predictions</span>
+ <h1>Where SEL Is<br /><em>Heading Next</em></h1>
+ <p>Wellbeing-as-a-Service, AI personalization, and the science of movement &mdash; three forces shaping where Social-Emotional Learning is heading next.</p>
+ </div>
+ </header>
 
-    <div class="industry-tabs"><a href="industry.html" class="industry-tab "><span class="tab-icon">&#128203;</span> Overview</a><a href="industry-timeline.html" class="industry-tab "><span class="tab-icon">&#128197;</span> Timeline</a><a href="industry-trends.html" class="industry-tab "><span class="tab-icon">&#127787;&#65039;</span> Industry Trends</a><a href="industry-future.html" class="industry-tab active"><span class="tab-icon">&#128301;</span> Future Predictions</a><a href="industry-entities.html" class="industry-tab "><span class="tab-icon">&#127942;</span> High Performing Entities</a></div>
+ <div class="industry-tabs"><a href="industry.html" class="industry-tab ">Overview</a><a href="industry-timeline.html" class="industry-tab ">Timeline</a><a href="industry-trends.html" class="industry-tab ">Industry Trends</a><a href="industry-future.html" class="industry-tab active">Future Predictions</a><a href="industry-entities.html" class="industry-tab ">High Performing Entities</a></div>
 
-    <main class="container">
+ <main class="container">
 
-      <div class="section-header fade-in"><span class="section-tag">Industry Analysis</span><h2 class="section-title">Three Predictions for the Future of SEL</h2></div>
-      <p class="lead-text fade-in">The SEL industry is at an inflection point. The market is accelerating, the research is maturing, and AI is about to change everything.</p>
+ <div class="section-header fade-in"><span class="section-tag">Industry Analysis</span><h2 class="section-title">Three Predictions for the Future of SEL</h2></div>
+ <p class="lead-text fade-in">The SEL industry is at an inflection point. The market is accelerating, the research is maturing, and AI is about to change everything.</p>
 
-      <div class="mkt-snap stagger-parent fade-in">
-        <div class="snap-c"><span class="snap-v">$4.0B</span><span class="snap-l">Global SEL market size (2024)</span></div>
-        <div class="snap-c"><span class="snap-v">73%</span><span class="snap-l">of SEL revenue from analytics platforms</span></div>
-        <div class="snap-c"><span class="snap-v">$87M</span><span class="snap-l">Federal grants for evidence-based SEL (2024)</span></div>
-        <div class="snap-c"><span class="snap-v">32</span><span class="snap-l">Studies in landmark physical activity meta-analysis</span></div>
-      </div>
+ <div class="mkt-snap stagger-parent fade-in">
+ <div class="snap-c"><span class="snap-v">$4.0B</span><span class="snap-l">Global SEL market size (2024)</span></div>
+ <div class="snap-c"><span class="snap-v">73%</span><span class="snap-l">of SEL revenue from analytics platforms</span></div>
+ <div class="snap-c"><span class="snap-v">$87M</span><span class="snap-l">Federal grants for evidence-based SEL (2024)</span></div>
+ <div class="snap-c"><span class="snap-v">32</span><span class="snap-l">Studies in landmark physical activity meta-analysis</span></div>
+ </div>
 
-      <!-- PREDICTION 01: WELLBEING-AS-A-SERVICE -->
-      <div class="pred-card fade-in">
-        <div class="pred-hdr">
-          <div class="pred-icon">&#128202;</div>
-          <div class="pred-meta">
-            <span class="pred-lbl">Prediction 01</span>
-            <h3>Wellbeing-as-a-Service Will Define the Industry</h3>
-            <p class="pred-sub">Turning emotional health into a measurable outcome</p>
-          </div>
-          <div class="pred-horizon">Near-term &middot; 2025&ndash;2028</div>
-        </div>
-        <div class="pred-body">
-          <p>The Social-Emotional Learning industry is undergoing a fundamental shift from simple classroom practice, to a data-driven infrastructure. The global Social-Emotional Market is projected to grow from $3.24 billion in 2023 to $22.11 billion by 2032 (ltd, 2025). This growth is mirrored by the rise of dashboards being sold and added to platforms to track student performance. Vendors like Govox and Schoolytics are selling these dashboards that provide longitudinal benchmarking for teachers. This is turning emotional health into a tracked and graded metric for students. In 2024, the Solutions segment, which included Social-Emotional Learning platforms, assessment tools, and analytical systems, dominated the Social-Emotional Learning platforms. In the analysis, the shift toward analytics and assessments accounted for 73% of total revenue (Social And Emotional Learning Market To Reach $27.73Bn By 2033, n.d.). Companies like Panorama Education led the charge, enhancing their analytics engine with updated behavior-tracking that improved their accuracy by 42% and increasing their teacher engagement with dashboards by more than 55% across participating schools (SEL (Social Emotional Learning) Market Trends 2026–2035, n.d.). Federal investment is also supporting this transition with various grants, totalling $87 million in 2024, focusing on supporting evidence-based, data-supported Social-Emotional Learning strategies in schools (“Social and Emotional Learning Market,” n.d.). In addition, the House of Representatives approved $260 million to be dedicated to measurable holistic child development outcomes, showing more and more push for Social-Emotional Learning to be used in schools as a measurable wellbeing service (“Social and Emotional Learning Market,” n.d.). This shift may change the way that schools receive federal funding down the road, with weight being put on behavior outcomes and student wellbeing, rather than just academic outcomes. </p>
-          <div class="pred-ev">
-            <h5>Supporting Evidence</h5>
-            <ul>
-              <li>73% of total 2024 SEL platform revenue came from analytics and assessment tools</li>
-              <li>$87M in 2024 federal grants targeted evidence-based, data-supported SEL strategies</li>
-              <li>$260M approved by the House of Representatives for measurable holistic child development outcomes</li>
-            </ul>
-          </div>
-          <div class="callout callout-info"><strong>Implication for GoNoodle:</strong> This trend represents both an opportunity and a threat. GoNoodle&rsquo;s strength is engagement, not analytics. To remain competitive, GoNoodle will need to invest significantly in reporting and measurement capabilities.</div>
-        </div>
-      </div>
+ <!-- PREDICTION 01: WELLBEING-AS-A-SERVICE -->
+ <div class="pred-card fade-in">
+ <div class="pred-hdr">
+ 
+ <div class="pred-meta">
+ <span class="pred-lbl">Prediction 01</span>
+ <h3>Wellbeing-as-a-Service Will Define the Industry</h3>
+ <p class="pred-sub">Turning emotional health into a measurable outcome</p>
+ </div>
+ <div class="pred-horizon">Near-term &middot; 2025&ndash;2028</div>
+ </div>
+ <div class="pred-body">
+ <p>The Social-Emotional Learning industry is undergoing a fundamental shift from simple classroom practice, to a data-driven infrastructure. The global Social-Emotional Market is projected to grow from $3.24 billion in 2023 to $22.11 billion by 2032 (ltd, 2025). This growth is mirrored by the rise of dashboards being sold and added to platforms to track student performance. Vendors like Govox and Schoolytics are selling these dashboards that provide longitudinal benchmarking for teachers. This is turning emotional health into a tracked and graded metric for students. In 2024, the Solutions segment, which included Social-Emotional Learning platforms, assessment tools, and analytical systems, dominated the Social-Emotional Learning platforms. In the analysis, the shift toward analytics and assessments accounted for 73% of total revenue (Social And Emotional Learning Market To Reach $27.73Bn By 2033, n.d.). Companies like Panorama Education led the charge, enhancing their analytics engine with updated behavior-tracking that improved their accuracy by 42% and increasing their teacher engagement with dashboards by more than 55% across participating schools (SEL (Social Emotional Learning) Market Trends 2026–2035, n.d.). Federal investment is also supporting this transition with various grants, totalling $87 million in 2024, focusing on supporting evidence-based, data-supported Social-Emotional Learning strategies in schools (“Social and Emotional Learning Market,” n.d.). In addition, the House of Representatives approved $260 million to be dedicated to measurable holistic child development outcomes, showing more and more push for Social-Emotional Learning to be used in schools as a measurable wellbeing service (“Social and Emotional Learning Market,” n.d.). This shift may change the way that schools receive federal funding down the road, with weight being put on behavior outcomes and student wellbeing, rather than just academic outcomes. </p>
+ <div class="pred-ev">
+ <h5>Supporting Evidence</h5>
+ <ul>
+ <li>73% of total 2024 SEL platform revenue came from analytics and assessment tools</li>
+ <li>$87M in 2024 federal grants targeted evidence-based, data-supported SEL strategies</li>
+ <li>$260M approved by the House of Representatives for measurable holistic child development outcomes</li>
+ </ul>
+ </div>
+ <div class="callout callout-info"><strong>Implication for GoNoodle:</strong> This trend represents both an opportunity and a threat. GoNoodle&rsquo;s strength is engagement, not analytics. To remain competitive, GoNoodle will need to invest significantly in reporting and measurement capabilities.</div>
+ </div>
+ </div>
 
-      <!-- PREDICTION 02: AI-POWERED SEL -->
-      <div class="pred-card fade-in">
-        <div class="pred-hdr">
-          <div class="pred-icon">&#129302;</div>
-          <div class="pred-meta">
-            <span class="pred-lbl">Prediction 02</span>
-            <h3>AI Will Personalize SEL at Scale</h3>
-            <p class="pred-sub">Technology as a SEL driver</p>
-          </div>
-          <div class="pred-horizon">Near-term &middot; 2025&ndash;2028</div>
-        </div>
-        <div class="pred-body">
-          <p>As artificial intelligence grows across the globe, it is also becoming a disruptive force in social-emotional learning as an industry. Today, AI-driven emotional learning systems are being increasingly integrated within social-emotional learning frameworks. Offering interactive simulations, role-playing environments, and real-time feedback, AI has opened the door for new mechanisms to cultivate emotional competencies (Sethi & Jain, 2024). A 2024 systematic review published in the Journal of Research in Innovative Teaching and Learning found that AI technologies, including virtual reality, chatbots, gamification, and wearable devices, present significant opportunities in the social-emotional learning space (Sethi & Jain, 2024). 
+ <!-- PREDICTION 02: AI-POWERED SEL -->
+ <div class="pred-card fade-in">
+ <div class="pred-hdr">
+ 
+ <div class="pred-meta">
+ <span class="pred-lbl">Prediction 02</span>
+ <h3>AI Will Personalize SEL at Scale</h3>
+ <p class="pred-sub">Technology as a SEL driver</p>
+ </div>
+ <div class="pred-horizon">Near-term &middot; 2025&ndash;2028</div>
+ </div>
+ <div class="pred-body">
+ <p>As artificial intelligence grows across the globe, it is also becoming a disruptive force in social-emotional learning as an industry. Today, AI-driven emotional learning systems are being increasingly integrated within social-emotional learning frameworks. Offering interactive simulations, role-playing environments, and real-time feedback, AI has opened the door for new mechanisms to cultivate emotional competencies (Sethi & Jain, 2024). A 2024 systematic review published in the Journal of Research in Innovative Teaching and Learning found that AI technologies, including virtual reality, chatbots, gamification, and wearable devices, present significant opportunities in the social-emotional learning space (Sethi & Jain, 2024). 
 What makes AI particularly powerful in this space is its capacity for real-time personalization. AI tools give users the ability to track emotional patterns over time, flag concerns to educators, and adapt support based on individual student needs (Can Emotional Intelligence Be Taught by AI?, n.d.). This type of usability gives a level of differentiation that has never been seen before in the social-emotional learning space, especially for teachers that are overwhelmed with a full classroom. 
 However, the integration of AI into Social-Emotional Learning is not without ethical concerns. Researchers caution that without intentional design that promotes high-fidelity human interaction, students may experience what scholars call “social deskilling” (Sethi & Jain, 2024). Social deskilling is the erosion of their capacity for empathy, negotiation, and non-verbal attunement (Sethi & Jain, 2024). In order to implement AI effectively, researchers believe it will need to be used as a tool to amplify human connection rather than substitute it (“AI Tutoring in Schools,” n.d.).</p>
-          <div class="pred-ev">
-            <h5>Supporting Evidence</h5>
-            <ul>
-              <li>2024 systematic review confirmed VR, chatbots, gamification, and wearables as high-opportunity AI categories in SEL</li>
-              <li>AI enables real-time personalization, flagging emotional concerns to educators as they emerge</li>
-              <li>Real-time personalization closes the gap between one-size-fits-all curricula and individual student needs</li>
-            </ul>
-          </div>
-          <div class="callout callout-warn"><strong>Critical Risk &mdash; Social Deskilling:</strong> Without intentional design promoting human interaction, researchers caution students may experience &ldquo;social deskilling&rdquo; &mdash; the erosion of empathy, negotiation, and non-verbal attunement. AI must amplify human connection, not substitute it.</div>
-        </div>
-      </div>
+ <div class="pred-ev">
+ <h5>Supporting Evidence</h5>
+ <ul>
+ <li>2024 systematic review confirmed VR, chatbots, gamification, and wearables as high-opportunity AI categories in SEL</li>
+ <li>AI enables real-time personalization, flagging emotional concerns to educators as they emerge</li>
+ <li>Real-time personalization closes the gap between one-size-fits-all curricula and individual student needs</li>
+ </ul>
+ </div>
+ <div class="callout callout-warn"><strong>Critical Risk &mdash; Social Deskilling:</strong> Without intentional design promoting human interaction, researchers caution students may experience &ldquo;social deskilling&rdquo; &mdash; the erosion of empathy, negotiation, and non-verbal attunement. AI must amplify human connection, not substitute it.</div>
+ </div>
+ </div>
 
-      <!-- PREDICTION 03: PHYSICAL ACTIVITY -->
-      <div class="pred-card fade-in">
-        <div class="pred-hdr">
-          <div class="pred-icon">&#127939;</div>
-          <div class="pred-meta">
-            <span class="pred-lbl">Prediction 03</span>
-            <h3>Physical Activity Will Become a Core SEL Strategy</h3>
-            <p class="pred-sub">SEL as a movement tool</p>
-          </div>
-          <div class="pred-horizon">Mid-term &middot; 2026&ndash;2030</div>
-        </div>
-        <div class="pred-body">
-          <p>Among some of the most significant scientific advancements in Social-Emotional Learning is the evidence that physical movement is not just compatible with social-emotional learning, but it is a driver of it. In a 2024 landmark review and meta-analysis published in the Review of Education by Wiley examined 32 separate intervention studies and found a consistent positive effect of physical activity interventions in elementary school children’s social-emotional learning outcomes (Moon et al., 2024). This was a benchmark moment for social-emotional learning, as it was the first meta-analysis of its kind. This data moved physical activity from a wellness strategy to a data-driven social-emotional learning tool (Moon et al., 2024).
+ <!-- PREDICTION 03: PHYSICAL ACTIVITY -->
+ <div class="pred-card fade-in">
+ <div class="pred-hdr">
+ 
+ <div class="pred-meta">
+ <span class="pred-lbl">Prediction 03</span>
+ <h3>Physical Activity Will Become a Core SEL Strategy</h3>
+ <p class="pred-sub">SEL as a movement tool</p>
+ </div>
+ <div class="pred-horizon">Mid-term &middot; 2026&ndash;2030</div>
+ </div>
+ <div class="pred-body">
+ <p>Among some of the most significant scientific advancements in Social-Emotional Learning is the evidence that physical movement is not just compatible with social-emotional learning, but it is a driver of it. In a 2024 landmark review and meta-analysis published in the Review of Education by Wiley examined 32 separate intervention studies and found a consistent positive effect of physical activity interventions in elementary school children’s social-emotional learning outcomes (Moon et al., 2024). This was a benchmark moment for social-emotional learning, as it was the first meta-analysis of its kind. This data moved physical activity from a wellness strategy to a data-driven social-emotional learning tool (Moon et al., 2024).
 More studies have continued to build evidence for physical education implementation in Social-Emotional Learning. In 2025, Frontiers in Psychology carried out a study involving 260 students grades four through six. In this study, they found significant improvements in teamwork, self-awareness, and creative thinking amongst students who received Social-Emotional Learning through physical education classes, compared to students who received standard physical education instruction (Sindiani et al., 2025). A 2024 review in the Journal of School Health called explicitly for programs designed to advance Social-Emotional Learning and physical activity simultaneously, noting a historical trend for educators to prioritize physical fitness, while sidelining Social-Emotional Learning (Jackson et al., 2024). Platforms like GoNoodle, which are built at this intersection, are now being validated by scientific evidence and growing in the field. </p>
-          <div class="pred-ev">
-            <h5>Supporting Evidence</h5>
-            <ul>
-              <li>Moon et al. (2024) meta-analysis of 32 studies confirmed physical activity drives SEL outcomes in elementary students</li>
-              <li>2025 Frontiers in Psychology study of 260 students found improvements in teamwork, self-awareness, and creative thinking</li>
-              <li>2024 Journal of School Health review called for programs combining SEL and physical activity simultaneously</li>
-            </ul>
-          </div>
-          <div class="callout callout-pos"><strong>Key Implication:</strong> This finding is the scientific foundation of GoNoodle&rsquo;s entire business model, and the reason its approach is uniquely validated by research. <a href="business.html" style="color:inherit;font-weight:700;">See the full Business Profile &rarr;</a></div>
-        </div>
-      </div>
+ <div class="pred-ev">
+ <h5>Supporting Evidence</h5>
+ <ul>
+ <li>Moon et al. (2024) meta-analysis of 32 studies confirmed physical activity drives SEL outcomes in elementary students</li>
+ <li>2025 Frontiers in Psychology study of 260 students found improvements in teamwork, self-awareness, and creative thinking</li>
+ <li>2024 Journal of School Health review called for programs combining SEL and physical activity simultaneously</li>
+ </ul>
+ </div>
+ <div class="callout callout-pos"><strong>Key Implication:</strong> This finding is the scientific foundation of GoNoodle&rsquo;s entire business model, and the reason its approach is uniquely validated by research. <a href="business.html" style="color:inherit;font-weight:700;">See the full Business Profile &rarr;</a></div>
+ </div>
+ </div>
 
-      <nav class="page-nav">
-        <a href="industry-timeline.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Timeline</span></a>
-        <a href="industry-entities.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">High Performing Entities</span></a>
-      </nav>
+ <nav class="page-nav">
+ <a href="industry-timeline.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Timeline</span></a>
+ <a href="industry-entities.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">High Performing Entities</span></a>
+ </nav>
 
-    </main>
-  </div>
+ </main>
+ </div>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-      <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
-      <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
-    </div>
-  </footer>
+ <footer class="footer">
+ <div class="footer-inner">
+ <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-text">The Holistic Student</span></a>
+ <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
+ <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
+ </div>
+ </footer>
 
 <script>(function(){
-  const path=window.location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
-  const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
-  if(hb&&nm){
-    hb.addEventListener('click',()=>nm.classList.toggle('open'));
-    document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
-  }
-  const nb=document.getElementById('navbar');
-  if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
-  const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
-  document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
-  document.querySelectorAll('.stagger-parent').forEach(parent=>{
-    Array.from(parent.children).forEach((child,i)=>{
-      child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
-      const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
-      o.observe(child);
-    });
-  });
-  const dd=document.getElementById('industryDropdown');
-  if(dd){
-    const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
-    btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
-    document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-    btn.addEventListener('keydown',e=>{
-      if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.addEventListener('keydown',e=>{
-      const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
-      if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
-      if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
-  }
+ const path=window.location.pathname.split('/').pop()||'index.html';
+ document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
+ const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
+ if(hb&&nm){
+ hb.addEventListener('click',()=>nm.classList.toggle('open'));
+ document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
+ }
+ const nb=document.getElementById('navbar');
+ if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
+ const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
+ document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
+ document.querySelectorAll('.stagger-parent').forEach(parent=>{
+ Array.from(parent.children).forEach((child,i)=>{
+ child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
+ const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
+ o.observe(child);
+ });
+ });
+ const dd=document.getElementById('industryDropdown');
+ if(dd){
+ const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
+ btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
+ document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+ btn.addEventListener('keydown',e=>{
+ if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.addEventListener('keydown',e=>{
+ const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
+ if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
+ if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
+ }
 })();
 </script>
 </body>

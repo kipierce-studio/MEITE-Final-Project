@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction | The Holistic Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Introduction | The Holistic Student</title>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+ <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
-  --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
-  --mid-text:#3d5a6e;--light-text:#6b8fa0;
-  --font-display:'Playfair Display',Georgia,serif;
-  --font-body:'DM Sans',system-ui,sans-serif;
-  --radius:16px;--radius-sm:8px;--nav-h:72px;
-  --shadow:0 4px 24px rgba(25,63,86,.10);
-  --shadow-lg:0 12px 48px rgba(25,63,86,.18);
+ --navy:#193f56;--gold:#ffa114;--teal:#94ccd4;--cream:#fef2c1;
+ --white:#ffffff;--offwhite:#f9f4e8;--dark-text:#1a2530;
+ --mid-text:#3d5a6e;--light-text:#6b8fa0;
+ --font-display:'Playfair Display',Georgia,serif;
+ --font-body:'DM Sans',system-ui,sans-serif;
+ --radius:16px;--radius-sm:8px;--nav-h:72px;
+ --shadow:0 4px 24px rgba(25,63,86,.10);
+ --shadow-lg:0 12px 48px rgba(25,63,86,.18);
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--font-body);color:var(--dark-text);background:var(--offwhite);overflow-x:hidden}
@@ -80,35 +80,35 @@ p strong{color:var(--navy)}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 /* RESPONSIVE NAV */
 @media(max-width:680px){
-  .navbar{padding:0 20px}
-  .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
-  .nav-links.open{display:flex}
-  .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
-  .hamburger{display:flex}
-  .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
-  .dropdown-menu::before{display:none}
-  .nav-item-dropdown.open .dropdown-menu{display:block}
-  .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
-  .page-hero{padding:48px 24px}
-  .container{padding:40px 20px}
+ .navbar{padding:0 20px}
+ .nav-links{display:none;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--navy);padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+ .nav-links.open{display:flex}
+ .nav-link{padding:12px 16px;border-radius:var(--radius-sm)}
+ .hamburger{display:flex}
+ .dropdown-menu{position:static;transform:none!important;opacity:1;visibility:visible;pointer-events:auto;background:rgba(255,255,255,.06);border:none;box-shadow:none;border-radius:var(--radius-sm);padding:4px 0 4px 12px;margin:4px 0;display:none}
+ .dropdown-menu::before{display:none}
+ .nav-item-dropdown.open .dropdown-menu{display:block}
+ .nav-link-dropdown{width:100%;border-radius:var(--radius-sm);padding:12px 16px;justify-content:space-between}
+ .page-hero{padding:48px 24px}
+ .container{padding:40px 20px}
 }
 
 /* VIDEO SECTION */
 .video-section{margin-bottom:8px}
 .video-wrap{
-  position:relative;width:100%;max-width:760px;margin:0 auto;
-  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);
-  background:var(--navy);
+ position:relative;width:100%;max-width:760px;margin:0 auto;
+ border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);
+ background:var(--navy);
 }
 .video-wrap video{display:block;width:100%;height:auto;background:#000}
 .video-caption{
-  text-align:center;margin-top:16px;font-size:.85rem;color:var(--light-text);
-  font-style:italic;
+ text-align:center;margin-top:16px;font-size:.85rem;color:var(--light-text);
+ font-style:italic;
 }
 .video-fallback{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:14px;aspect-ratio:16/9;background:linear-gradient(135deg,var(--navy),#0f2b3d);
-  color:var(--white);text-align:center;padding:32px;
+ display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:14px;aspect-ratio:16/9;background:linear-gradient(135deg,var(--navy),#0f2b3d);
+ color:var(--white);text-align:center;padding:32px;
 }
 .video-fallback-icon{font-size:2.4rem}
 .video-fallback p{color:rgba(255,255,255,.7);font-size:.9rem;margin:0;max-width:380px}
@@ -133,45 +133,45 @@ p strong{color:var(--navy)}
 .scope-icon{font-size:1.4rem}
 
 @media(max-width:900px){.crisis-layout,.impact-grid{grid-template-columns:1fr}.scope-cards{grid-template-columns:repeat(2,1fr)}}
-  </style>
+ </style>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-logo"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" class="nav-link ">Home</a></li>
-      <li><a href="introduction.html" class="nav-link active">Introduction</a></li>
-      <li class="nav-item-dropdown" id="industryDropdown">
-        <button class="nav-link-dropdown " aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
-        <ul class="dropdown-menu" role="menu">
-          <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128203;</span><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
-          <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128197;</span><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
-          <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127787;&#65039;</span><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
-          <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#128301;</span><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
-          <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-icon">&#127942;</span><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
-        </ul>
-      </li>
-      <li><a href="business.html" class="nav-link ">Business Profile</a></li>
-      <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
-      <li><a href="references.html" class="nav-link ">References</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar" id="navbar">
+ <a href="index.html" class="nav-logo"><span class="logo-text">The Holistic Student</span></a>
+ <button class="hamburger" id="hamburger" aria-label="Toggle menu"></button>
+ <ul class="nav-links" id="nav-links">
+ <li><a href="index.html" class="nav-link ">Home</a></li>
+ <li><a href="introduction.html" class="nav-link active">Introduction</a></li>
+ <li class="nav-item-dropdown" id="industryDropdown">
+ <button class="nav-link-dropdown " aria-expanded="false" aria-haspopup="true">Industry Analysis <span class="nav-chevron">&#9660;</span></button>
+ <ul class="dropdown-menu" role="menu">
+ <li class="dropdown-overview"><a href="industry.html" class="dropdown-link " role="menuitem"><span class="dd-label">Overview<span class="dd-desc">Industry at a glance</span></span></a></li>
+ <li><a href="industry-timeline.html" class="dropdown-link " role="menuitem"><span class="dd-label">Timeline<span class="dd-desc">History of SEL</span></span></a></li>
+ <li><a href="industry-trends.html" class="dropdown-link " role="menuitem"><span class="dd-label">Industry Trends<span class="dd-desc">External forces shaping SEL</span></span></a></li>
+ <li><a href="industry-future.html" class="dropdown-link " role="menuitem"><span class="dd-label">Future Predictions<span class="dd-desc">Where SEL is heading</span></span></a></li>
+ <li><a href="industry-entities.html" class="dropdown-link " role="menuitem"><span class="dd-label">High Performing Entities<span class="dd-desc">Major players in the field</span></span></a></li>
+ </ul>
+ </li>
+ <li><a href="business.html" class="nav-link ">Business Profile</a></li>
+ <li><a href="conclusion.html" class="nav-link ">Conclusion</a></li>
+ <li><a href="references.html" class="nav-link ">References</a></li>
+ </ul>
+ </nav>
 
-  <div class="page-wrapper">
-    <header class="page-hero">
-      <div class="hero-inner">
-        <span class="hero-tag">01 / Introduction</span>
-        <h1>A Crisis That Demanded<br /><em>an Industry</em></h1>
-        <p>Two decades of rising youth mental health struggles, a smartphone revolution, and the educators who refused to look away &mdash; this is how Social-Emotional Learning became a global imperative.</p>
-      </div>
-    </header>
+ <div class="page-wrapper">
+ <header class="page-hero">
+ <div class="hero-inner">
+ <span class="hero-tag">01 / Introduction</span>
+ <h1>A Crisis That Demanded<br /><em>an Industry</em></h1>
+ <p>Two decades of rising youth mental health struggles, a smartphone revolution, and the educators who refused to look away &mdash; this is how Social-Emotional Learning became a global imperative.</p>
+ </div>
+ </header>
 
-    <main class="container">
+ <main class="container">
 
-      <!-- INTRODUCTION VIDEO -->
-      <section class="video-section fade-in">
-        <div class="video-wrap">
+ <!-- INTRODUCTION VIDEO -->
+ <section class="video-section fade-in">
+ <div class="video-wrap">
           <iframe
             src="https://www.youtube.com/embed/Bhvw5sfsAx0?rel=0"
             title="Introduction Video — The Holistic Student"
@@ -181,80 +181,80 @@ p strong{color:var(--navy)}
             style="width:100%;aspect-ratio:16/9;display:block;">
           </iframe>
         </div>
-          </video>
-        </div>
-        <p class="video-caption">Kiannah Pierce previews The Holistic Student &mdash; her interest in the SEL industry, what the report covers, and what readers will gain.</p>
-      </section>
+ </video>
+ </div>
+ <p class="video-caption">Kiannah Pierce previews The Holistic Student &mdash; her interest in the SEL industry, what the report covers, and what readers will gain.</p>
+ </section>
 
-      <section class="fade-in">
-        <p class="lead-text">As the global education sector grapples with the rising mental health crisis in young students, Social-Emotional Learning has evolved from supplemental education into a multi-billion dollar technology-driven industry.</p>
-        <p>This ePublication provides an in-depth analysis of the Social-Emotional Learning industry, exploring the transition from traditional classroom instruction to a dynamic ecosystem where mental health, physical movement, and data analysis intersect.</p>
-      </section>
+ <section class="fade-in">
+ <p class="lead-text">As the global education sector grapples with the rising mental health crisis in young students, Social-Emotional Learning has evolved from supplemental education into a multi-billion dollar technology-driven industry.</p>
+ <p>This ePublication provides an in-depth analysis of the Social-Emotional Learning industry, exploring the transition from traditional classroom instruction to a dynamic ecosystem where mental health, physical movement, and data analysis intersect.</p>
+ </section>
 
-      <div class="subsection-title fade-in"><h3>About This ePublication</h3></div>
-      <div class="fade-in">
-        <div class="author-card"><div class="author-avatar">KP</div><div><p class="author-name">Kiannah Pierce</p><p class="author-role">Innovative Specialist &middot; MEITE Program &middot; University of North Carolina &middot; 2026</p></div></div>
-        <p>This ePublication centers on a business profile of GoNoodle, a high-performing industry leader that has bridged the gap between physical activity and mental regulation for over 40 million children. The analysis examines GoNoodle's business model, innovative features such as its classroom-to-home connectivity, as well as key weaknesses and critical areas for growth.</p>
-        <div class="scope-cards stagger-parent">
-          <div class="scope-card"><span class="scope-icon">&#128214;</span><span>SEL Industry History &amp; Analysis</span></div>
-          <div class="scope-card"><span class="scope-icon">&#128202;</span><span>Future Predictions for SEL</span></div>
-          <div class="scope-card"><span class="scope-icon">&#127970;</span><span>GoNoodle Business Profile</span></div>
-          <div class="scope-card"><span class="scope-icon">&#128506;&#65039;</span><span>Stakeholder Roadmap</span></div>
-        </div>
-      </div>
+ <div class="subsection-title fade-in"><h3>About This ePublication</h3></div>
+ <div class="fade-in">
+ <div class="author-card"><div><p class="author-name">Kiannah Pierce</p><p class="author-role">Innovative Specialist &middot; MEITE Program &middot; University of North Carolina &middot; 2026</p></div></div>
+ <p>This ePublication centers on a business profile of GoNoodle, a high-performing industry leader that has bridged the gap between physical activity and mental regulation for over 40 million children. The analysis examines GoNoodle's business model, innovative features such as its classroom-to-home connectivity, as well as key weaknesses and critical areas for growth.</p>
+ <div class="scope-cards stagger-parent">
+ <div class="scope-card"><span>SEL Industry History &amp; Analysis</span></div>
+ <div class="scope-card"><span>Future Predictions for SEL</span></div>
+ <div class="scope-card"><span>GoNoodle Business Profile</span></div>
+ <div class="scope-card"><span>Stakeholder Roadmap</span></div>
+ </div>
+ </div>
 
-      <nav class="page-nav">
-        <a href="index.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Home</span></a>
-        <a href="industry.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Industry Analysis</span></a>
-      </nav>
+ <nav class="page-nav">
+ <a href="index.html" class="page-nav-btn prev"><span class="page-nav-label">&larr; Previous</span><span class="page-nav-title">Home</span></a>
+ <a href="industry.html" class="page-nav-btn next"><span class="page-nav-label">Next &rarr;</span><span class="page-nav-title">Industry Analysis</span></a>
+ </nav>
 
-    </main>
-  </div>
+ </main>
+ </div>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-icon">&#9733;</span><span class="logo-text">The Holistic Student</span></a>
-      <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
-      <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
-    </div>
-  </footer>
+ <footer class="footer">
+ <div class="footer-inner">
+ <a href="index.html" class="nav-logo" style="justify-content:center;margin-bottom:12px;"><span class="logo-text">The Holistic Student</span></a>
+ <p class="footer-caption">MEITE Final Project &middot; Kiannah Pierce &middot; University of North Carolina &middot; 2026</p>
+ <p class="footer-sub">Social-Emotional Learning in K-12 Education</p>
+ </div>
+ </footer>
 
 <script>(function(){
-  const path=window.location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
-  const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
-  if(hb&&nm){
-    hb.addEventListener('click',()=>nm.classList.toggle('open'));
-    document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
-  }
-  const nb=document.getElementById('navbar');
-  if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
-  const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
-  document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
-  document.querySelectorAll('.stagger-parent').forEach(parent=>{
-    Array.from(parent.children).forEach((child,i)=>{
-      child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
-      const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
-      o.observe(child);
-    });
-  });
-  const dd=document.getElementById('industryDropdown');
-  if(dd){
-    const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
-    btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
-    document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-    btn.addEventListener('keydown',e=>{
-      if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.addEventListener('keydown',e=>{
-      const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
-      if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
-      if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
-      if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
-    });
-    menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
-  }
+ const path=window.location.pathname.split('/').pop()||'index.html';
+ document.querySelectorAll('.nav-link').forEach(l=>{if((l.getAttribute('href')||'').split('/').pop()===path)l.classList.add('active')});
+ const hb=document.getElementById('hamburger'),nm=document.getElementById('nav-links');
+ if(hb&&nm){
+ hb.addEventListener('click',()=>nm.classList.toggle('open'));
+ document.addEventListener('click',e=>{if(!hb.contains(e.target)&&!nm.contains(e.target))nm.classList.remove('open')});
+ }
+ const nb=document.getElementById('navbar');
+ if(nb)window.addEventListener('scroll',()=>{nb.style.boxShadow=window.scrollY>20?'0 4px 32px rgba(0,0,0,.28)':'0 2px 20px rgba(0,0,0,.15)';},{passive:true});
+ const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=e.target.dataset.delay||0;setTimeout(()=>e.target.classList.add('visible'),+d);fadeObs.unobserve(e.target);}});},{threshold:.12});
+ document.querySelectorAll('.fade-in').forEach(el=>fadeObs.observe(el));
+ document.querySelectorAll('.stagger-parent').forEach(parent=>{
+ Array.from(parent.children).forEach((child,i)=>{
+ child.style.cssText=`opacity:0;transform:translateY(20px);transition:opacity .45s ease ${i*100}ms,transform .45s ease ${i*100}ms`;
+ const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){child.style.opacity='1';child.style.transform='translateY(0)';o.unobserve(child);}},{threshold:.1});
+ o.observe(child);
+ });
+ });
+ const dd=document.getElementById('industryDropdown');
+ if(dd){
+ const btn=dd.querySelector('.nav-link-dropdown'),menu=dd.querySelector('.dropdown-menu');
+ btn.addEventListener('click',e=>{const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);e.stopPropagation();});
+ document.addEventListener('click',e=>{if(!dd.contains(e.target)){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+ btn.addEventListener('keydown',e=>{
+ if(e.key==='Enter'||e.key===' '){e.preventDefault();const open=dd.classList.toggle('open');btn.setAttribute('aria-expanded',open);if(open)menu.querySelector('.dropdown-link')?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.addEventListener('keydown',e=>{
+ const links=Array.from(menu.querySelectorAll('.dropdown-link')),idx=links.indexOf(document.activeElement);
+ if(e.key==='ArrowDown'){e.preventDefault();links[(idx+1)%links.length]?.focus();}
+ if(e.key==='ArrowUp'){e.preventDefault();links[(idx-1+links.length)%links.length]?.focus();}
+ if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}
+ });
+ menu.querySelectorAll('.dropdown-link').forEach(l=>l.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');document.getElementById('nav-links')?.classList.remove('open');}));
+ }
 })();
 </script>
 </body>

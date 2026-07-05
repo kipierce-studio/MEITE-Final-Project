@@ -140,7 +140,7 @@ p strong{color:var(--navy)}
   position: relative;
   min-height: 320px;
   cursor: pointer;
-  overflow: hidden;
+  overflow: visible;
 }
 .casel-card:nth-child(1) { background: var(--navy); }
 .casel-card:nth-child(2) { background: #1a5072; }
@@ -194,6 +194,7 @@ p strong{color:var(--navy)}
   transition: opacity 0.35s ease, transform 0.35s ease;
   z-index: 1;
   overflow-y: auto;
+  border-radius: var(--radius-sm);
 }
 .casel-icon-sm { font-size: 1.4rem; }
 .casel-back h4 {
